@@ -69,7 +69,7 @@ def download_datasets(path_datasets):
     if not os.path.exists(path_datasets):
         os.makedirs(path_datasets)
 
-    download_dataset("hilbert_geo7k_v2", path_datasets)
+    download_dataset("hilbert_geo_sample_1k", path_datasets)
     download_dataset("formalgeo-imo_v1", path_datasets)
 
 

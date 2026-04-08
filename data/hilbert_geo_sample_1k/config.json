@@ -1,5 +1,5 @@
 {
-  "base_path": "data/hilbert_geo7k_v2",
+  "base_path": "data/hilbert_geo_sample_1k",
   "diagrams_folder": "diagrams",
   "problems_folder": "problems",
   "images_folder": "images",

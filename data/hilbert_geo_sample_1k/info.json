@@ -1,5 +1,5 @@
 {
-  "dataset_name": "hilbert_geo7k",
+  "dataset_name": "hilbert_geo_sample_1k",
   "dataset_version": "v2",
   "short_description": "1k sample problems for the reorganized Hilbert-Geo repository.",
   "license": "MIT",
