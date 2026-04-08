@@ -34,6 +34,8 @@ Install dependencies:
 pip install -r requirements.txt
 ```
 
+And download the Hilbert-Geo core package separately
+
 Run the interactive solver:
 
 ```bash
