@@ -1,0 +1,41 @@
+{
+  "problem_id": 324,
+  "annotation": "",
+  "annotation_img": "",
+  "source": "SolidGeo",
+  "problem_text_cn": "",
+  "problem_text_en": "",
+  "problem_img": [
+    "images\\324.jpg"
+  ],
+  "construction_cdl": [
+    "Shape(PQ,QP)",
+    "Shape(AB,BA)",
+    "Cocircular(P)",
+    "Cocircular(Q)",
+    "Cocircular(A)",
+    "Cocircular(B)"
+  ],
+  "text_cdl": [],
+  "image_cdl": [
+    "Circle(B)",
+    "Circle(A)",
+    "Circle(P)",
+    "Equal(VolumeOfCylinder(P,Q),5760)",
+    "Equal(HeightOfCylinder(A,B),20)",
+    "Cylinder(A,B)",
+    "Circle(Q)",
+    "Cylinder(P,Q)",
+    "Equal(VolumeOfCylinder(A,B),90)"
+  ],
+  "goal_cdl": "Value(Div(VolumeOfCylinder(P,Q),VolumeOfCylinder(A,B)))",
+  "problem_answer": "64",
+  "problem_type": [
+    "Measurement of Solid Geometric Forms"
+  ],
+  "complexity_level": "Level 1",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

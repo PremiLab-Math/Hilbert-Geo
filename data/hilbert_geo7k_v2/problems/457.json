@@ -1,0 +1,29 @@
+{
+  "problem_id": 457,
+  "annotation": "",
+  "source": "SolidGeo",
+  "problem_text_en": "A three-quarter sector of a circle of radius 2 inches together with its interior can be rolled up to form the lateral surface area of a right circular cone by taping together along the two radii shown. What is the volume of the cone in cubic inches? ",
+  "construction_cdl": [
+    "Shape(O)",
+    "RadiusOfCircle(O)",
+    "Cone(O,P)",
+    "Shape(OP,PO)",
+    "Cocircular(O)"
+  ],
+  "text_cdl": [
+    "Sector(O)",
+    "Equal(RadiusOfCircle(O),2)",
+    "Equal(AreaOfSector(O),3/4*AreaOfCircle(O))"
+  ],
+  "image_cdl": [
+    "Sector(O)",
+    "Equal(RadiusOfCircle(O),2)",
+    "Equal(AreaOfSector(O),3/4*AreaOfCircle(O))"
+  ],
+  "goal_cdl": "Value(VolumeOfCone(O,P))",
+  "problem_answer": "2*pi/3",
+  "problem_type": [],
+  "complexity_level": "",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": "{\"START\": []}"
+}

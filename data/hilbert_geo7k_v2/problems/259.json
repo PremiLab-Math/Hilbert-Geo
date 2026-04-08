@@ -1,0 +1,36 @@
+{
+  "problem_id": 259,
+  "annotation": "",
+  "annotation_img": "",
+  "source": "SolidGeo",
+  "problem_text_cn": "",
+  "problem_text_en": "",
+  "problem_img": [
+    "images\\259.jpg"
+  ],
+  "construction_cdl": [
+    "Shape(PQ,QP)",
+    "Cocircular(P)",
+    "Cocircular(Q)"
+  ],
+  "text_cdl": [
+    "Equal(HeightOfCylinder(P,Q),35)"
+  ],
+  "image_cdl": [
+    "Cylinder(P,Q)",
+    "IsCentreOfCircle(P,P)",
+    "IsCentreOfCircle(Q,Q)",
+    "Equal(HeightOfCylinder(P,Q),35)",
+    "Equal(RadiusOfCircle(P),10)"
+  ],
+  "goal_cdl": "Value(Add(AreaOfCircle(P),AreaOfCircle(Q),LateralareaOfCylinder(P,Q)))",
+  "problem_answer": "2827.43",
+  "problem_type": [
+    "Measurement of Solid Geometric Forms"
+  ],
+  "complexity_level": "Level 1",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

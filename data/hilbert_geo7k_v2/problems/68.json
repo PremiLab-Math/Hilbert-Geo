@@ -1,0 +1,26 @@
+{
+  "problem_id": 68,
+  "annotation": "",
+  "source": "SolidGeo",
+  "problem_text_en": "Find the surface area of the solid figure shown. The height is 20 cm.",
+  "construction_cdl": [
+    "Shape(AB,BC,CD,DA,AE,BE,CE,DE)",
+    "Collinear(A,B,C,D)",
+    "Collinear(E,A,B,C,D)"
+  ],
+  "text_cdl": [
+    "Equal(HeightOfTriangularPrism(AE),20)"
+  ],
+  "image_cdl": [
+    "TriangularPrism(AE)",
+    "Equal(LengthOfLine(A,B),10)",
+    "Equal(LengthOfLine(B,C),8)",
+    "Equal(LengthOfLine(C,D),6)"
+  ],
+  "goal_cdl": "Value(SurfaceAreaOfTrigularPrism(AE))",
+  "problem_answer": "",
+  "problem_type": [],
+  "complexity_level": "",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": "{\"START\": []}"
+}

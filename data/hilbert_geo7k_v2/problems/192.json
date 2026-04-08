@@ -1,0 +1,29 @@
+{
+  "problem_id": 192,
+  "annotation": "",
+  "source": "SolidGeo",
+  "problem_text_en": "Find the surface area of the figure shown.\n\nGive your answer to the nearest two decimal places.",
+  "construction_cdl": [
+    "Shape(AB,BC,CD,DA,EF,FG,GH,HE,AE,BF,CG,DH)",
+    "Coplanar(ABCD,EFGH)"
+  ],
+  "text_cdl": [
+    "Equal(LengthOfLine(A,B),5)",
+    "Equal(LengthOfLine(A,E),12)",
+    "Equal(LengthOfLine(E,F),9)",
+    "Equal(LengthOfLine(F,G),3)"
+  ],
+  "image_cdl": [
+    "Cuboid(ABCD,EFGH)",
+    "Equal(LengthOfLine(A,B),5)",
+    "Equal(LengthOfLine(A,E),12)",
+    "Equal(LengthOfLine(E,F),9)",
+    "Equal(LengthOfLine(F,G),3)"
+  ],
+  "goal_cdl": "Value(SurfaceAreaOfCuboid(ABCD,EFGH))",
+  "problem_answer": "366.00",
+  "problem_type": [],
+  "complexity_level": "",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": "{\"START\": []}"
+}

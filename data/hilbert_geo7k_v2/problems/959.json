@@ -1,0 +1,31 @@
+{
+  "problem_id": 959,
+  "annotation": "",
+  "annotation_img": "",
+  "source": "SolidGeo",
+  "problem_text_cn": "",
+  "problem_text_en": "",
+  "problem_img": [
+    "images\\258.jpg"
+  ],
+  "construction_cdl": [
+    "Shape(O)",
+    "Cospherical(O)"
+  ],
+  "text_cdl": [],
+  "image_cdl": [
+    "Sphere(O)",
+    "IsCentreOfSphere(O,O)",
+    "Equal(RadiusOfSphere(O),25.36)"
+  ],
+  "goal_cdl": "Value(Mul(1/2,VolumeOfSphere(O)))",
+  "problem_answer": "34159.095",
+  "problem_type": [
+    "Measurement of Solid Geometric Forms"
+  ],
+  "complexity_level": "Level 1",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "problem_id": 832,
+  "annotation": "ShiyuShen_2025-08-23",
+  "annotation_img": "ShiyuShen_2025-08-23",
+  "source": "SolidGeo",
+  "problem_text_cn": "求图中实心几何体的体积。半径是4.1厘米。\n\n（把你的答案精确到小数点后1位）",
+  "problem_text_en": "Find the volume of the solid figure pictured here. The radius is 4.1 centimeters.\n\n(Give your answer correct to 1 decimal place.)",
+  "problem_img": "images\\832.png",
+  "construction_cdl": [
+    "Shape(OP,PO)",
+    "Cocircular(O)"
+  ],
+  "text_cdl": [
+    "Equal(RadiusOfCircle(O),4.1)"
+  ],
+  "image_cdl": [
+    "Cone(O,P)",
+    "IsCentreOfCircle(O,O)",
+    "Equal(HeightOfCone(O,P),12.5)",
+    "Equal(RadiusOfCircle(O),4.1)"
+  ],
+  "goal_cdl": "Value(VolumeOfCone(O,P))",
+  "problem_answer": "220.0",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "problem_id": 533,
+  "annotation": "",
+  "source": "SolidGeo",
+  "problem_text_en": "As shown in the figure, two adjacent planes are parallel to each other, which proves that the two outer planes are parallel to each other.",
+  "construction_cdl": [
+    "Plane(A)",
+    "Plane(B)",
+    "Plane(C)",
+    "Plane(D)"
+  ],
+  "text_cdl": [
+    "ParallelBetweenPlane(A,B)",
+    "ParallelBetweenPlane(C,D)"
+  ],
+  "image_cdl": [
+    "ParallelBetweenPlane(A,B)",
+    "ParallelBetweenPlane(C,D)"
+  ],
+  "goal_cdl": "ParallelBetweenPlane(A,D)",
+  "problem_answer": "True",
+  "problem_type": [],
+  "complexity_level": "",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": "{\"START\": []}"
+}

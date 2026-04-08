@@ -1,0 +1,53 @@
+{
+  "problem_id": 774,
+  "annotation": "",
+  "annotation_img": "",
+  "source": "SolidGeo",
+  "problem_text_cn": "",
+  "problem_text_en": "Find the surface area of the figure shown. The height is 3 cm.\n\nGive your answer to the nearest two decimal places.",
+  "problem_img": [
+    "images\\73.jpg"
+  ],
+  "construction_cdl": [
+    "Shape(AB,BC,CD,DA)",
+    "Shape(EF,FG,GH,HE)",
+    "Shape(AE,EF,FB,BA)",
+    "Shape(CD,DH,HG,GC)",
+    "Shape(AE,EH,HD,DA)",
+    "Shape(BF,FG,GC,CB)",
+    "Coplanar(U,ABCD)",
+    "Coplanar(V,EFGH)"
+  ],
+  "text_cdl": [
+    "RightQuadrangularPrism(ABCD,EFGH)",
+    "Prism(U,V)",
+    "Trapezoid(ABCD)",
+    "PerpendicularBetweenLine(AD,DC)",
+    "ParallelBetweenLine(AB,DC)",
+    "Equal(LengthOfLine(AD),5)",
+    "Equal(LengthOfLine(AB),9)",
+    "Equal(LengthOfLine(DC),12)",
+    "Equal(LengthOfLine(AE),3)"
+  ],
+  "image_cdl": [
+    "RightQuadrangularPrism(ABCD,EFGH)",
+    "Prism(U,V)",
+    "Trapezoid(ABCD)",
+    "PerpendicularBetweenLine(AD,DC)",
+    "ParallelBetweenLine(AB,DC)",
+    "Equal(LengthOfLine(AD),5)",
+    "Equal(LengthOfLine(AB),9)",
+    "Equal(LengthOfLine(DC),12)",
+    "Equal(LengthOfLine(AE),3)"
+  ],
+  "goal_cdl": "Value(SurfaceAreaOfQuadrangularPrism(ABCD,EFGH))",
+  "problem_answer": "200.49",
+  "problem_type": [
+    "Measurement of Solid Geometric Forms"
+  ],
+  "complexity_level": "Level 1",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

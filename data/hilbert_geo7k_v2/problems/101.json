@@ -1,0 +1,36 @@
+{
+  "problem_id": 101,
+  "annotation": "",
+  "source": "SolidGeo",
+  "problem_text_en": "As the solid shown in the figure, the seven marked edges have the same length. The height of the prism of 16 cm. Find the volume of the composite solid shown.",
+  "construction_cdl": [
+    "Shape(AB,BC,CD,DA,EF,FG,GH,HE)",
+    "Shape(IJ,JK,KL,LI)",
+    "Collinear(A,B,C,D,E,F,G,H,I,J,K,L)"
+  ],
+  "text_cdl": [
+    "Equal(LengthOfLine(AB),7)",
+    "Equal(LengthOfLine(BC),7)",
+    "Equal(LengthOfLine(CD),7)",
+    "Equal(LengthOfLine(DA),7)",
+    "Equal(LengthOfLine(EF),7)",
+    "Equal(LengthOfLine(FG),7)",
+    "Equal(LengthOfLine(GH),7)",
+    "Equal(HeightOfPrism(ABCD),16)"
+  ],
+  "image_cdl": [
+    "Equal(LengthOfLine(AB),7)",
+    "Equal(LengthOfLine(BC),7)",
+    "Equal(LengthOfLine(CD),7)",
+    "Equal(LengthOfLine(DA),7)",
+    "Equal(LengthOfLine(EF),7)",
+    "Equal(LengthOfLine(FG),7)",
+    "Equal(LengthOfLine(GH),7)"
+  ],
+  "goal_cdl": "Value(VolumeOfTriangularPrism(ABCD))",
+  "problem_answer": "784",
+  "problem_type": [],
+  "complexity_level": "",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": "{\"START\": []}"
+}

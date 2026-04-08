@@ -1,0 +1,61 @@
+{
+  "problem_id": 775,
+  "annotation": "Claude_2024-12-20",
+  "annotation_img": "Claude_2024-12-20",
+  "source": "SolidGeo",
+  "problem_text_cn": "",
+  "problem_text_en": "Find the surface area of the figure shown. The two marked edges have the same length. The top rectangular prism has sides length of 12cm, 1cm and 1cm. The bottom rectangular prism has sides length of 7cm, 4cm and 1cm.",
+  "problem_img": "images\\775.png",
+  "construction_cdl": [
+    "Shape(AB,BC,CD,DA)",
+    "Shape(EF,FG,GH,HE)",
+    "Shape(AE,EF,FB,BA)",
+    "Shape(CD,DH,HG,GC)",
+    "Shape(AE,EH,HD,DA)",
+    "Shape(BC,CG,GF,FB)",
+    "Shape(IJ,JK,KL,LI)",
+    "Shape(IJ,JN,NM,MI)",
+    "Shape(JK,KO,ON,NJ)",
+    "Shape(KL,LS,SO,OK)",
+    "Shape(IL,LS,SM,MI)",
+    "Shape(MN,NO,OS,SM)",
+    "Coplanar(R,SIJKL)",
+    "Coplanar(T,MNOS)",
+    "Coplanar(U,ABCDQ)",
+    "Coplanar(V,EFGH)",
+    "Coplanar(W,AEFBIJNM)",
+    "Coplanar(X,ADHEJNOK)",
+    "Coplanar(Y,CBFGIJSM)",
+    "Coplanar(Z,CGHDSOKL)"
+  ],
+  "text_cdl": [
+    "Cuboid(ABCDEFGH)",
+    "Cuboid(IJKLMNOS)",
+    "Equal(LengthOfLine(AB),12)",
+    "Equal(LengthOfLine(BC),1)",
+    "Equal(LengthOfLine(AE),1)",
+    "Equal(LengthOfLine(IJ),7)",
+    "Equal(LengthOfLine(JK),4)",
+    "Equal(LengthOfLine(IM),1)"
+  ],
+  "image_cdl": [
+    "Cuboid(ABCDEFGH)",
+    "Cuboid(IJKLMNOS)",
+    "Equal(LengthOfLine(AB),12)",
+    "Equal(LengthOfLine(BC),1)",
+    "Equal(LengthOfLine(AE),1)",
+    "Equal(LengthOfLine(IJ),7)",
+    "Equal(LengthOfLine(JK),4)",
+    "Equal(LengthOfLine(IM),1)"
+  ],
+  "goal_cdl": "Value(Add(AreaOfCuboid(ABCDEFGH),AreaOfCuboid(IJKLMNOS)))",
+  "problem_answer": "128",
+  "problem_type": [
+    "Composite Solid Structures"
+  ],
+  "complexity_level": "Level 2",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

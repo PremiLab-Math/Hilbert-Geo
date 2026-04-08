@@ -1,0 +1,45 @@
+{
+  "problem_id": 325,
+  "annotation": "",
+  "annotation_img": "",
+  "source": "SolidGeo",
+  "problem_text_cn": "",
+  "problem_text_en": "",
+  "problem_img": [
+    "images\\325.jpg"
+  ],
+  "construction_cdl": [
+    "Shape(AB,BC,CD,DA)",
+    "Shape(EF,FG,GH,HE)",
+    "Shape(AE,EF,FB,BA)",
+    "Shape(CD,DH,HG,GC)",
+    "Shape(AE,EH,HD,DA)",
+    "Shape(BF,FG,GC,CB)",
+    "Coplanar(U,ABCD)",
+    "Coplanar(V,EFGH)",
+    "Coplanar(W,AEFB)",
+    "Coplanar(X,ADHE)",
+    "Coplanar(Y,CBFG)",
+    "Coplanar(Z,CGHD)"
+  ],
+  "text_cdl": [],
+  "image_cdl": [
+    "Equal(LengthOfLine(CD),x+4)",
+    "Equal(LengthOfLine(BF),12)",
+    "Equal(LengthOfLine(CG),12)",
+    "Equal(LengthOfLine(DH),12)",
+    "Equal(LengthOfLine(AE),12)",
+    "Cuboid(ABCDEFGH)",
+    "Equal(LengthOfLine(BC),x+8)"
+  ],
+  "goal_cdl": "Value(VolumeOfCuboid(ABCDEFGH))",
+  "problem_answer": "12*x**2+144*x+384",
+  "problem_type": [
+    "Measurement of Solid Geometric Forms"
+  ],
+  "complexity_level": "Level 1",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

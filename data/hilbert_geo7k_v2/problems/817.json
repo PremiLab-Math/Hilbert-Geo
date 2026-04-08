@@ -1,0 +1,49 @@
+{
+  "problem_id": 817,
+  "annotation": "",
+  "annotation_img": "",
+  "source": "SolidGeo",
+  "problem_text_cn": "",
+  "problem_text_en": "Consider the following figure. The height of the solid is 16cm.\n\nUse Pythagoras' Theorem to find the unknown height $x$ in the solid shown.",
+  "problem_img": "images\\817.png",
+  "construction_cdl": [
+    "Shape(AB,BD,DA)",
+    "Shape(AC,CD,DA)",
+    "Shape(EF,FG,GE)",
+    "Shape(AE,EF,FB,BA)",
+    "Shape(AC,CG,GE,EA)",
+    "Shape(BC,CG,GF,FB)",
+    "Coplanar(U,ABCD)",
+    "Coplanar(V,EFG)",
+    "Coplanar(W,ACEG)",
+    "Coplanar(X,ABEF)",
+    "Coplanar(Y,BCFG)",
+    "Collinear(BDC)"
+  ],
+  "text_cdl": [
+    "RightTriangularPrism(ABC,EFG)",
+    "Prism(U,V)",
+    "Equal(LengthOfLine(AE),16)",
+    "Equal(LengthOfLine(BF),16)",
+    "Equal(LengthOfLine(CG),16)"
+  ],
+  "image_cdl": [
+    "RightTriangularPrism(ABC,EFG)",
+    "Prism(U,V)",
+    "Equal(LengthOfLine(BC),12)",
+    "Equal(LengthOfLine(AC),10)",
+    "Equal(LengthOfLine(AB),10)",
+    "Equal(MeasureOfAngle(ADC),90)",
+    "Equal(LengthOfLine(AD),x)"
+  ],
+  "goal_cdl": "Value(x)",
+  "problem_answer": "8",
+  "problem_type": [
+    "Measurement of Solid Geometric Forms"
+  ],
+  "complexity_level": "Level 1",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

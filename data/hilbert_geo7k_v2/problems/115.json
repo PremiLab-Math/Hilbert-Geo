@@ -1,0 +1,22 @@
+{
+  "problem_id": 115,
+  "annotation": "",
+  "source": "SolidGeo",
+  "problem_text_en": "A solid has dimensions as labelled on the diagram. The height is 5.\nFind the length of AG. Leave your answer in surd form.",
+  "construction_cdl": [
+    "Shape(AB,BC,CD,DA,EF,FG,GH,HE,AE,BF,CG,DH)"
+  ],
+  "text_cdl": [
+    "Equal(HeightOfPrism(A,B),5)"
+  ],
+  "image_cdl": [
+    "Equal(LengthOfLine(HG),9)",
+    "Equal(LengthOfLine(GF),4)"
+  ],
+  "goal_cdl": "Value(LengthOfLine(A,G))",
+  "problem_answer": "sqrt(122)",
+  "problem_type": [],
+  "complexity_level": "",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": "{\"START\": []}"
+}

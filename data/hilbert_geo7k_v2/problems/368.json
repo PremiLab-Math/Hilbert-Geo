@@ -1,0 +1,33 @@
+{
+  "problem_id": 368,
+  "annotation": "",
+  "source": "SolidGeo",
+  "problem_text_en": "Two identical cylindrical sheets are cut open along the dotted lines and glued together to form one bigger cylindrical sheet, as shown. The smaller sheets each enclose a volume of 100. What volume is enclosed by the larger\n<image1>",
+  "construction_cdl": [
+    "Shape(O1P1,Q1R1)",
+    "Shape(O2P2,Q2R2)",
+    "Shape(O3P3,Q3R3)",
+    "Cocircular(O1)",
+    "Cocircular(O2)",
+    "Cocircular(O3)"
+  ],
+  "text_cdl": [
+    "Cylinder(O1,P1)",
+    "Cylinder(O2,P2)",
+    "Equal(VolumeOfCylinder(O1,P1),100)",
+    "Equal(VolumeOfCylinder(O2,P2),100)"
+  ],
+  "image_cdl": [
+    "Cylinder(O1,P1)",
+    "Cylinder(O2,P2)",
+    "Cylinder(O3,P3)",
+    "Equal(VolumeOfCylinder(O1,P1),100)",
+    "Equal(VolumeOfCylinder(O2,P2),100)"
+  ],
+  "goal_cdl": "Value(VolumeOfCylinder(O3,P3))",
+  "problem_answer": "200",
+  "problem_type": [],
+  "complexity_level": "",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": "{\"START\": []}"
+}

@@ -1,0 +1,31 @@
+{
+  "problem_id": 40,
+  "annotation": "",
+  "source": "SolidGeo",
+  "problem_text_en": "A solid with a radius of 2.5cm and a height of 10cm contains balls. What is the surface area of each ball? Give your answer correct to one decimal place.",
+  "construction_cdl": [
+    "Shape(OP,PO)",
+    "Cocircular(O)",
+    "Shape(O1)",
+    "Shape(O2)",
+    "Cospherical(O1)",
+    "Cospherical(O2)"
+  ],
+  "text_cdl": [
+    "Equal(RadiusOfCylinder(O,P),2.5)",
+    "Equal(HeightOfCylinder(O,P),10)"
+  ],
+  "image_cdl": [
+    "Cylinder(O,P)",
+    "Sphere(O1)",
+    "Sphere(O2)",
+    "Equal(RadiusOfSphere(O1),2.5)",
+    "Equal(RadiusOfSphere(O2),2.5)"
+  ],
+  "goal_cdl": "Value(AreaOfSphere(O1))",
+  "problem_answer": "78.5",
+  "problem_type": [],
+  "complexity_level": "",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": "{\"START\": []}"
+}

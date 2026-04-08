@@ -1,0 +1,27 @@
+{
+  "problem_id": 715,
+  "annotation": "RuoranXu_2025-08-09",
+  "annotation_img": "RuoranXu_2025-08-09",
+  "source": "SolidGeo",
+  "problem_text_cn": "求所示球体的体积。半径是3厘米。把你的答案四舍五入到小数点后两位。",
+  "problem_text_en": "Find the volume of the sphere shown. The radius is 3 centimeters.\n\nRound your answer to two decimal places.",
+  "problem_img": "images\\715.png",
+  "construction_cdl": [
+    "Shape(O)",
+    "Cospherical(O)"
+  ],
+  "text_cdl": [
+    "Equal(RadiusOfSphere(O),3)"
+  ],
+  "image_cdl": [
+    "Sphere(O)",
+    "IsCentreOfSphere(O,O)",
+    "Equal(RadiusOfSphere(O),3)"
+  ],
+  "goal_cdl": "Value(VolumeOfSphere(O))",
+  "problem_answer": "113.10",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

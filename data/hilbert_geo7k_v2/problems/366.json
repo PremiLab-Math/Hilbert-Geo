@@ -1,0 +1,33 @@
+{
+  "problem_id": 366,
+  "annotation": "",
+  "source": "SolidGeo",
+  "problem_text_en": "In tank I, whose base has an area of $2 \\mathrm{dm}^{2}$ and whose height is $10 \\mathrm{~cm}$, the water is $5 \\mathrm{~cm}$ high. An empty tank II with a base of area $1 \\mathrm{dm}^{2}$ and a height of $7 \\mathrm{~cm}$ is placed in tank I. The water of tank I rises, of course, and spills over into tank II. What level does the water reach in tank II?\n<image1> A. $1 \\mathrm{~cm}$\n B. $2 \\mathrm{~cm}$\n C. $3 \\mathrm{~cm}$\n D. $4 \\mathrm{~cm}$\n E. $5 \\mathrm{~cm}$\n",
+  "construction_cdl": [
+    "Shape(I)",
+    "Shape(II)",
+    "Shape(BaseI)",
+    "Shape(BaseII)",
+    "Shape(WaterLevelI)",
+    "Shape(WaterLevelII)"
+  ],
+  "text_cdl": [
+    "Equal(AreaOfBase(BaseI),2)",
+    "Equal(HeightOfCuboid(I),10)",
+    "Equal(HeightOfWaterLevel(WaterLevelI),5)",
+    "Equal(AreaOfBase(BaseII),1)",
+    "Equal(HeightOfCuboid(II),7)"
+  ],
+  "image_cdl": [
+    "Cuboid(I)",
+    "Cuboid(II)",
+    "Equal(HeightOfWaterLevel(WaterLevelI),5)",
+    "Equal(HeightOfCuboid(II),7)"
+  ],
+  "goal_cdl": "Value(HeightOfWaterLevel(WaterLevelII))",
+  "problem_answer": "2",
+  "problem_type": [],
+  "complexity_level": "",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": "{\"START\": []}"
+}

@@ -1,0 +1,46 @@
+{
+  "problem_id": 915,
+  "annotation": "",
+  "annotation_img": "",
+  "source": "SolidGeo",
+  "problem_text_cn": "",
+  "problem_text_en": "Find the volume of the rectangular prism.",
+  "problem_img": [
+    "images\\214.jpg"
+  ],
+  "construction_cdl": [
+    "Shape(AB,BC,CD,DA)",
+    "Shape(EF,FG,GH,HE)",
+    "Shape(AE,EF,FB,BA)",
+    "Shape(CD,DH,HG,GC)",
+    "Shape(AE,EH,HD,DA)",
+    "Shape(BF,FG,GC,CB,)",
+    "Coplanar(U,ABCD)",
+    "Coplanar(V,EFGH)",
+    "Coplanar(W,AEFB)",
+    "Coplanar(X,ADHE)",
+    "Coplanar(Y,CBFG)",
+    "Coplanar(Z,CGHD)"
+  ],
+  "text_cdl": [
+    "Equal(LengthOfLine(AE),3)",
+    "Equal(LengthOfLine(BF),3)",
+    "Equal(LengthOfLine(CG),3)",
+    "Equal(LengthOfLine(DH),3)"
+  ],
+  "image_cdl": [
+    "Cuboid(ABCDEFGH)",
+    "Equal(LengthOfLine(EF),2)",
+    "Equal(LengthOfLine(GE),20)"
+  ],
+  "goal_cdl": "Value(VolumeOfCuboid(ABCDEFGH))",
+  "problem_answer": "48",
+  "problem_type": [
+    "Measurement of Solid Geometric Forms"
+  ],
+  "complexity_level": "Level 1",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

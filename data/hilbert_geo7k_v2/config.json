@@ -1,0 +1,34 @@
+{
+  "base_path": "data/hilbert_geo7k_v2",
+  "diagrams_folder": "diagrams",
+  "problems_folder": "problems",
+  "images_folder": "images",
+  "multimodal_file": "multimodal_problems.json",
+  "default_annotation": "RuoranXu_2025-01-27",
+  "default_source": "SolidGeo",
+  "image_extensions": ["png", "jpg", "jpeg"],
+  "problem_template": {
+    "annotation": "RuoranXu_2025-01-27",
+    "annotation_img": "RuoranXu_2025-01-27",
+    "source": "SolidGeo",
+    "problem_img_format": "images\\{problem_id}.jpg",
+    "default_construction_cdl": [],
+    "default_text_cdl": [],
+    "default_image_cdl": [],
+    "default_goal_cdl": "",
+    "default_theorem_seqs": [],
+    "default_theorem_seqs_dag": {
+      "START": []
+    }
+  },
+  "field_mapping": {
+    "problem_text.chinese": "problem_text_cn",
+    "problem_text.english": "problem_text_en",
+    "answer": "problem_answer",
+    "formal_description.construction_cdl": "construction_cdl",
+    "formal_description.text_cdl": "text_cdl",
+    "formal_description.image_cdl": "image_cdl",
+    "formal_description.goal_cdl": "goal_cdl",
+    "source": "source"
+  }
+}

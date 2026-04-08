@@ -1,0 +1,28 @@
+{
+  "problem_id": 43,
+  "annotation": "",
+  "source": "SolidGeo",
+  "problem_text_en": "A solid figure has one side of length 14cm as shown.\n\nIf the size of \\angle DFH is \\theta °, find theta to two decimal places.",
+  "construction_cdl": [
+    "Shape(AB,BC,CD,DA,EF,FG,GH,HE)",
+    "Shape(AE,BF,CG,DH)",
+    "Coplanar(ABCD)",
+    "Coplanar(EFGH)"
+  ],
+  "text_cdl": [
+    "Equal(LengthOfLine(D,H),14)",
+    "MeasureOfAngle(DFH,theta)"
+  ],
+  "image_cdl": [
+    "Cuboid(ABCD,EFGH)",
+    "Equal(LengthOfLine(A,B),3)",
+    "Equal(LengthOfLine(E,F),z)",
+    "MeasureOfAngle(DFH,theta)"
+  ],
+  "goal_cdl": "Value(MeasureOfAngle(DFH))",
+  "problem_answer": "45.00",
+  "problem_type": [],
+  "complexity_level": "",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": "{\"START\": []}"
+}

@@ -1,0 +1,32 @@
+{
+  "problem_id": 110,
+  "annotation": "",
+  "source": "SolidGeo",
+  "problem_text_en": "The volume of a cylinder that fits exactly into a sphere is given by the formula:\n\nV=\\frac{1}{4}\\pi h\\left(4r^2-h^2\\right)\n\nwhere r is the radius of the sphere and h is the height of the cylinder.\n\nWhat is the radius of the sphere if the volume of the cylinder is 13.75\\pi cm3 and the height of the cylinder is 5 cm?",
+  "construction_cdl": [
+    "Shape(OP,PO)",
+    "Shape(O)",
+    "Shape(P)",
+    "Cocircular(O)",
+    "Cocircular(P)",
+    "Cospherical(O)"
+  ],
+  "text_cdl": [
+    "VolumeOfCylinder(OP)",
+    "Equal(HeightOfCylinder(OP),5)",
+    "Equal(VolumeOfCylinder(OP),13.75*pi)",
+    "RadiusOfSphere(O)"
+  ],
+  "image_cdl": [
+    "Cylinder(OP)",
+    "Sphere(O)",
+    "Equal(HeightOfCylinder(OP),5)",
+    "RadiusOfSphere(O)"
+  ],
+  "goal_cdl": "Value(RadiusOfSphere(O))",
+  "problem_answer": "2.5",
+  "problem_type": [],
+  "complexity_level": "",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": "{\"START\": []}"
+}

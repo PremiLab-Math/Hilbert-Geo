@@ -1,0 +1,29 @@
+{
+  "problem_id": 372,
+  "annotation": "",
+  "source": "SolidGeo",
+  "problem_text_en": "A cube of edge length $s > 0$ has the property that its surface area is equal to the sum of its volume and five times its edge length. Compute the sum of all possible values of $s$.\n\n<image1>",
+  "construction_cdl": [
+    "Shape(AB,BC,CD,DA,EF,FG,GH,HE,AE,BF,CG,DH)",
+    "Coplanar(ABCD)",
+    "Coplanar(EFGH)",
+    "Coplanar(AEFB)",
+    "Coplanar(BFGC)",
+    "Coplanar(CGHD)",
+    "Coplanar(DHEA)"
+  ],
+  "text_cdl": [
+    "Cube(ABCD,EFGH)",
+    "Equal(SurfaceAreaOfCube(ABCD,EFGH),Sum(VolumeOfCube(ABCD,EFGH),Product(5,SideLengthOfCube(ABCD,EFGH))))"
+  ],
+  "image_cdl": [
+    "Cube(ABCD,EFGH)",
+    "Equal(SideLengthOfCube(ABCD,EFGH),s)"
+  ],
+  "goal_cdl": "Value(SumOfPossibleValuesOf(SideLengthOfCube(ABCD,EFGH)))",
+  "problem_answer": "6",
+  "problem_type": [],
+  "complexity_level": "",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": "{\"START\": []}"
+}

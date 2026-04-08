@@ -1,0 +1,50 @@
+{
+  "problem_id": 932,
+  "annotation": "",
+  "annotation_img": "",
+  "source": "SolidGeo",
+  "problem_text_cn": "",
+  "problem_text_en": "Consider the triangular prism below. EX and XF have same length.\nFind the length of CX correct to two decimal places.",
+  "problem_img": [
+    "images\\231.jpg"
+  ],
+  "construction_cdl": [
+    "Shape(AB,BC,CD,DA)",
+    "Shape(AD,DE,EA)",
+    "Shape(AB,BF,FX,XE,EA)",
+    "Shape(BC,CF,FB)",
+    "Shape(CX,XF,FC)",
+    "Shape(CD,DE,EX,XC)",
+    "Shape(BC,CX,XB)",
+    "Coplanar(U,ABCD)",
+    "Coplanar(V,CDEXF)",
+    "Coplanar(W,ADE)",
+    "Coplanar(X,CBF)",
+    "Coplanar(Y,ABFXE)",
+    "Collinear(FXE)"
+  ],
+  "text_cdl": [
+    "RightTriangularPrism(ADE,BCF)",
+    "Prism(W,X)",
+    "Equal(LengthOfLine(EX),LengthOfLine(FX))",
+    "Equal(LengthOfLine(CF),15)",
+    "Equal(LengthOfLine(AB),10)",
+    "Equal(LengthOfLine(BC),3)"
+  ],
+  "image_cdl": [
+    "Equal(MeasureOfAngle(BCF),90)",
+    "Equal(MeasureOfAngle(ADC),90)",
+    "Equal(LengthOfLine(AB),10)",
+    "Equal(LengthOfLine(BC),3)"
+  ],
+  "goal_cdl": "Value(LengthOfLine(CX))",
+  "problem_answer": "15.81",
+  "problem_type": [
+    "Spatial Metric Relations"
+  ],
+  "complexity_level": "Level 2",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

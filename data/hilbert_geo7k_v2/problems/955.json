@@ -1,0 +1,37 @@
+{
+  "problem_id": 955,
+  "annotation": "",
+  "annotation_img": "",
+  "source": "SolidGeo",
+  "problem_text_cn": "",
+  "problem_text_en": "",
+  "problem_img": [
+    "images\\254.jpg"
+  ],
+  "construction_cdl": [
+    "Shape(O)",
+    "Shape(P)",
+    "Cospherical(O)",
+    "Cospherical(P)"
+  ],
+  "text_cdl": [
+    "Equal(DiameterOfSphere(O),12)"
+  ],
+  "image_cdl": [
+    "Sphere(O)",
+    "IsCentreOfSphere(O,O)",
+    "Sphere(P)",
+    "IsCentreOfSphere(P,P)",
+    "Equal(DiameterOfSphere(P),6)"
+  ],
+  "goal_cdl": "Value(Mul(1/2,Add(VolumeOfSphere(O),VolumeOfSphere(P))))",
+  "problem_answer": "508.94",
+  "problem_type": [
+    "Measurement of Solid Geometric Forms"
+  ],
+  "complexity_level": "Level 1",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

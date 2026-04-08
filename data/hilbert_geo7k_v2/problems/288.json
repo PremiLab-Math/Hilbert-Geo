@@ -1,0 +1,51 @@
+{
+  "problem_id": 288,
+  "annotation": "",
+  "annotation_img": "",
+  "source": "SolidGeo",
+  "problem_text_cn": "",
+  "problem_text_en": "",
+  "problem_img": [
+    "images\\288.jpg"
+  ],
+  "construction_cdl": [
+    "Shape(AB,BC,CA)",
+    "Shape(AE,EC,CA)",
+    "Shape(AC,CD,DA)",
+    "Shape(BC,CD,DG,GB)",
+    "Shape(AF,FH,HE,EA)",
+    "Shape(AB,BG,GF,FA)",
+    "Shape(CD,DH,HE,EC)",
+    "Shape(GF,FH,HD,DG)",
+    "Coplanar(U,ABCE)",
+    "Coplanar(V,FGDH)",
+    "Coplanar(W,AEFH)",
+    "Coplanar(X,BCDG)",
+    "Coplanar(Y,ABGF)",
+    "Coplanar(Z,CEHD)",
+    "Coplanar(R,ACDF)"
+  ],
+  "text_cdl": [
+    "Cuboid(ABCEFGDH)",
+    "Equal(LengthOfLine(CD),9)",
+    "Equal(LengthOfLine(AB),19)",
+    "Equal(LengthOfLine(CB),9)"
+  ],
+  "image_cdl": [
+    "Cuboid(ABCEFGDH)",
+    "Equal(LengthOfLine(AC),z)",
+    "Equal(LengthOfLine(CD),9)",
+    "Equal(LengthOfLine(AB),19)",
+    "Equal(LengthOfLine(CB),9)"
+  ],
+  "goal_cdl": "Value(AreaOfTriangle(ACD))",
+  "problem_answer": "94.59",
+  "problem_type": [
+    "Composite Solid Structures"
+  ],
+  "complexity_level": "Level 2",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

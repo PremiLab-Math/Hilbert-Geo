@@ -1,0 +1,44 @@
+{
+  "problem_id": 334,
+  "annotation": "",
+  "annotation_img": "",
+  "source": "SolidGeo",
+  "problem_text_cn": "",
+  "problem_text_en": "",
+  "problem_img": [
+    "images\\334.jpg"
+  ],
+  "construction_cdl": [
+    "Shape(AB,BC,CA)",
+    "Shape(DE,EF,FD)",
+    "Shape(AD,DE,EB,BA)",
+    "Shape(BE,EF,FC,CB)",
+    "Shape(CA,AD,DF,FC)",
+    "Coplanar(U,ABC)",
+    "Coplanar(V,DEF)",
+    "Coplanar(W,ADEB)",
+    "Coplanar(X,BEFC)",
+    "Coplanar(Y,CFDA)"
+  ],
+  "text_cdl": [],
+  "image_cdl": [
+    "RightTriangularPrism(ABC,DEF)",
+    "Equal(MeasureOfAngle(BAC),90)",
+    "Prism(U,V)",
+    "Equal(LengthOfLine(CF),8)",
+    "Equal(LengthOfLine(AD),8)",
+    "Equal(LengthOfLine(AB),2)",
+    "Equal(LengthOfLine(AC),4)",
+    "Equal(LengthOfLine(BE),8)"
+  ],
+  "goal_cdl": "Value(Mul(AreaOfTriangle(ABC),LengthOfLine(AD)))",
+  "problem_answer": "32",
+  "problem_type": [
+    "Measurement of Solid Geometric Forms"
+  ],
+  "complexity_level": "Level 1",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

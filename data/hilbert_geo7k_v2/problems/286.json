@@ -1,0 +1,50 @@
+{
+  "problem_id": 286,
+  "annotation": "",
+  "annotation_img": "",
+  "source": "SolidGeo",
+  "problem_text_cn": "",
+  "problem_text_en": "",
+  "problem_img": [
+    "images\\286.jpg"
+  ],
+  "construction_cdl": [
+    "Shape(AD,DM,MA)",
+    "Shape(CN,ND,DM,MA)",
+    "Shape(AB,BM,MA)",
+    "Shape(BC,CM,MB)",
+    "Shape(PN,NM,MP)",
+    "Shape(PA,AM,MP)",
+    "Shape(PC,CM,MP)",
+    "Shape(PD,DM,MP)",
+    "Shape(PB,BM,MP)",
+    "Collinear(CND)",
+    "Collinear(AMC)",
+    "Collinear(BMD)",
+    "Coplanar(U,ABCDW)",
+    "Coplanar(V,APMC)",
+    "Coplanar(W,BPMD)",
+    "Coplanar(X,PMN)"
+  ],
+  "text_cdl": [
+    "Equal(LengthOfLine(CN),LengthOfLine(DN))",
+    "RegularQuadrangularPyramid(ABCD,P)",
+    "Equal(HeightOfCone(O,P),12)",
+    "Equal(MeasureOfAngle(PNM),y)"
+  ],
+  "image_cdl": [
+    "Equal(LengthOfLine(CN),LengthOfLine(DN))",
+    "Equal(LengthOfLine(AD),8)",
+    "PerpendicularBetweenLineAndPlane(PM,U)"
+  ],
+  "goal_cdl": "Value(y)",
+  "problem_answer": "69.30",
+  "problem_type": [
+    "Spatial Metric Relations"
+  ],
+  "complexity_level": "Level 2",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

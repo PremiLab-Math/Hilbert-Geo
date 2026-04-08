@@ -1,0 +1,26 @@
+{
+  "problem_id": 205,
+  "annotation": "",
+  "source": "SolidGeo",
+  "problem_text_en": "Two similar cylinders as shown in the figure, find the fully simplified ratio of the volume of the larger cylinder to the volume of the smaller cylinder.",
+  "construction_cdl": [
+    "Shape(O1P1,O2P2)",
+    "Cocircular(O1)",
+    "Cocircular(O2)"
+  ],
+  "text_cdl": [
+    "SimilarBetweenCylinder(O1,P1,O2,P2)"
+  ],
+  "image_cdl": [
+    "Cylinder(O1,P1)",
+    "Cylinder(O2,P2)",
+    "Equal(VolumeOfCylinder(O1,P1),5760)",
+    "Equal(VolumeOfCylinder(O2,P2),90)"
+  ],
+  "goal_cdl": "Value(RatioOfSimilarCylinder(O1,P1,O2,P2))",
+  "problem_answer": "64",
+  "problem_type": [],
+  "complexity_level": "",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": "{\"START\": []}"
+}

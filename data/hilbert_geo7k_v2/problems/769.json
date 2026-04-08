@@ -1,0 +1,47 @@
+{
+  "problem_id": 769,
+  "annotation": "",
+  "annotation_img": "",
+  "source": "SolidGeo",
+  "problem_text_cn": "",
+  "problem_text_en": "Find the surface area of the solid figure shown. The height is 20 cm.",
+  "problem_img": "images\\769.png",
+  "construction_cdl": [
+    "Shape(AB,BC,CA)",
+    "Shape(DE,EF,FD)",
+    "Shape(AB,BE,ED,DA)",
+    "Shape(BC,CF,FE,EB)",
+    "Shape(AC,CF,FD,DA)",
+    "Coplanar(U,ABC)",
+    "Coplanar(V,DEF)",
+    "Coplanar(W,ACDF)",
+    "Coplanar(X,ABDE)",
+    "Coplanar(Y,BCEF)"
+  ],
+  "text_cdl": [
+    "RightTriangularPrism(ABC,DEF)",
+    "Prism(U,V)",
+    "Equal(LengthOfLine(AD),20)",
+    "Equal(LengthOfLine(BE),20)",
+    "Equal(LengthOfLine(CF),20)"
+  ],
+  "image_cdl": [
+    "RightTriangularPrism(ABC,DEF)",
+    "Prism(U,V)",
+    "Equal(LengthOfLine(BC),10)",
+    "Equal(LengthOfLine(DE),6)",
+    "Equal(LengthOfLine(DF),8)",
+    "Equal(MeasureOfAngle(BAC),90)",
+    "Equal(MeasureOfAngle(EDF),90)"
+  ],
+  "goal_cdl": "Value(SurfaceAreaOfTrigularPrism(ABC,DEF))",
+  "problem_answer": "528",
+  "problem_type": [
+    "Measurement of Solid Geometric Forms"
+  ],
+  "complexity_level": "Level 1",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "problem_id": 464,
+  "annotation": "",
+  "source": "SolidGeo",
+  "problem_text_en": "The length of the diameter of this spherical ball is equal to the height of the box in which it is placed. The box is a cube and has an edge length of 37 cm. How many cubic centimeters of the box are not occupied by the solid sphere?",
+  "construction_cdl": [
+    "Shape(O)",
+    "Shape(AB,BC,CD,DA,EF,FG,GH,HE)",
+    "Cospherical(O)",
+    "Coplanar(O,ABCD)",
+    "Equal(DiameterOfSphere(O),SideLengthOfCube(AB))"
+  ],
+  "text_cdl": [
+    "Equal(SideLengthOfCube(AB),37)",
+    "Equal(DiameterOfSphere(O),SideLengthOfCube(AB))"
+  ],
+  "image_cdl": [
+    "Cube(ABCD,EFGH)",
+    "Sphere(O)",
+    "Equal(SideLengthOfCube(AB),37)",
+    "Equal(DiameterOfSphere(O),SideLengthOfCube(AB))"
+  ],
+  "goal_cdl": "Value(VolumeOfCuboid(ABCD) - VolumeOfSphere(O))",
+  "problem_answer": "37852.5",
+  "problem_type": [],
+  "complexity_level": "",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": "{\"START\": []}"
+}

@@ -1,0 +1,24 @@
+{
+  "problem_id": 599,
+  "annotation": "",
+  "source": "SolidGeo",
+  "problem_text_en": "As shown in the figure, there is a cube ABCD-EFGH, prove that CD is parallel to the plane ABFE",
+  "construction_cdl": [
+    "Shape(AB,BC,CD,DA,EF,FG,GH,HE,AE,BF,CG,DH)",
+    "Coplanar(ABFE)"
+  ],
+  "text_cdl": [
+    "Cube(ABCD-EFGH)",
+    "ParallelBetweenLine(CD,ABFE)"
+  ],
+  "image_cdl": [
+    "Cube(ABCD-EFGH)",
+    "ParallelBetweenLine(CD,ABFE)"
+  ],
+  "goal_cdl": "ParallelBetweenLine(CD,ABFE)",
+  "problem_answer": "Proven",
+  "problem_type": [],
+  "complexity_level": "",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": "{\"START\": []}"
+}

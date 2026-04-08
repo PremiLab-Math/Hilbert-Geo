@@ -1,0 +1,30 @@
+{
+  "problem_id": 511,
+  "annotation": "",
+  "source": "SolidGeo",
+  "problem_text_en": "As shown in the figure,AB is perpendicular to BC, BC is on plane U, and AB is on plane V. Prove that AB is perpendicular to CD.",
+  "construction_cdl": [
+    "Shape(AB, BC, CD)",
+    "Plane(U)",
+    "Plane(V)",
+    "Coplanar(U, BC)",
+    "Coplanar(V, AB)"
+  ],
+  "text_cdl": [
+    "PerpendicularBetweenLine(A,B,B,C)",
+    "Coplanar(U, BC)",
+    "Coplanar(V, AB)"
+  ],
+  "image_cdl": [
+    "PerpendicularBetweenLine(A,B,B,C)",
+    "PerpendicularBetweenLine(A,B,C,D)",
+    "Coplanar(U, BC)",
+    "Coplanar(V, AB)"
+  ],
+  "goal_cdl": "PerpendicularBetweenLine(A,B,C,D)",
+  "problem_answer": "Proven",
+  "problem_type": [],
+  "complexity_level": "",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": "{\"START\": []}"
+}

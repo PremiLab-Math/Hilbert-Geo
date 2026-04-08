@@ -1,0 +1,39 @@
+{
+  "problem_id": 750,
+  "annotation": "RuoranXu_2025-08-13",
+  "annotation_img": "RuoranXu_2025-08-13",
+  "source": "SolidGeo",
+  "problem_text_cn": "标记为ABCDEF的三棱镜形盒子需要如图所示插入对角线支撑。求这个支撑物的长度AF。AB=3，BD=4，DF=5。",
+  "problem_text_en": "This triangular prism shaped box labelled ABCDEF needs a diagonal support inserted as shown. Find the length AF of this support.AB=3, BD=4, DF=5.",
+  "problem_img": "images\\750.png",
+  "construction_cdl": [
+    "Shape(AB,BD,DC,CA)",
+    "Shape(AE,EF,FA)",
+    "Shape(AB,BF,FA)",
+    "Shape(BD,DF,FB)",
+    "Shape(AC,CE,EA)",
+    "Shape(CD,DF,FE,EC)",
+    "Coplanar(U,ABCD)",
+    "Coplanar(V,CDEF)",
+    "Coplanar(W,ACE)",
+    "Coplanar(X,BDF)",
+    "Coplanar(Y,ABFE)"
+  ],
+  "text_cdl": [
+    "RightTriangularPrism(ACE,BDF)",
+    "Prism(W,X)",
+    "Equal(LengthOfLine(AB),3)",
+    "Equal(LengthOfLine(BD),4)",
+    "Equal(LengthOfLine(DF),5)"
+  ],
+  "image_cdl": [
+    "RightTriangularPrism(ACE,BDF)",
+    "Prism(W,X)"
+  ],
+  "goal_cdl": "Value(LengthOfLine(AF))",
+  "problem_answer": "sqrt(50)",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "problem_id": 753,
+  "annotation": "RuoranXu_2025-08-16",
+  "annotation_img": "RuoranXu_2025-08-16",
+  "source": "SolidGeo",
+  "problem_text_cn": "求所示实心图形的体积。高13厘米。把你的答案四舍五入到小数点后两位。",
+  "problem_text_en": "Find the volume of the solid figure shown. The height is 13 cm.\n\nRound your answer to two decimal places.",
+  "problem_img": "images\\753.png",
+  "construction_cdl": [
+    "Shape(PQ,QP)",
+    "Cocircular(Q)",
+    "Cocircular(P)"
+  ],
+  "text_cdl": [
+    "Equal(HeightOfCylinder(P,Q),13)"
+  ],
+  "image_cdl": [
+    "Cylinder(P,Q)",
+    "IsCentreOfCircle(P,P)",
+    "IsCentreOfCircle(Q,Q)",
+    "Equal(RadiusOfCircle(P),3)"
+  ],
+  "goal_cdl": "Value(VolumeOfCylinder(P,Q))",
+  "problem_answer": "367.57",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

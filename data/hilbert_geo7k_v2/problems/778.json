@@ -1,0 +1,37 @@
+{
+  "problem_id": 778,
+  "annotation": "Gemini_2024-05-22",
+  "annotation_img": "Gemini_2024-05-22",
+  "source": "SolidGeo",
+  "problem_text_cn": "",
+  "problem_text_en": "The solid figure has a diameter of 4cm. Find the surface area of the solid formed, correct to two decimal places.",
+  "problem_img": "images\\778.png",
+  "construction_cdl": [
+    "Shape(VP,PQ,QP,PV)"
+  ],
+  "text_cdl": [
+    "Cone(V,Q)",
+    "Cone(V,P)",
+    "Equal(DiameterOfCircle(P),2)",
+    "Equal(BusbarOfCone(V,P),8)",
+    "Equal(BusbarOfCone(V,Q),16)"
+  ],
+  "image_cdl": [
+    "Cone(V,Q)",
+    "Cone(V,P)",
+    "Equal(DiameterOfCircle(P),2)",
+    "Equal(DiameterOfCircle(Q),4)",
+    "Equal(BusbarOfCone(V,P),8)",
+    "Equal(BusbarOfCone(V,Q),16)"
+  ],
+  "goal_cdl": "Value(Add(Sub(LateralareaOfCone(V,P),LateralareaOfCone(V,Q)),AreaOfCircle(P),AreaOfCircle(Q)))",
+  "problem_answer": "91.11",
+  "problem_type": [
+    "Measurement of Solid Geometric Forms"
+  ],
+  "complexity_level": "Level 1",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "problem_id": 867,
+  "annotation": "",
+  "annotation_img": "",
+  "source": "SolidGeo",
+  "problem_text_cn": "三角棱镜的尺寸在图中标注。AB边的长度是10。BC边的长度是3。CF边的长度为15。EX边和FX边的长度相等。找到z，角BXC的大小，精确到小数点后2位。",
+  "problem_text_en": "A triangular prism has as dimensions those labelled on the diagram. The AB edge has length of 10. The BC edge has length of 3. The CF edge has length of 15. The EX edge and FX edge have the equal length. Find z, the size of \\angle BXC, correct to 2 decimal places.",
+  "problem_img": "images\\867.png",
+  "construction_cdl": [
+    "Shape(AB,BC,CD,DA)",
+    "Shape(AD,DE,EA)",
+    "Shape(AB,BF,FX,XE,EA)",
+    "Shape(BC,CF,FB)",
+    "Shape(CX,XF,FC)",
+    "Shape(CD,DE,EX,XC)",
+    "Coplanar(U,ABCD)",
+    "Coplanar(V,CDEXF)",
+    "Coplanar(W,ADE)",
+    "Coplanar(X,CDF)",
+    "Coplanar(Y,ABFXE)",
+    "Collinear(FXE)"
+  ],
+  "text_cdl": [
+    "RightTriangularPrism(ADE,BCF)",
+    "Prism(W,X)",
+    "Equal(LengthOfLine(EX),LengthOfLine(FX))",
+    "Equal(LengthOfLine(CF),15)",
+    "Equal(LengthOfLine(AB),10)",
+    "Equal(LengthOfLine(BC),3)",
+    "Equal(MeasureOfAngle(BXC),z)"
+  ],
+  "image_cdl": [
+    "Equal(MeasureOfAngle(BCF),90)",
+    "Equal(MeasureOfAngle(ADC),90)",
+    "Equal(LengthOfLine(AB),10)",
+    "Equal(LengthOfLine(BC),3)"
+  ],
+  "goal_cdl": "Value(z)",
+  "problem_answer": "10.74",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

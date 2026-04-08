@@ -1,0 +1,35 @@
+{
+  "problem_id": 156,
+  "annotation": "",
+  "source": "SolidGeo",
+  "problem_text_en": "We want to find the surface area of this shape. Assume that both boxes are identical in size. The box has sides of length 25, 20 and 33. The cylinder has a radius of 6 and a height of 11.\n\nFind the surface area of the solid.\n\nRound your answer to two decimal places.",
+  "construction_cdl": [
+    "Shape(ABCD,EFGH,IJKL,MNOP)",
+    "Cuboid(ABCD,EFGH)",
+    "Cuboid(IJKL,MNOP)",
+    "Shape(O,P)",
+    "Cylinder(O,P)",
+    "Cocircular(O)",
+    "Cocircular(P)"
+  ],
+  "text_cdl": [
+    "Equal(SideLengthOfCube(AB,BC,CD,DA),25)",
+    "Equal(SideLengthOfCube(AE,BF,CG,DH),20)",
+    "Equal(SideLengthOfCube(EF,FG,GH,HE),33)",
+    "Equal(RadiusOfCircle(O),6)",
+    "Equal(HeightOfCylinder(O,P),11)"
+  ],
+  "image_cdl": [
+    "Equal(SideLengthOfCube(AB,BC,CD,DA),25)",
+    "Equal(SideLengthOfCube(AE,BF,CG,DH),20)",
+    "Equal(SideLengthOfCube(EF,FG,GH,HE),33)",
+    "Equal(RadiusOfCircle(O),6)",
+    "Equal(HeightOfCylinder(O,P),11)"
+  ],
+  "goal_cdl": "Value(SurfaceAreaOfQuadrangularPrism)",
+  "problem_answer": "4822.52",
+  "problem_type": [],
+  "complexity_level": "",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": "{\"START\": []}"
+}

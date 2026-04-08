@@ -1,0 +1,33 @@
+{
+  "problem_id": 71,
+  "annotation": "",
+  "source": "SolidGeo",
+  "problem_text_en": "Find the surface area of the following solid prism. The right rectangle surface has one edge of 10cm.\n\nGive your answer to the nearest one decimal place.",
+  "construction_cdl": [
+    "Shape(AB,BC,CD,DA,EF,FG,GH,HE,AE,BF,CG,DH)",
+    "Coplanar(A,B,C,D)",
+    "Coplanar(E,F,G,H)",
+    "Coplanar(A,E,B,F)",
+    "Coplanar(B,F,C,G)",
+    "Coplanar(C,G,D,H)",
+    "Coplanar(D,H,A,E)"
+  ],
+  "text_cdl": [
+    "RightTriangularPrism(ABCD,EFGH)",
+    "Equal(LengthOfLine(A,B),10)",
+    "Equal(LengthOfLine(A,D),13)",
+    "Equal(LengthOfLine(E,F),3)"
+  ],
+  "image_cdl": [
+    "RightTriangularPrism(ABCD,EFGH)",
+    "Equal(LengthOfLine(A,B),10)",
+    "Equal(LengthOfLine(A,D),13)",
+    "Equal(LengthOfLine(E,F),3)"
+  ],
+  "goal_cdl": "Value(SurfaceAreaOfTrigularPrism(ABCD,EFGH))",
+  "problem_answer": "496.5",
+  "problem_type": [],
+  "complexity_level": "",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": "{\"START\": []}"
+}

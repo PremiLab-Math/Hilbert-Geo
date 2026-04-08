@@ -1,0 +1,30 @@
+{
+  "problem_id": 722,
+  "annotation": "RuoranXu_2025-08-10",
+  "annotation_img": "RuoranXu_2025-08-10",
+  "source": "SolidGeo",
+  "problem_text_cn": "考虑下面这个身高为35厘米的实心图形。求实心图形的表面积。把你的答案四舍五入到小数点后两位。",
+  "problem_text_en": "Consider the following solid figure with a height of 35 cm. Find the surface area of the solid figure.\n\nRound your answer to two decimal places.",
+  "problem_img": "images\\722.png",
+  "construction_cdl": [
+    "Shape(PQ,QP)",
+    "Cocircular(P)",
+    "Cocircular(Q)"
+  ],
+  "text_cdl": [
+    "Equal(HeightOfCylinder(P,Q),35)"
+  ],
+  "image_cdl": [
+    "Cylinder(P,Q)",
+    "IsCentreOfCircle(P,P)",
+    "IsCentreOfCircle(Q,Q)",
+    "Equal(HeightOfCylinder(P,Q),35)",
+    "Equal(RadiusOfCircle(P),10)"
+  ],
+  "goal_cdl": "Value(Add(AreaOfCircle(P),AreaOfCircle(Q),LateralareaOfCylinder(P,Q)))",
+  "problem_answer": "2827.43",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "problem_id": 942,
+  "annotation": "",
+  "annotation_img": "",
+  "source": "SolidGeo",
+  "problem_text_cn": "",
+  "problem_text_en": "",
+  "problem_img": [
+    "images\\241.jpg"
+  ],
+  "construction_cdl": [
+    "Shape(AB,BC,CD,DA)",
+    "Shape(BC,CG,GF,FB)",
+    "Shape(AD,DH,HE,EA)",
+    "Shape(AB,BF,FE,EA)",
+    "Shape(CD,DH,HG,GC)",
+    "Shape(FG,GH,HF)",
+    "Shape(FE,EH,HF)",
+    "Shape(DH,HF,FD)",
+    "Coplanar(U,ABCD)",
+    "Coplanar(V,EFGH)",
+    "Coplanar(W,AEFB)",
+    "Coplanar(X,ADHE)",
+    "Coplanar(Y,CBFG)",
+    "Coplanar(Z,CGHD)",
+    "Coplanar(R,DHFB)"
+  ],
+  "text_cdl": [
+    "Cuboid(ABCDEFGH)",
+    "Equal(LengthOfLine(DF),y)",
+    "Equal(LengthOfLine(AB),11)",
+    "Equal(LengthOfLine(BF),11)",
+    "Equal(LengthOfLine(GF),15)"
+  ],
+  "image_cdl": [
+    "Cuboid(ABCDEFGH)",
+    "Equal(LengthOfLine(DF),y)",
+    "Equal(LengthOfLine(HF),z)",
+    "Equal(LengthOfLine(AB),11)",
+    "Equal(LengthOfLine(BF),11)",
+    "Equal(LengthOfLine(GF),15)"
+  ],
+  "goal_cdl": "Value(y)",
+  "problem_answer": "21.61",
+  "problem_type": [
+    "Measurement of Solid Geometric Forms"
+  ],
+  "complexity_level": "Level 1",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "problem_id": 998,
+  "annotation": "",
+  "annotation_img": "",
+  "source": "SolidGeo",
+  "problem_text_cn": "",
+  "problem_text_en": "",
+  "problem_img": [
+    "images\\297.jpg"
+  ],
+  "construction_cdl": [
+    "Shape(PQ,QP)",
+    "Cocircular(Q)",
+    "Cocircular(P)"
+  ],
+  "text_cdl": [],
+  "image_cdl": [
+    "IsCentreOfCircle(Q,Q)",
+    "Cylinder(P,Q)",
+    "IsCentreOfCircle(P,P)",
+    "Equal(HeightOfCylinder(P,Q),26)",
+    "Equal(RadiusOfCircle(P),15)"
+  ],
+  "goal_cdl": "Value(Add(0.25,Mul(0.001,VolumeOfCylinder(P,Q))))",
+  "problem_answer": "18.63",
+  "problem_type": [
+    "Measurement of Solid Geometric Forms"
+  ],
+  "complexity_level": "Level 1",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

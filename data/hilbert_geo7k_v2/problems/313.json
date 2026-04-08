@@ -1,0 +1,34 @@
+{
+  "problem_id": 313,
+  "annotation": "",
+  "annotation_img": "",
+  "source": "SolidGeo",
+  "problem_text_cn": "",
+  "problem_text_en": "",
+  "problem_img": [
+    "images\\313.jpg"
+  ],
+  "construction_cdl": [
+    "Shape(A,B,C,D,O,M,N)"
+  ],
+  "text_cdl": [],
+  "image_cdl": [
+    "Equal(LengthOfLine(DA),10)",
+    "Equal(LengthOfLine(CD),10)",
+    "Equal(LengthOfLine(BC),10)",
+    "Equal(LengthOfLine(AB),10)",
+    "RegularQuadrangularPyramid(ABCD,O)",
+    "Equal(LengthOfLine(A,B),10)",
+    "Equal(LengthOfLine(ON),6)"
+  ],
+  "goal_cdl": "Value(Add(Mul(LengthOfLine(A,B),LengthOfLine(B,C)),Mul(4,Mul(Mul(LengthOfLine(A,B),Sqrt(Add(Pow(LengthOfLine(O,N),2),Pow(Mul(LengthOfLine(B,C),0.5),2)))),0.5))))",
+  "problem_answer": "256.2",
+  "problem_type": [
+    "Measurement of Solid Geometric Forms"
+  ],
+  "complexity_level": "Level 1",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

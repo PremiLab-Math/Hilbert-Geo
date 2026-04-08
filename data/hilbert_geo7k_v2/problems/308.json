@@ -1,0 +1,39 @@
+{
+  "problem_id": 308,
+  "annotation": "",
+  "annotation_img": "",
+  "source": "SolidGeo",
+  "problem_text_cn": "",
+  "problem_text_en": "",
+  "problem_img": [
+    "images\\308.jpg"
+  ],
+  "construction_cdl": [
+    "Shape(AB,BC,CD,DE,EF,FA)",
+    "Shape(GH,HI,IJ,JK,KL,LG)",
+    "Shape(AB,BH,HG,GA)",
+    "Shape(BC,CI,IH,HB)",
+    "Shape(CD,DJ,JI,IC)",
+    "Shape(DE,EK,KJ,JD)",
+    "Shape(EF,FL,LK,KE)",
+    "Shape(FA,AG,GL,LF)",
+    "Coplanar(U,ABCDEF)",
+    "Coplanar(V,GHIJKL)",
+    "Coplanar(W,ABHG)",
+    "Coplanar(X,BCIH)"
+  ],
+  "text_cdl": [],
+  "image_cdl": [
+    "Prism(U,V)"
+  ],
+  "goal_cdl": "Value(VolumeOfPrism(U,V))",
+  "problem_answer": "534",
+  "problem_type": [
+    "Measurement of Solid Geometric Forms"
+  ],
+  "complexity_level": "Level 1",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "problem_id": 349,
+  "annotation": "",
+  "annotation_img": "",
+  "source": "SolidGeo",
+  "problem_text_cn": "",
+  "problem_text_en": "",
+  "problem_img": [
+    "images\\349.jpg"
+  ],
+  "construction_cdl": [
+    "Shape(PQ,QP)",
+    "Shape(PA,AC,CB,BP)",
+    "Cocircular(P,AB)",
+    "Cocircular(Q,C)",
+    "Collinear(APB)",
+    "Coplanar(U,PAB)",
+    "Coplanar(V,QC)",
+    "Coplanar(W,PQABC)"
+  ],
+  "text_cdl": [],
+  "image_cdl": [
+    "Equal(HeightOfCylinder(P,Q),13)",
+    "Equal(LengthOfLine(AC),l)",
+    "IsCentreOfCircle(P,P)",
+    "IsCentreOfCircle(Q,Q)",
+    "Equal(RadiusOfCircle(P),3)",
+    "Equal(MeasureOfAngle(ABC),90)",
+    "Cylinder(P,Q)"
+  ],
+  "goal_cdl": "Value(l)",
+  "problem_answer": "14",
+  "problem_type": [
+    "Spatial Metric Relations"
+  ],
+  "complexity_level": "Level 2",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

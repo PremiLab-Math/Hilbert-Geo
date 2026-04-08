@@ -1,0 +1,51 @@
+{
+  "problem_id": 975,
+  "annotation": "",
+  "annotation_img": "",
+  "source": "SolidGeo",
+  "problem_text_cn": "",
+  "problem_text_en": "",
+  "problem_img": [
+    "images\\274.jpg"
+  ],
+  "construction_cdl": [
+    "Shape(PQ,QP)",
+    "Shape(AB,BC,CD,DA)",
+    "Shape(EF,FG,GH,HE)",
+    "Shape(AE,EF,FB,BA)",
+    "Shape(CD,DH,HG,GC)",
+    "Shape(AE,EH,HD,DA)",
+    "Shape(BC,CG,GF,FB)",
+    "Coplanar(R,P)",
+    "Cocircular(P)",
+    "Cocircular(Q)",
+    "Coplanar(U,ABCDQ)",
+    "Coplanar(V,EFGH)",
+    "Coplanar(W,AEFB)",
+    "Coplanar(X,ADHE)",
+    "Coplanar(Y,CBFG)",
+    "Coplanar(Z,CGHD)"
+  ],
+  "text_cdl": [
+    "Equal(RadiusOfCircle(Q),5)",
+    "Equal(RadiusOfCircle(P),5)"
+  ],
+  "image_cdl": [
+    "Cuboid(ABCDEFGH)",
+    "Cylinder(P,Q)",
+    "Equal(HeightOfCylinder(P,Q),11)",
+    "Equal(LengthOfLine(AB),65)",
+    "Equal(LengthOfLine(EH),21)",
+    "Equal(LengthOfLine(BF),10)"
+  ],
+  "goal_cdl": "Value(Sub(AreaOfCuboid(ABCDEFGH),AreaOfCircle(Q)))",
+  "problem_answer": "4371.46",
+  "problem_type": [
+    "Composite Solid Structures"
+  ],
+  "complexity_level": "Level 2",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

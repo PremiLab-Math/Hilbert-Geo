@@ -1,0 +1,25 @@
+{
+  "problem_id": 106,
+  "annotation": "",
+  "source": "SolidGeo",
+  "problem_text_en": "Find the height h mm of this closed cylinder if its surface area (S) is $27288$mm2.\n\nRound your answer to the nearest whole number.",
+  "construction_cdl": [
+    "Shape(OP,PO)",
+    "Cocircular(O)",
+    "Cocircular(P)"
+  ],
+  "text_cdl": [
+    "Equal(SurfaceAreaOfCylinder(O,P),27288)"
+  ],
+  "image_cdl": [
+    "Cylinder(O,P)",
+    "Equal(RadiusOfCircle(O),43)",
+    "Equal(RadiusOfCircle(P),43)"
+  ],
+  "goal_cdl": "Value(HeightOfCylinder(O,P))",
+  "problem_answer": "94",
+  "problem_type": [],
+  "complexity_level": "",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": "{\"START\": []}"
+}

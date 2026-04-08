@@ -1,0 +1,63 @@
+{
+  "problem_id": 738,
+  "annotation": "RuoranXu_2025-08-12",
+  "annotation_img": "RuoranXu_2025-08-12",
+  "source": "SolidGeo",
+  "problem_text_cn": "我们要求出这个形状的表面积。假设两个盒子的大小相同。盒子的边长分别为25、20和33。圆柱体的半径是6，高度是11。求出固体的表面积。把你的答案四舍五入到小数点后两位。",
+  "problem_text_en": "We want to find the surface area of this shape. Assume that both boxes are identical in size. The box has sides of length 25, 20 and 33. The cylinder has a radius of 6 and a height of 11.\n\nFind the surface area of the solid.\n\nRound your answer to two decimal places.",
+  "problem_img": "images\\738.png",
+  "construction_cdl": [
+    "Shape(PQ,QP)",
+    "Shape(AB,BC,CD,DA)",
+    "Shape(EF,FG,GH,HE)",
+    "Shape(AE,EF,FB,BA)",
+    "Shape(CD,DH,HG,GC)",
+    "Shape(AE,EH,HD,DA)",
+    "Shape(BC,CG,GF,FB)",
+    "Shape(IJ,JK,KL,LI)",
+    "Shape(IJ,JN,NM,MI)",
+    "Shape(JK,KO,ON,NJ)",
+    "Shape(KL,LS,SO,OK)",
+    "Shape(IL,LS,SM,MI)",
+    "Shape(MN,NO,OS,SM)",
+    "Coplanar(R,SIJKL)",
+    "Coplanar(T,MNOS)",
+    "Cocircular(P)",
+    "Cocircular(Q)",
+    "Coplanar(U,ABCDQ)",
+    "Coplanar(V,EFGH)",
+    "Coplanar(W,AEFBIJNM)",
+    "Coplanar(X,ADHEJNOK)",
+    "Coplanar(Y,CBFGIJSM)",
+    "Coplanar(Z,CGHDSOKL)"
+  ],
+  "text_cdl": [
+    "Cuboid(ABCDEFGH)",
+    "Cuboid(IJKLMNOS)",
+    "Cylinder(P,Q)",
+    "Equal(RadiusOfCircle(Q),6)",
+    "Equal(RadiusOfCircle(P),6)",
+    "Equal(HeightOfCylinder(P,Q),11)",
+    "Equal(LengthOfLine(AB),20)",
+    "Equal(LengthOfLine(EH),33)",
+    "Equal(LengthOfLine(BF),25)",
+    "Equal(LengthOfLine(IJ),20)",
+    "Equal(LengthOfLine(MS),33)",
+    "Equal(LengthOfLine(JN),25)"
+  ],
+  "image_cdl": [
+    "Cuboid(ABCDEFGH)",
+    "Cuboid(IJKLMNOS)",
+    "Cylinder(P,Q)",
+    "Equal(HeightOfCylinder(P,Q),11)",
+    "Equal(LengthOfLine(BF),25)",
+    "Equal(LengthOfLine(AB),20)",
+    "Equal(RadiusOfCircle(P),6)"
+  ],
+  "goal_cdl": "Value(Add(Sub(AreaOfCuboid(ABCDEFGH),AreaOfCircle(Q)),LateralareaOfCylinder(P,Q),Sub(AreaOfCuboid(IJKLMNOS),AreaOfCircle(P))))",
+  "problem_answer": "8128.50",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

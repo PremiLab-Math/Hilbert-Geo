@@ -1,0 +1,37 @@
+{
+  "problem_id": 248,
+  "annotation": "",
+  "annotation_img": "",
+  "source": "SolidGeo",
+  "problem_text_cn": "",
+  "problem_text_en": "",
+  "problem_img": [
+    "images\\248.jpg"
+  ],
+  "construction_cdl": [
+    "Shape(OP,PO)",
+    "Cocircular(O)"
+  ],
+  "text_cdl": [
+    "Cone(O,P)",
+    "IsCentreOfCircle(O,O)",
+    "Equal(RadiusOfCircle(O),2)",
+    "Equal(BusbarOfCone(O,P),8)"
+  ],
+  "image_cdl": [
+    "Cone(O,P)",
+    "IsCentreOfCircle(O,O)",
+    "Equal(RadiusOfCircle(O),2)",
+    "Equal(BusbarOfCone(O,P),8)"
+  ],
+  "goal_cdl": "Value(VolumeOfCone(O,P))",
+  "problem_answer": "32.45",
+  "problem_type": [
+    "Measurement of Solid Geometric Forms"
+  ],
+  "complexity_level": "Level 1",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "problem_id": 935,
+  "annotation": "",
+  "annotation_img": "",
+  "source": "SolidGeo",
+  "problem_text_cn": "",
+  "problem_text_en": "A rectangular prism has dimensions as labelled on the diagram.\nFind the length of AG. Leave your answer in surd form.",
+  "problem_img": [
+    "images\\234.jpg"
+  ],
+  "construction_cdl": [
+    "Shape(AB,BC,CD,DA)",
+    "Shape(EF,FG,GH,HE)",
+    "Shape(AE,EF,FB,BA)",
+    "Shape(CD,DH,HG,GC)",
+    "Shape(AE,EH,HD,DA)",
+    "Shape(BF,FG,GC,CB,)",
+    "Coplanar(U,ABCD)",
+    "Coplanar(V,EFGH)",
+    "Coplanar(W,AEFB)",
+    "Coplanar(X,ADHE)",
+    "Coplanar(Y,CBFG)",
+    "Coplanar(Z,CGHD)"
+  ],
+  "text_cdl": [
+    "Equal(LengthOfLine(AE),5)",
+    "Equal(LengthOfLine(BF),5)",
+    "Equal(LengthOfLine(CG),5)",
+    "Equal(LengthOfLine(DH),5)"
+  ],
+  "image_cdl": [
+    "Cuboid(ABCDEFGH)",
+    "Equal(LengthOfLine(FG),4)",
+    "Equal(LengthOfLine(GH),9)"
+  ],
+  "goal_cdl": "Value(LengthOfLine(AG))",
+  "problem_answer": "sqrt(122)",
+  "problem_type": [
+    "Spatial Metric Relations"
+  ],
+  "complexity_level": "Level 2",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

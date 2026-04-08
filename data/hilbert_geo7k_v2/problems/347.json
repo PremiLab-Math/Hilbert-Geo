@@ -1,0 +1,24 @@
+{
+  "problem_id": 347,
+  "annotation": "",
+  "annotation_img": "",
+  "source": "SolidGeo",
+  "problem_text_cn": "",
+  "problem_text_en": "",
+  "problem_img": [
+    "images\\347.jpg"
+  ],
+  "construction_cdl": [],
+  "text_cdl": [],
+  "image_cdl": [],
+  "goal_cdl": "Value(0)",
+  "problem_answer": "",
+  "problem_type": [
+    "Measurement of Solid Geometric Forms"
+  ],
+  "complexity_level": "Level 1",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

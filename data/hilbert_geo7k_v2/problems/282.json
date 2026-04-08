@@ -1,0 +1,49 @@
+{
+  "problem_id": 282,
+  "annotation": "",
+  "annotation_img": "",
+  "source": "SolidGeo",
+  "problem_text_cn": "",
+  "problem_text_en": "",
+  "problem_img": [
+    "images\\282.jpg"
+  ],
+  "construction_cdl": [
+    "Shape(AB,BC,CW,WA)",
+    "Shape(CD,DA,AW,WC)",
+    "Shape(AB,BV,VA)",
+    "Shape(CB,BV,VC)",
+    "Shape(CD,DV,VC)",
+    "Shape(AD,DV,VA)",
+    "Shape(AW,WV,VA)",
+    "Shape(VW,WC,CV)",
+    "Coplanar(U,ABCDW)",
+    "Coplanar(V,ADV)",
+    "Coplanar(W,CDV)",
+    "Coplanar(X,ABV)",
+    "Coplanar(Y,CBV)",
+    "Coplanar(Z,AVCW)",
+    "Collinear(AWC)"
+  ],
+  "text_cdl": [
+    "Square(ABCD)",
+    "PerpendicularBetweenLineAndPlane(VW,U)",
+    "Equal(MeasureOfAngle(VAW),o)",
+    "Equal(LengthOfLine(AB),12)"
+  ],
+  "image_cdl": [
+    "Equal(LengthOfLine(AV),23)",
+    "Equal(LengthOfLine(AW),z)",
+    "IsMidpointOfLine(W,AC)"
+  ],
+  "goal_cdl": "Value(o)",
+  "problem_answer": "68.34",
+  "problem_type": [
+    "Spatial Metric Relations"
+  ],
+  "complexity_level": "Level 2",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

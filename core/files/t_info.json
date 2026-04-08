@@ -1,0 +1,918 @@
+{
+  "line_addition": [
+    1,
+    222
+  ],
+  "midpoint_of_line_judgment": [
+    1,
+    20
+  ],
+  "transitivity_between_plane_and_plane":[
+    1,
+    20
+  ],
+  "parallel_judgment_between_line_and_plane":[
+    1,
+    20
+  ],
+  "parallel_judgment_between_plane_and_plane":[
+    1,
+    25
+  ],
+  "perpendicular_judgment3_between_line_and_plane":[
+    1,
+    20
+  ],
+  "perpendicular_judgment_between_plane_and_plane":[
+    1,
+    20
+  ],
+  "perpendicular_judgment1_between_line_and_plane":[
+    1,
+    20
+  ],
+  "perpendicular_judgment2_between_line_and_plane":[
+    1,
+    20
+  ],
+  "perpendicular_judgment_between_line_and_plane":[
+    1,
+    20
+  ],
+  "perpendicular_property_between_line_and_line":[
+    1,
+    20
+  ],
+  "perpendicular_property1_between_line_and_line":[
+    1,
+    20
+  ],
+  "parallel_property1_between_line_and_line":[
+    1,
+    20
+  ],
+  "parallel_property2_between_line_and_line":[
+    1,
+    20
+  ],
+  "parallel_property_between_line_and_plane":[
+    1,
+    20
+  ],
+  "parallel_judgment_corresponding_angle": [
+    1,
+    20
+  ],
+  "parallel_judgment_alternate_interior_angle": [
+    1,
+    9
+  ],
+  "parallel_judgment_ipsilateral_internal_angle": [
+    1,
+    73
+  ],
+  "parallel_judgment_par_par": [
+    1,
+    12
+  ],
+  "parallel_judgment_per_per": [
+    1,
+    20
+  ],
+  "parallel_property_collinear_extend": [
+    1,
+    10
+  ],
+  "parallel_property_corresponding_angle": [
+    1,
+    10
+  ],
+  "parallel_property_alternate_interior_angle": [
+    1,
+    10
+  ],
+  "parallel_property_ipsilateral_internal_angle": [
+    1,
+    10
+  ],
+  "parallel_property_par_per": [
+    1,
+    10
+  ],
+  "perpendicular_judgment_angle": [
+    1,
+    10
+  ],
+  "perpendicular_bisector_judgment_per_and_mid": [
+    1,
+    10
+  ],
+  "perpendicular_bisector_judgment_distance_equal": [
+    1,
+    10
+  ],
+  "perpendicular_bisector_property_distance_equal": [
+    1,
+    12
+  ],
+  "perpendicular_bisector_property_bisector": [
+    1,
+    13
+  ],
+  "angle_addition": [
+    1,
+    25
+  ],
+  "flat_angle": [
+    1,
+    10
+  ],
+  "adjacent_complementary_angle": [
+    1,
+    13
+  ],
+  "round_angle": [
+    1,
+    18
+  ],
+  "vertical_angle": [
+    1,
+    15
+  ],
+  "bisector_of_angle_judgment_angle_equal": [
+    1,
+    15
+  ],
+  "bisector_of_angle_property_distance_equal": [
+    1,
+    12
+  ],
+  "bisector_of_angle_property_line_ratio": [
+    2,
+    12
+  ],
+  "bisector_of_angle_property_length_formula": [
+    2,
+    0
+  ],
+  "triangle_property_angle_sum": [
+    1,
+    20
+  ],
+  "sine_theorem": [
+    2,
+    82
+  ],
+  "cosine_theorem": [
+    2,
+    79
+  ],
+  "triangle_perimeter_formula": [
+    4,
+    1
+  ],
+  "triangle_area_formula_common": [
+    4,
+    15
+  ],
+  "cone_volume_formula_common":[
+    4,
+    20
+  ],
+  "cylinder_volume_formula_common":[
+  	4,
+  	20
+  ],
+  "cuboid_area_formula":[
+    4,
+    10
+  ],
+  "cube_area_formula":[
+  	4,
+  	10
+  ],
+  "triangle_area_formula_sine": [
+    3,
+    15
+  ],
+  "median_of_triangle_judgment": [
+    3,
+    15
+  ],
+  "altitude_of_triangle_judgment": [
+    3,
+    7
+  ],
+  "midsegment_of_triangle_judgment_midpoint": [
+    3,
+    14
+  ],
+  "midsegment_of_triangle_judgment_parallel": [
+    3,
+    16
+  ],
+  "midsegment_of_triangle_property_parallel": [
+    3,
+    13
+  ],
+  "midsegment_of_triangle_property_length": [
+    3,
+    14
+  ],
+  "circumcenter_of_triangle_judgment_intersection": [
+    3,
+    0
+  ],
+  "circumcenter_of_triangle_property_intersection": [
+    3,
+    0
+  ],
+  "incenter_of_triangle_judgment_intersection": [
+    3,
+    1
+  ],
+  "centroid_of_triangle_judgment_intersection": [
+    3,
+    2
+  ],
+  "centroid_of_triangle_property_intersection": [
+    3,
+    3
+  ],
+  "centroid_of_triangle_property_line_ratio": [
+    3,
+    33
+  ],
+  "orthocenter_of_triangle_judgment_intersection": [
+    3,
+    1
+  ],
+  "orthocenter_of_triangle_property_intersection": [
+    3,
+    1
+  ],
+  "orthocenter_of_triangle_property_angle": [
+    3,
+    0
+  ],
+  "congruent_triangle_judgment_sss": [
+    3,
+    4
+  ],
+  "congruent_triangle_judgment_sas": [
+    3,
+    9
+  ],
+  "congruent_triangle_judgment_aas": [
+    3,
+    2
+  ],
+  "congruent_triangle_judgment_hl": [
+    3,
+    6
+  ],
+  "congruent_triangle_property_line_equal": [
+    3,
+    7
+  ],
+  "congruent_triangle_property_angle_equal": [
+    3,
+    4
+  ],
+  "congruent_triangle_property_perimeter_equal": [
+    3,
+    0
+  ],
+  "congruent_triangle_property_area_equal": [
+    3,
+    0
+  ],
+  "congruent_triangle_property_exchange": [
+    3,
+    0
+  ],
+  "mirror_congruent_triangle_judgment_sss": [
+    3,
+    2
+  ],
+  "mirror_congruent_triangle_judgment_sas": [
+    3,
+    5
+  ],
+  "mirror_congruent_triangle_judgment_aas": [
+    3,
+    5
+  ],
+  "mirror_congruent_triangle_judgment_hl": [
+    3,
+    4
+  ],
+  "mirror_congruent_triangle_property_line_equal": [
+    3,
+    1
+  ],
+  "mirror_congruent_triangle_property_angle_equal": [
+    3,
+    1
+  ],
+  "mirror_congruent_triangle_property_perimeter_equal": [
+    3,
+    0
+  ],
+  "mirror_congruent_triangle_property_area_equal": [
+    3,
+    0
+  ],
+  "mirror_congruent_triangle_property_exchange": [
+    3,
+    0
+  ],
+  "similar_triangle_judgment_sss": [
+    3,
+    0
+  ],
+  "similar_triangle_judgment_sas": [
+    3,
+    3
+  ],
+  "similar_triangle_judgment_aa": [
+    3,
+    6
+  ],
+  "similar_triangle_judgment_hl": [
+    3,
+    0
+  ],
+  "similar_triangle_property_ratio": [
+    3,
+    0
+  ],
+  "similar_triangle_property_line_ratio": [
+    3,
+    1
+  ],
+  "similar_triangle_property_angle_equal": [
+    3,
+    1
+  ],
+  "similar_triangle_property_perimeter_ratio": [
+    3,
+    1
+  ],
+  "similar_triangle_property_area_square_ratio": [
+    3,
+    1
+  ],
+  "mirror_similar_triangle_judgment_sss": [
+    3,
+    1
+  ],
+  "mirror_similar_triangle_judgment_sas": [
+    3,
+    1
+  ],
+  "mirror_similar_triangle_judgment_aa": [
+    3,
+    1
+  ],
+  "mirror_similar_triangle_judgment_hl": [
+    3,
+    1
+  ],
+  "mirror_similar_triangle_property_ratio": [
+    3,
+    0
+  ],
+  "mirror_similar_triangle_property_line_ratio": [
+    3,
+    1
+  ],
+  "mirror_similar_triangle_property_angle_equal": [
+    3,
+    1
+  ],
+  "mirror_similar_triangle_property_perimeter_ratio": [
+    3,
+    3
+  ],
+  "mirror_similar_triangle_property_area_square_ratio": [
+    3,
+    1
+  ],
+  "right_triangle_judgment_angle": [
+    1,
+    1
+  ],
+  "right_triangle_judgment_pythagorean_inverse": [
+    1,
+    1
+  ],
+  "right_triangle_property_pythagorean": [
+    2,
+    1
+  ],
+  "right_triangle_property_length_of_median": [
+    1,
+    1
+  ],
+  "isosceles_triangle_judgment_line_equal": [
+    1,
+    1
+  ],
+  "isosceles_triangle_judgment_angle_equal": [
+    1,
+    1
+  ],
+  "isosceles_triangle_property_angle_equal": [
+    1,
+    1
+  ],
+  "isosceles_triangle_property_line_coincidence": [
+    1,
+    1
+  ],
+  "isosceles_right_triangle_judgment_isosceles_and_right": [
+    1,
+    0
+  ],
+  "isosceles_right_triangle_property_angle": [
+    1,
+    0
+  ],
+  "equilateral_triangle_judgment_isosceles_and_isosceles": [
+    1,
+    1
+  ],
+  "equilateral_triangle_property_angle": [
+    1,
+    6
+  ],
+  "quadrilateral_property_angle_sum": [
+    1,
+    2
+  ],
+  "quadrilateral_perimeter_formula": [
+    4,
+    0
+  ],
+  "altitude_of_quadrilateral_judgment": [
+    3,
+    1
+  ],
+  "altitude_of_quadrilateral_judgment_left_vertex": [
+    3,
+    3
+  ],
+  "altitude_of_quadrilateral_judgment_right_vertex": [
+    3,
+    2
+  ],
+  "altitude_of_quadrilateral_judgment_diagonal": [
+    3,
+    1
+  ],
+  "midsegment_of_quadrilateral_judgment_midpoint": [
+    3,
+    1
+  ],
+  "midsegment_of_quadrilateral_judgment_parallel": [
+    3,
+    1
+  ],
+  "midsegment_of_quadrilateral_property_length": [
+    3,
+    2
+  ],
+  "midsegment_of_quadrilateral_property_parallel": [
+    3,
+    0
+  ],
+  "circumcenter_of_quadrilateral_property_intersection": [
+    3,
+    0
+  ],
+  "congruent_quadrilateral_property_line_equal": [
+    3,
+    3
+  ],
+  "congruent_quadrilateral_property_angle_equal": [
+    3,
+    1
+  ],
+  "congruent_quadrilateral_property_perimeter_equal": [
+    3,
+    0
+  ],
+  "congruent_quadrilateral_property_area_equal": [
+    3,
+    0
+  ],
+  "congruent_quadrilateral_property_exchange": [
+    3,
+    0
+  ],
+  "mirror_congruent_quadrilateral_property_line_equal": [
+    3,
+    1
+  ],
+  "mirror_congruent_quadrilateral_property_angle_equal": [
+    3,
+    13
+  ],
+  "mirror_congruent_quadrilateral_property_perimeter_equal": [
+    3,
+    0
+  ],
+  "mirror_congruent_quadrilateral_property_area_equal": [
+    3,
+    1
+  ],
+  "mirror_congruent_quadrilateral_property_exchange": [
+    3,
+    0
+  ],
+  "similar_quadrilateral_property_ratio": [
+    3,
+    0
+  ],
+  "similar_quadrilateral_property_line_ratio": [
+    3,
+    0
+  ],
+  "similar_quadrilateral_property_angle_equal": [
+    3,
+    4
+  ],
+  "similar_quadrilateral_property_perimeter_ratio": [
+    3,
+    1
+  ],
+  "similar_quadrilateral_property_area_square_ratio": [
+    3,
+    1
+  ],
+  "mirror_similar_quadrilateral_property_ratio": [
+    3,
+    0
+  ],
+  "mirror_similar_quadrilateral_property_line_ratio": [
+    3,
+    0
+  ],
+  "mirror_similar_quadrilateral_property_angle_equal": [
+    3,
+    1
+  ],
+  "mirror_similar_quadrilateral_property_perimeter_ratio": [
+    3,
+    0
+  ],
+  "mirror_similar_quadrilateral_property_area_square_ratio": [
+    3,
+    0
+  ],
+  "parallelogram_judgment_parallel_and_parallel": [
+    3,
+    1
+  ],
+  "parallelogram_judgment_parallel_and_equal": [
+    3,
+    1
+  ],
+  "parallelogram_judgment_equal_and_equal": [
+    3,
+    1
+  ],
+  "parallelogram_judgment_angle_and_angle": [
+    3,
+    1
+  ],
+  "parallelogram_judgment_diagonal_bisection": [
+    3,
+    1
+  ],
+  "parallelogram_property_opposite_line_equal": [
+    3,
+    1
+  ],
+  "parallelogram_property_opposite_angle_equal": [
+    3,
+    1
+  ],
+  "parallelogram_property_diagonal_bisection": [
+    3,
+    1
+  ],
+  "parallelogram_area_formula_common": [
+    4,
+    1
+  ],
+  "parallelogram_area_formula_sine": [
+    3,
+    1
+  ],
+  "kite_judgment_equal_and_equal": [
+    3,
+    1
+  ],
+  "kite_property_diagonal_perpendicular_bisection": [
+    3,
+    1
+  ],
+  "kite_property_opposite_angle_equal": [
+    3,
+    1
+  ],
+  "kite_area_formula_diagonal": [
+    3,
+    1
+  ],
+  "kite_area_formula_sine": [
+    3,
+    1
+  ],
+  "rectangle_judgment_right_angle": [
+    3,
+    6
+  ],
+  "rectangle_judgment_diagonal_equal": [
+    3,
+    0
+  ],
+  "rectangle_property_diagonal_equal": [
+    3,
+    3
+  ],
+  "rhombus_judgment_parallelogram_and_kite": [
+    3,
+    5
+  ],
+  "square_judgment_rhombus_and_rectangle": [
+    3,
+    0
+  ],
+  "trapezoid_judgment_parallel": [
+    1,
+    2
+  ],
+  "trapezoid_area_formula": [
+    4,
+    2
+  ],
+  "right_trapezoid_judgment_right_angle": [
+    1,
+    10
+  ],
+  "right_trapezoid_area_formular": [
+    4,
+    11
+  ],
+  "isosceles_trapezoid_judgment_line_equal": [
+    3,
+    6
+  ],
+  "isosceles_trapezoid_judgment_angle_equal": [
+    3,
+    0
+  ],
+  "isosceles_trapezoid_judgment_diagonal_equal": [
+    3,
+    0
+  ],
+  "isosceles_trapezoid_property_angle_equal": [
+    3,
+    0
+  ],
+  "isosceles_trapezoid_property_diagonal_equal": [
+    3,
+    0
+  ],
+  "round_arc": [
+    1,
+    20
+  ],
+  "arc_addition_length": [
+    1,
+    10
+  ],
+  "arc_addition_measure": [
+    1,
+    13
+  ],
+  "arc_property_center_angle": [
+    1,
+    13
+  ],
+  "arc_property_circumference_angle_external": [
+    3,
+    7
+  ],
+  "arc_property_circumference_angle_internal": [
+    3,
+    1
+  ],
+  "arc_length_formula": [
+    2,
+    16
+  ],
+  "congruent_arc_judgment_length_equal": [
+    3,
+    12
+  ],
+  "congruent_arc_judgment_measure_equal": [
+    3,
+    12
+  ],
+  "congruent_arc_judgment_chord_equal": [
+    3,
+    2
+  ],
+  "congruent_arc_property_length_equal": [
+    3,
+    2
+  ],
+  "congruent_arc_property_measure_equal": [
+    3,
+    10
+  ],
+  "congruent_arc_property_chord_equal": [
+    3,
+    10
+  ],
+  "similar_arc_judgment_cocircular": [
+    3,
+    2
+  ],
+  "similar_arc_property_ratio": [
+    3,
+    0
+  ],
+  "similar_arc_property_length_ratio": [
+    3,
+    2
+  ],
+  "similar_arc_property_measure_ratio": [
+    3,
+    3
+  ],
+  "similar_arc_property_chord_ratio": [
+    3,
+    0
+  ],
+  "circle_property_length_of_radius_and_diameter": [
+    1,
+    20
+  ],
+  "sphere_property_length_of_radius_and_diameter":[
+    1,
+    20
+  ],
+  "circle_property_circular_power_chord_and_chord": [
+    2,
+    3
+  ],
+  "circle_property_circular_power_tangent_and_segment_line": [
+    2,
+    3
+  ],
+  "circle_property_circular_power_segment_and_segment_line": [
+    2,
+    2
+  ],
+  "circle_property_circular_power_tangent_and_segment_angle": [
+    1,
+    18
+  ],
+  "circle_property_circular_power_segment_and_segment_angle": [
+    1,
+    20
+  ],
+  "circle_property_chord_perpendicular_bisect_chord": [
+    1,
+    10
+  ],
+  "circle_property_chord_perpendicular_bisect_arc": [
+    1,
+    5
+  ],
+  "circle_property_angle_of_osculation": [
+    1,
+    12
+  ],
+  "circle_perimeter_formula": [
+    4,
+    33
+  ],
+  "circle_area_formula": [
+    4,
+    42
+  ],
+  "sphere_area_formula":[
+    4,
+    20
+  ],
+  "sphere_volume_formula":[
+    4,
+    20
+  ],
+  "cube_volume_formula":[
+    4,
+    20
+  ],
+  "cuboid_volume_formula":[
+  	4,
+  	20
+  ],
+  "radius_of_sphere_property_length_equal":[
+    1,
+    20
+  ],
+  "radius_of_circle_property_length_equal": [
+    1,
+    15
+  ],
+  "diameter_of_circle_judgment_pass_centre": [
+    1,
+    10
+  ],
+  "diameter_of_sphere_judgment_pass_centre":[
+    1,
+    10
+  ],
+  "diameter_of_sphere_judgment_length_equal":[
+    1,
+    10
+  ],
+  "diameter_of_circle_judgment_length_equal": [
+    1,
+    10
+  ],
+  "diameter_of_circle_judgment_right_angle": [
+    1,
+    10
+  ],
+  "diameter_of_circle_property_length_equal": [
+    1,
+    10
+  ],
+  "diameter_of_circle_property_right_angle": [
+    1,
+    10
+  ],
+  "diameter_of_sphere_property_length_equal":[
+    1,
+    10
+  ],
+  "tangent_of_sphere_judgment_perpendicular":[
+    1,
+    10
+  ],
+  "tangent_of_sphere_property_perpendicular":[
+    1,
+    10
+  ],
+  "tangent_of_circle_judgment_perpendicular": [
+    1,
+    12
+  ],
+  "tangent_of_circle_property_perpendicular": [
+    1,
+    10
+  ],
+  "tangent_of_circle_property_length_equal": [
+    1,
+    13
+  ],
+  "sector_perimeter_formula": [
+    4,
+    1
+  ],
+  "sector_area_formula": [
+    4,
+    1
+  ],
+  "cone_area_formula":[
+    4,
+    20
+  ],
+  "cylinder_area_formula":[
+  	4,
+  	20
+  ],
+  "busbar_of_cone_judgment":[
+    2,
+    20
+  ],
+  "height_of_cylinder_judgment":[
+  	2,
+  	20
+  ],
+  "height_of_prism_judgment":[
+  	2,
+  	20
+  ],
+  "perpendicular_bisector_judgment_per_and_bisect": [
+    1,
+    10
+  ]
+}

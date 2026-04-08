@@ -1,0 +1,26 @@
+{
+  "problem_id": 506,
+  "annotation": "",
+  "source": "SolidGeo",
+  "problem_text_en": "As shown in the figure, AB and CD are on plane U and parallel to plane V. Prove that plane V is parallel to plane U.",
+  "construction_cdl": [
+    "Shape(AB,CD)",
+    "Coplanar(U,ABCD)",
+    "ParallelBetweenPlane(U,V)"
+  ],
+  "text_cdl": [
+    "Coplanar(U,ABCD)",
+    "ParallelBetweenPlane(U,V)"
+  ],
+  "image_cdl": [
+    "Shape(AB,CD)",
+    "Coplanar(U,ABCD)",
+    "ParallelBetweenPlane(U,V)"
+  ],
+  "goal_cdl": "ParallelBetweenPlane(U,V)",
+  "problem_answer": "Proven",
+  "problem_type": [],
+  "complexity_level": "",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": "{\"START\": []}"
+}

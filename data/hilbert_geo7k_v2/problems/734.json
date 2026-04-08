@@ -1,0 +1,28 @@
+{
+  "problem_id": 734,
+  "annotation": "RuoranXu_2025-08-11",
+  "annotation_img": "RuoranXu_2025-08-11",
+  "source": "SolidGeo",
+  "problem_text_cn": "实心图形的圆形底的面积是多少？把你的答案四舍五入到小数点后三位。",
+  "problem_text_en": "What is the area of the circular base of the solid figure?\n\nRound your answer to three decimal places.",
+  "problem_img": "images\\734.png",
+  "construction_cdl": [
+    "Shape(O)",
+    "Cospherical(O)",
+    "Cocircular(O)"
+  ],
+  "text_cdl": [],
+  "image_cdl": [
+    "Sphere(O)",
+    "Circle(O)",
+    "IsCentreOfSphere(O,O)",
+    "IsCentreOfCircle(O,O)",
+    "Equal(RadiusOfSphere(O),6)"
+  ],
+  "goal_cdl": "Value(AreaOfCircle(O))",
+  "problem_answer": "113.097",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

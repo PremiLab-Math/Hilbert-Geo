@@ -1,0 +1,31 @@
+{
+  "problem_id": 830,
+  "annotation": "ShiyuShen_2025-08-23",
+  "annotation_img": "ShiyuShen_2025-08-23",
+  "source": "SolidGeo",
+  "problem_text_cn": "求所示圆锥体的体积。斜高为8厘米，半径为2厘米。把你的答案四舍五入到小数点后两位。",
+  "problem_text_en": "Find the volume of the cone shown. The slant height is 8 centimeters and radius is 2 centimeters. \n\nRound your answer to two decimal places.",
+  "problem_img": "images\\830.png",
+  "construction_cdl": [
+    "Shape(OP,PO)",
+    "Cocircular(O)"
+  ],
+  "text_cdl": [
+    "Cone(O,P)",
+    "IsCentreOfCircle(O,O)",
+    "Equal(RadiusOfCircle(O),2)",
+    "Equal(BusbarOfCone(O,P),8)"
+  ],
+  "image_cdl": [
+    "Cone(O,P)",
+    "IsCentreOfCircle(O,O)",
+    "Equal(RadiusOfCircle(O),2)",
+    "Equal(BusbarOfCone(O,P),8)"
+  ],
+  "goal_cdl": "Value(VolumeOfCone(O,P))",
+  "problem_answer": "32.45",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "problem_id": 388,
+  "annotation": "",
+  "source": "SolidGeo",
+  "problem_text_en": "\"What is the volume of the original rectangular prism if a cylinder with a base radius of 2 cm is removed from the top to the bottom of the prism, in a prism that is 8 cm long, 5 cm wide, and 6 cm high? (Leave the answer in terms of $\\pi$.)\" A. 180\n B. 200\n C. 240\n D. 260\n",
+  "construction_cdl": [
+    "Shape(AB,BC,CD,DA,EF,FG,GH,HE)",
+    "Shape(AE,BF,CG,DH)",
+    "Shape(O,P)",
+    "Coplanar(ABCD,EFGH)",
+    "Cocircular(O,P)"
+  ],
+  "text_cdl": [
+    "Cuboid(ABCD,EFGH)",
+    "Equal(LengthOfLine(A,B),8)",
+    "Equal(LengthOfLine(B,C),5)",
+    "Equal(HeightOfCuboid(A,E),6)",
+    "Cylinder(O,P)",
+    "Equal(RadiusOfCircle(O),2)",
+    "Equal(HeightOfCylinder(O,P),6)"
+  ],
+  "image_cdl": [
+    "Cuboid(ABCD,EFGH)",
+    "Equal(LengthOfLine(A,B),8)",
+    "Equal(LengthOfLine(B,C),5)",
+    "Equal(HeightOfCuboid(A,E),6)",
+    "Cylinder(O,P)",
+    "Equal(RadiusOfCircle(O),2)",
+    "Equal(HeightOfCylinder(O,P),6)"
+  ],
+  "goal_cdl": "Value(VolumeOfCuboid(ABCD,EFGH)-VolumeOfCylinder(O,P))",
+  "problem_answer": "240-24*pi",
+  "problem_type": [],
+  "complexity_level": "",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": "{\"START\": []}"
+}

@@ -1,0 +1,32 @@
+{
+  "problem_id": 3,
+  "annotation": "",
+  "source": "SolidGeo",
+  "problem_text_en": "A square prism has sides of length 11cm, 11cm and 15cm as shown.\n\nNow, we want to find $y$, the length of the diagonal $DF$.\n\nCalculate $y$ to two decimal places.",
+  "construction_cdl": [
+    "Shape(AB,BC,CD,DA,EF,FG,GH,HE,AE,BF,CG,DH)",
+    "Coplanar(A,B,C,D)",
+    "Coplanar(E,F,G,H)",
+    "Equal(LengthOfLine(A,B),11)",
+    "Equal(LengthOfLine(B,C),15)",
+    "Equal(LengthOfLine(A,E),11)"
+  ],
+  "text_cdl": [
+    "Square(A,B,C,D)",
+    "Equal(LengthOfLine(A,B),11)",
+    "Equal(LengthOfLine(B,C),15)",
+    "Value(LengthOfLine(D,F))"
+  ],
+  "image_cdl": [
+    "Square(A,B,C,D)",
+    "Equal(LengthOfLine(A,B),11)",
+    "Equal(LengthOfLine(B,C),15)",
+    "Value(LengthOfLine(D,F))"
+  ],
+  "goal_cdl": "Value(LengthOfLine(D,F))",
+  "problem_answer": "19.87",
+  "problem_type": [],
+  "complexity_level": "",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": "{\"START\": []}"
+}

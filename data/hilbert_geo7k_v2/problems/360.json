@@ -1,0 +1,30 @@
+{
+  "problem_id": 360,
+  "annotation": "",
+  "source": "SolidGeo",
+  "problem_text_en": "A cuboid-shaped container that is not filled completely contains $120 \\mathrm{~m}^{3}$ of water. The depth of the water is either $2 \\mathrm{~m}$ or $3 \\mathrm{~m}$ or $5 \\mathrm{~m}$, depending on which side the container is actually standing on (drawings not to scale). How big is the volume of the container?\n<image1> A. $160 \\mathrm{~m}^{3}$\n B. $180 \\mathrm{~m}^{3}$\n C. $200 \\mathrm{~m}^{3}$\n D. $220 \\mathrm{~m}^{3}$\n E. $240 \\mathrm{~m}^{3}$\n",
+  "construction_cdl": [
+    "Shape(AB,BC,CD,DA,EF,FG,GH,HE)",
+    "Coplanar(ABCD,EFGH)"
+  ],
+  "text_cdl": [
+    "Cuboid(ABCD,EFGH)",
+    "Equal(VolumeOfCuboid(ABCD,EFGH),Value)",
+    "Equal(VolumeOfCuboid(ABCD,EFGH),120)",
+    "Equal(HeightOfCuboid(ABCD,EFGH),2)",
+    "Equal(HeightOfCuboid(ABCD,EFGH),3)",
+    "Equal(HeightOfCuboid(ABCD,EFGH),5)"
+  ],
+  "image_cdl": [
+    "Cuboid(ABCD,EFGH)",
+    "Equal(HeightOfCuboid(ABCD,EFGH),2)",
+    "Equal(HeightOfCuboid(ABCD,EFGH),3)",
+    "Equal(HeightOfCuboid(ABCD,EFGH),5)"
+  ],
+  "goal_cdl": "Value(VolumeOfCuboid(ABCD,EFGH))",
+  "problem_answer": "200",
+  "problem_type": [],
+  "complexity_level": "",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": "{\"START\": []}"
+}

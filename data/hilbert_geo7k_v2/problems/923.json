@@ -1,0 +1,48 @@
+{
+  "problem_id": 923,
+  "annotation": "",
+  "annotation_img": "",
+  "source": "SolidGeo",
+  "problem_text_cn": "",
+  "problem_text_en": "Find the exact volume of the right pyramid pictured.",
+  "problem_img": [
+    "images\\222.jpg"
+  ],
+  "construction_cdl": [
+    "Shape(AB,BC,CD,DA)",
+    "Shape(AP,PB,BA)",
+    "Shape(BP,PC,CB)",
+    "Shape(CP,PD,DC)",
+    "Shape(DP,PA,AD)",
+    "Coplanar(U,ABCD)",
+    "Coplanar(V,ABP)",
+    "Coplanar(W,BCP)",
+    "Coplanar(X,CDP)",
+    "Coplanar(Y,DAP)"
+  ],
+  "text_cdl": [
+    "RegularQuadrangularPyramid(ABCD,P)",
+    "Equal(LengthOfLine(AB),11)",
+    "Equal(LengthOfLine(BC),11)",
+    "Equal(LengthOfLine(CD),11)",
+    "Equal(LengthOfLine(DA),11)",
+    "Equal(HeightOfQuadrangularPyramid(ABCD,P),7)"
+  ],
+  "image_cdl": [
+    "RegularQuadrangularPyramid(ABCD,P)",
+    "Equal(LengthOfLine(AB),11)",
+    "Equal(LengthOfLine(BC),11)",
+    "Equal(LengthOfLine(CD),11)",
+    "Equal(LengthOfLine(DA),11)"
+  ],
+  "goal_cdl": "Value(VolumeOfQuadrangularPyramid(ABCD,P))",
+  "problem_answer": "847/3",
+  "problem_type": [
+    "Measurement of Solid Geometric Forms"
+  ],
+  "complexity_level": "Level 1",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

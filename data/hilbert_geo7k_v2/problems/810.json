@@ -1,0 +1,37 @@
+{
+  "problem_id": 810,
+  "annotation": "",
+  "annotation_img": "",
+  "source": "SolidGeo",
+  "problem_text_cn": "",
+  "problem_text_en": "A solid is shown with the following dimensions. Height of the solid is 6x+9.\n\nFind an expression for the length L of the base of the solid in terms of the variable, x.",
+  "problem_img": [
+    "images\\109.jpg"
+  ],
+  "construction_cdl": [
+    "Shape(AB,BC,CD,DA)",
+    "Shape(AP,PB,BA)",
+    "Shape(BP,PC,CB)",
+    "Shape(CP,PD,DC)",
+    "Shape(DP,PA,AD)",
+    "Coplanar(U,ABCD)",
+    "Coplanar(V,ABP)",
+    "Coplanar(W,BCP)",
+    "Coplanar(X,CDP)",
+    "Coplanar(Y,DAP)"
+  ],
+  "text_cdl": [
+    "RegularQuadrangularPyramid(ABCD,P)",
+    "Equal(HeightOfQuadrangularPyramid(ABCD,P),Add(Mul(6,x),9))"
+  ],
+  "image_cdl": [
+    "RegularQuadrangularPyramid(ABCD,P)",
+    "Equal(HeightOfQuadrangularPyramid(ABCD,P),Add(Mul(6,x),9))"
+  ],
+  "goal_cdl": "Value(LengthOfLine(AB))",
+  "problem_answer": "",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

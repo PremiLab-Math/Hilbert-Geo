@@ -1,0 +1,34 @@
+{
+  "problem_id": 191,
+  "annotation": "",
+  "source": "SolidGeo",
+  "problem_text_en": "Find the total surface area of the triangular prism.",
+  "construction_cdl": [
+    "Shape(AB,BC,CA)",
+    "Shape(ABCD)",
+    "IsAltitudeOfTriangle(X,AB)",
+    "Shape(X)"
+  ],
+  "text_cdl": [
+    "TriangularPrism(ABCD)",
+    "Equal(LengthOfLine(AB),12)",
+    "Equal(LengthOfLine(BC),10)",
+    "Equal(LengthOfLine(CA),12)",
+    "Equal(HeightOfTriangle(X,AB),10)",
+    "Equal(LengthOfLine(AD),16)"
+  ],
+  "image_cdl": [
+    "TriangularPrism(ABCD)",
+    "Equal(LengthOfLine(AB),12)",
+    "Equal(LengthOfLine(BC),10)",
+    "Equal(LengthOfLine(CA),12)",
+    "Equal(HeightOfTriangle(X,AB),10)",
+    "Equal(LengthOfLine(AD),16)"
+  ],
+  "goal_cdl": "Value(SurfaceAreaOfTrigularPrism(ABCD))",
+  "problem_answer": "544",
+  "problem_type": [],
+  "complexity_level": "",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": "{\"START\": []}"
+}

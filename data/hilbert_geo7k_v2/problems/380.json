@@ -1,0 +1,26 @@
+{
+  "problem_id": 380,
+  "annotation": "",
+  "source": "SolidGeo",
+  "problem_text_en": "A right circular cone is inscribed in a right circular cylinder. The volume of the cylinder is $72\\pi$ cubic centimeters. What is the number of cubic centimeters in the space inside the cylinder but outside the cone? Express your answer in terms of $\\pi$.\n\n<image1>",
+  "construction_cdl": [
+    "Shape(OP,PO)",
+    "Cocircular(O)",
+    "Cocircular(P)"
+  ],
+  "text_cdl": [
+    "Cylinder(O,P)",
+    "Cone(O,P)",
+    "Equal(VolumeOfCylinder(O,P),72*pi)"
+  ],
+  "image_cdl": [
+    "Cylinder(O,P)",
+    "Cone(O,P)"
+  ],
+  "goal_cdl": "Value(VolumeOfCylinder(O,P) - VolumeOfCone(O,P))",
+  "problem_answer": "48*pi",
+  "problem_type": [],
+  "complexity_level": "",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": "{\"START\": []}"
+}

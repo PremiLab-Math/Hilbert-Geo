@@ -1,0 +1,43 @@
+{
+  "problem_id": 803,
+  "annotation": "",
+  "annotation_img": "",
+  "source": "SolidGeo",
+  "problem_text_cn": "",
+  "problem_text_en": "The length and width of the base of the pyramid in the figure are 3cm and 9cm respectively. Find the volume of the pyramid to one decimal place.",
+  "problem_img": [
+    "images\\102.jpg"
+  ],
+  "construction_cdl": [
+    "Shape(AB,BC,CD,DA)",
+    "Shape(AP,PB,BA)",
+    "Shape(BP,PC,CB)",
+    "Shape(CP,PD,DC)",
+    "Shape(DP,PA,AD)",
+    "Coplanar(U,ABCD)",
+    "Coplanar(V,ABP)",
+    "Coplanar(W,BCP)",
+    "Coplanar(X,CDP)",
+    "Coplanar(Y,DAP)"
+  ],
+  "text_cdl": [
+    "RegularQuadrangularPyramid(ABCD,P)",
+    "Equal(LengthOfLine(AB),3)",
+    "Equal(LengthOfLine(BC),9)"
+  ],
+  "image_cdl": [
+    "RegularQuadrangularPyramid(ABCD,P)",
+    "Equal(HeightOfTriangle(PBC),14)",
+    "Equal(LengthOfLine(AB),3)"
+  ],
+  "goal_cdl": "Value(VolumeOfQuadrangularPyramid(ABCD,P))",
+  "problem_answer": "125.3",
+  "problem_type": [
+    "Measurement of Solid Geometric Forms"
+  ],
+  "complexity_level": "Level 1",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

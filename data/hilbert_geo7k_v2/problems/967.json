@@ -1,0 +1,47 @@
+{
+  "problem_id": 967,
+  "annotation": "",
+  "annotation_img": "",
+  "source": "SolidGeo",
+  "problem_text_cn": "",
+  "problem_text_en": "",
+  "problem_img": [
+    "images\\266.jpg"
+  ],
+  "construction_cdl": [
+    "Shape(PQ,QP)",
+    "Shape(AB,BA)",
+    "Coplanar(U,AP)",
+    "Coplanar(V,BQ)",
+    "Cocircular(P)",
+    "Cocircular(Q)",
+    "Cocircular(A)",
+    "Cocircular(B)"
+  ],
+  "text_cdl": [
+    "Cylinder(A,B)",
+    "Cylinder(P,Q)",
+    "Equal(RadiusOfCircle(Q),11)",
+    "Equal(RadiusOfCircle(A),10)",
+    "Equal(HeightOfCylinder(P,Q),24)",
+    "Equal(HeightOfCylinder(A,B),24)"
+  ],
+  "image_cdl": [
+    "Cylinder(A,B)",
+    "Cylinder(P,Q)",
+    "Equal(RadiusOfCircle(Q),11)",
+    "Equal(RadiusOfCircle(A),10)",
+    "Equal(HeightOfCylinder(P,Q),24)",
+    "Equal(HeightOfCylinder(A,B),24)"
+  ],
+  "goal_cdl": "Value(Sub(Add(AreaOfCircle(P),AreaOfCircle(Q),LateralareaOfCylinder(P,Q),LateralareaOfCylinder(A,B)),Add(AreaOfCircle(A),AreaOfCircle(B))))",
+  "problem_answer": "3298.67",
+  "problem_type": [
+    "Measurement of Solid Geometric Forms"
+  ],
+  "complexity_level": "Level 1",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

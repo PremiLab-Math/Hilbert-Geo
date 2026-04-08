@@ -1,0 +1,29 @@
+{
+  "problem_id": 575,
+  "annotation": "",
+  "source": "SolidGeo",
+  "problem_text_en": "As shown in the figure, there is a cube ABCD-EFGH, prove that BC is perpendicular to the plane CGHD",
+  "construction_cdl": [
+    "Shape(AB,BC,CD,DA,EF,FG,GH,HE,AE,BF,CG,DH)",
+    "Coplanar(ABCD)",
+    "Coplanar(EFGH)",
+    "Coplanar(AEFB)",
+    "Coplanar(BFGC)",
+    "Coplanar(CGHD)",
+    "Coplanar(DHEA)"
+  ],
+  "text_cdl": [
+    "Cube(ABCD-EFGH)",
+    "PerpendicularBetweenLine(B,C,Plane(CGHD))"
+  ],
+  "image_cdl": [
+    "Cube(ABCD-EFGH)",
+    "PerpendicularBetweenLine(B,C,Plane(CGHD))"
+  ],
+  "goal_cdl": "PerpendicularBetweenLine(B,C,Plane(CGHD))",
+  "problem_answer": "Proven",
+  "problem_type": [],
+  "complexity_level": "",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": "{\"START\": []}"
+}

@@ -1,0 +1,28 @@
+{
+  "problem_id": 175,
+  "annotation": "",
+  "source": "SolidGeo",
+  "problem_text_en": "Calculate the volume of the solid with a diameter of 6 cm. Correct to one decimal place.",
+  "construction_cdl": [
+    "Shape(O,P,Q,R)",
+    "Shape(A,B,C,D)",
+    "Cocircular(O)",
+    "Cocircular(P)",
+    "Collinear(OPQR)",
+    "Collinear(ABCD)"
+  ],
+  "text_cdl": [
+    "Equal(DiameterOfCircle(O),6)"
+  ],
+  "image_cdl": [
+    "Cylinder(O,P)",
+    "Equal(HeightOfCylinder(O,P),20)",
+    "Equal(DiameterOfCircle(O),8)"
+  ],
+  "goal_cdl": "Value(VolumeOfCylinder(O,P))",
+  "problem_answer": "603.2",
+  "problem_type": [],
+  "complexity_level": "",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": "{\"START\": []}"
+}

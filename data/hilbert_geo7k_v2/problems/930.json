@@ -1,0 +1,40 @@
+{
+  "problem_id": 930,
+  "annotation": "",
+  "annotation_img": "",
+  "source": "SolidGeo",
+  "problem_text_cn": "",
+  "problem_text_en": "Calculate the radius of the sphere shown in figure with the volume of the cylinder 13.75\\pi cm$^3$.",
+  "problem_img": [
+    "images\\229.jpg"
+  ],
+  "construction_cdl": [
+    "Shape(PQ,QP)",
+    "Shape(O)",
+    "Cospherical(O)"
+  ],
+  "text_cdl": [
+    "Cylinder(P,Q)",
+    "Sphere(O)",
+    "Equal(HeightOfCylinder(P,Q),5)",
+    "Equal(VolumeOfCylinder(P,Q),Mul(13.75,pi))",
+    "Equal(VolumeOfCylinder(P,Q),Mul(1/4,pi,HeightOfCylinder(P,Q),Sub(Mul(4,Pow(RadiusOfSphere(O),2)),Pow(HeightOfCylinder(P,Q),2))))"
+  ],
+  "image_cdl": [
+    "Cylinder(P,Q)",
+    "Sphere(O)",
+    "Equal(HeightOfCylinder(P,Q),5)",
+    "Equal(RadiusOfSphere(O),r)"
+  ],
+  "goal_cdl": "Value(r)",
+  "problem_answer": "3",
+  "problem_type": [
+    "Measurement of Solid Geometric Forms",
+    "Composite Solid Structures"
+  ],
+  "complexity_level": "Level 2",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

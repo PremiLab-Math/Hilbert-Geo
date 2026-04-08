@@ -1,0 +1,26 @@
+{
+  "problem_id": 568,
+  "annotation": "",
+  "source": "SolidGeo",
+  "problem_text_en": "As shown in the figure, it is a cone with a height of 2 and a generatrix of 3. Find the surface area.",
+  "construction_cdl": [
+    "Shape(OP)",
+    "Cocircular(O)"
+  ],
+  "text_cdl": [
+    "Cone(O,P)",
+    "Equal(HeightOfCone(O,P),2)",
+    "Equal(BusbarOfCone(O,P),3)"
+  ],
+  "image_cdl": [
+    "Cone(O,P)",
+    "Equal(HeightOfCone(O,P),2)",
+    "Equal(BusbarOfCone(O,P),3)"
+  ],
+  "goal_cdl": "Value(LateralareaOfCone(O,P))",
+  "problem_answer": "6*pi",
+  "problem_type": [],
+  "complexity_level": "",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": "{\"START\": []}"
+}

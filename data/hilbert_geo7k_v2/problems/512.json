@@ -1,0 +1,33 @@
+{
+  "problem_id": 512,
+  "annotation": "",
+  "source": "SolidGeo",
+  "problem_text_en": "As shown in the figure, AD and AC are on plane U, AB is on plane V, and AB is perpendicular to AC and AD. Prove that plane U is perpendicular to plane V.",
+  "construction_cdl": [
+    "Shape(AB,AC,AD)",
+    "Plane(U,AC,AD)",
+    "Plane(V,AB)",
+    "Coplanar(A,ACD)",
+    "Coplanar(A,AB)",
+    "PerpendicularBetweenLine(AB,AC)",
+    "PerpendicularBetweenLine(AB,AD)"
+  ],
+  "text_cdl": [
+    "Plane(U,AC,AD)",
+    "Plane(V,AB)",
+    "PerpendicularBetweenLine(AB,AC)",
+    "PerpendicularBetweenLine(AB,AD)"
+  ],
+  "image_cdl": [
+    "Plane(U,AC,AD)",
+    "Plane(V,AB)",
+    "PerpendicularBetweenLine(AB,AC)",
+    "PerpendicularBetweenLine(AB,AD)"
+  ],
+  "goal_cdl": "Value(PerpendicularBetweenPlane(U,V))",
+  "problem_answer": "True",
+  "problem_type": [],
+  "complexity_level": "",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": "{\"START\": []}"
+}

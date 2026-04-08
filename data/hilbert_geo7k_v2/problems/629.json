@@ -1,0 +1,37 @@
+{
+  "problem_id": 629,
+  "annotation": "RuoranXu_2025-09-30",
+  "annotation_img": "RuoranXu_2025-09-30",
+  "source": "SolidGeo",
+  "problem_text_cn": "如图，一立方体ABCD-EFGH，证明平面EFGH垂直平面ADHE",
+  "problem_text_en": "As shown in the figure, there is a cube ABCD-EFGH, prove that the plane EFGH is perpendicular to the plane ADHE",
+  "problem_img": [
+    "images\\573.jpg"
+  ],
+  "construction_cdl": [
+    "Shape(AB,BC,CD,DA)",
+    "Shape(EF,FG,GH,HE)",
+    "Shape(AE,EF,FB,BA)",
+    "Shape(CD,DH,HG,GC)",
+    "Shape(AE,EH,HD,DA)",
+    "Shape(BF,FG,GC,CB,)",
+    "Coplanar(U,ABCD)",
+    "Coplanar(V,EFGH)",
+    "Coplanar(W,AEFB)",
+    "Coplanar(X,ADHE)",
+    "Coplanar(Y,CBFG)",
+    "Coplanar(Z,CGHD)"
+  ],
+  "text_cdl": [
+    "Cube(ABCDEFGH)"
+  ],
+  "image_cdl": [
+    "Cube(ABCDEFGH)"
+  ],
+  "goal_cdl": "Relation(PerpendicularBetweenPlane(V,X))",
+  "problem_answer": "0",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "problem_id": 904,
+  "annotation": "",
+  "annotation_img": "",
+  "source": "SolidGeo",
+  "problem_text_cn": "",
+  "problem_text_en": "Consider the two similar spheres shown.\n\n\nFind the volume of Sphere A, in simplest exact form.",
+  "problem_img": [
+    "images\\203.jpg"
+  ],
+  "construction_cdl": [
+    "Shape(A)",
+    "Shape(B)",
+    "Cospherical(A)",
+    "Cospherical(B)"
+  ],
+  "text_cdl": [
+    "Sphere(A)",
+    "Sphere(B)",
+    "Equal(RadiusOfSphere(A),3)",
+    "Equal(RadiusOfSphere(B),12)"
+  ],
+  "image_cdl": [
+    "Equal(RadiusOfSphere(A),3)"
+  ],
+  "goal_cdl": "Value(VolumeOfSphere(A))",
+  "problem_answer": "36*pi",
+  "problem_type": [
+    "Measurement of Solid Geometric Forms"
+  ],
+  "complexity_level": "Level 1",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "problem_id": 562,
+  "annotation": "",
+  "source": "SolidGeo",
+  "problem_text_en": "Find the cylinder shown. Is plane P parallel to plane Q?",
+  "construction_cdl": [
+    "Shape(PQ,QP)",
+    "Cocircular(P)",
+    "Cocircular(Q)",
+    "ParallelBetweenPlane(P,Q)"
+  ],
+  "text_cdl": [
+    "Cylinder(P,Q)",
+    "ParallelBetweenPlane(P,Q)"
+  ],
+  "image_cdl": [
+    "Cylinder(P,Q)",
+    "ParallelBetweenPlane(P,Q)"
+  ],
+  "goal_cdl": "Value(ParallelBetweenPlane(P,Q))",
+  "problem_answer": "True",
+  "problem_type": [],
+  "complexity_level": "",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": "{\"START\": []}"
+}

@@ -1,0 +1,27 @@
+{
+  "problem_id": 177,
+  "annotation": "",
+  "source": "SolidGeo",
+  "problem_text_en": "Calculate the volume of the solid. The height is 15 cm.\n\nRound your answer to one decimal place.",
+  "construction_cdl": [
+    "Shape(O,P,Q)",
+    "Cocircular(O)",
+    "Cocircular(P)",
+    "Cocircular(Q)"
+  ],
+  "text_cdl": [
+    "Equal(HeightOfCylinder(O,P),15)"
+  ],
+  "image_cdl": [
+    "Cylinder(O,P)",
+    "Equal(RadiusOfCircle(O),6)",
+    "Equal(RadiusOfCircle(P),4)",
+    "Equal(HeightOfCylinder(O,P),13)"
+  ],
+  "goal_cdl": "Value(VolumeOfCylinder(O,P))",
+  "problem_answer": "254.5",
+  "problem_type": [],
+  "complexity_level": "",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": "{\"START\": []}"
+}

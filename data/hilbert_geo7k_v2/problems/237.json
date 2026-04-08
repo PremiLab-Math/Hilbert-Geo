@@ -1,0 +1,29 @@
+{
+  "problem_id": 237,
+  "annotation": "",
+  "source": "SolidGeo",
+  "problem_text_en": "The figure above shows a triangular prism. If the volume of the prism is $\\frac{81}{4}$, what is the value of $x$ ? A. 3\n B. 4\n C. 5\n D. 6\n",
+  "construction_cdl": [
+    "Shape(ABC,DEF)",
+    "Shape(A,B,C)",
+    "Shape(D,E,F)"
+  ],
+  "text_cdl": [
+    "Value(VolumeOfTriangularPrism(ABC,DEF))"
+  ],
+  "image_cdl": [
+    "Equal(LengthOfLine(A,B),x)",
+    "Equal(LengthOfLine(B,C),x)",
+    "Equal(LengthOfLine(C,A),x)",
+    "Equal(LengthOfLine(D,E),x)",
+    "Equal(LengthOfLine(E,F),x)",
+    "Equal(LengthOfLine(F,D),x)",
+    "Equal(LengthOfLine(A,D),sqrt(3)*x)"
+  ],
+  "goal_cdl": "Value(x)",
+  "problem_answer": "4",
+  "problem_type": [],
+  "complexity_level": "",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": "{\"START\": []}"
+}

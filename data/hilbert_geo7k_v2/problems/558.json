@@ -1,0 +1,24 @@
+{
+  "problem_id": 558,
+  "annotation": "",
+  "source": "SolidGeo",
+  "problem_text_en": "Find out if the upper and lower surfaces of the shown cylinder are parallel.",
+  "construction_cdl": [
+    "Shape(PQ,QP)",
+    "Cocircular(P)",
+    "Cocircular(Q)"
+  ],
+  "text_cdl": [
+    "ParallelBetweenPlane(P,Q)"
+  ],
+  "image_cdl": [
+    "Cylinder(P,Q)",
+    "ParallelBetweenPlane(P,Q)"
+  ],
+  "goal_cdl": "Value(ParallelBetweenPlane(P,Q))",
+  "problem_answer": "True",
+  "problem_type": [],
+  "complexity_level": "",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": "{\"START\": []}"
+}

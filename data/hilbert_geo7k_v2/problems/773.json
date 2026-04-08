@@ -1,0 +1,50 @@
+{
+  "problem_id": 773,
+  "annotation": "",
+  "annotation_img": "",
+  "source": "SolidGeo",
+  "problem_text_cn": "",
+  "problem_text_en": "Find the total surface area of the solid figure shown.",
+  "problem_img": [
+    "images\\72.jpg"
+  ],
+  "construction_cdl": [
+    "Shape(AB,BD,DA)",
+    "Shape(AC,CD,DA)",
+    "Shape(EF,FG,GE)",
+    "Shape(AE,EF,FB,BA)",
+    "Shape(AC,CG,GE,EA)",
+    "Shape(BC,CG,GF,FB)",
+    "Coplanar(U,ABCD)",
+    "Coplanar(V,EFG)",
+    "Coplanar(W,ACEG)",
+    "Coplanar(X,ABEF)",
+    "Coplanar(Y,BCFG)",
+    "Collinear(BDC)"
+  ],
+  "text_cdl": [
+    "RightTriangularPrism(ABC,EFG)",
+    "Prism(U,V)",
+    "Equal(LengthOfLine(AE),21)",
+    "Equal(LengthOfLine(BF),21)",
+    "Equal(LengthOfLine(CG),21)"
+  ],
+  "image_cdl": [
+    "RightTriangularPrism(ABC,EFG)",
+    "Prism(U,V)",
+    "Equal(LengthOfLine(BC),12)",
+    "Equal(LengthOfLine(AC),12)",
+    "Equal(LengthOfLine(AB),12)",
+    "Equal(MeasureOfAngle(ADC),90)"
+  ],
+  "goal_cdl": "Value(SurfaceAreaOfTrigularPrism(ABC,DEF))",
+  "problem_answer": "608",
+  "problem_type": [
+    "Measurement of Solid Geometric Forms"
+  ],
+  "complexity_level": "Level 1",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "problem_id": 895,
+  "annotation": "",
+  "annotation_img": "",
+  "source": "SolidGeo",
+  "problem_text_cn": "",
+  "problem_text_en": "Find the surface area of the square pyramid.\n\nRound your answer to one decimal place.",
+  "problem_img": [
+    "images\\194.jpg"
+  ],
+  "construction_cdl": [
+    "Shape(A,B,C,D,O,M,N)"
+  ],
+  "text_cdl": [
+    "RegularQuadrangularPyramid(ABCD,O)",
+    "Equal(LengthOfLine(AB),10)",
+    "Equal(LengthOfLine(BC),10)",
+    "Equal(LengthOfLine(CD),10)",
+    "Equal(LengthOfLine(DA),10)",
+    "Equal(LengthOfLine(ON),6)"
+  ],
+  "image_cdl": [
+    "RegularQuadrangularPyramid(ABCD,O)",
+    "Equal(LengthOfLine(A,B),10)"
+  ],
+  "goal_cdl": "Value(Add(Mul(LengthOfLine(A,B),LengthOfLine(B,C)),Mul(4,Mul(Mul(LengthOfLine(A,B),Sqrt(Add(Pow(LengthOfLine(O,N),2),Pow(Mul(LengthOfLine(B,C),0.5),2)))),0.5))))",
+  "problem_answer": "256.2",
+  "problem_type": [
+    "Measurement of Solid Geometric Forms"
+  ],
+  "complexity_level": "Level 1",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

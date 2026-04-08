@@ -1,0 +1,43 @@
+{
+  "problem_id": 910,
+  "annotation": "",
+  "annotation_img": "",
+  "source": "SolidGeo",
+  "problem_text_cn": "",
+  "problem_text_en": "Consider the cube shown.\n\nFind the polynomial that represents the volume of the cube.",
+  "problem_img": [
+    "images\\209.jpg"
+  ],
+  "construction_cdl": [
+    "Shape(AB,BC,CD,DA)",
+    "Shape(EF,FG,GH,HE)",
+    "Shape(AE,EF,FB,BA)",
+    "Shape(CD,DH,HG,GC)",
+    "Shape(AE,EH,HD,DA)",
+    "Shape(BF,FG,GC,CB,)",
+    "Coplanar(U,ABCD)",
+    "Coplanar(V,EFGH)",
+    "Coplanar(W,AEFB)",
+    "Coplanar(X,ADHE)",
+    "Coplanar(Y,CBFG)",
+    "Coplanar(Z,CGHD)"
+  ],
+  "text_cdl": [
+    "Cube(ABCDEFGH)",
+    "Equal(SideLengthOfCube(ABCDEFGH),x+4)"
+  ],
+  "image_cdl": [
+    "Cube(ABCDEFGH)",
+    "Equal(SideLengthOfCube(ABCDEFGH),x+4)"
+  ],
+  "goal_cdl": "Value(VolumeOfCube(ABCDEFGH))",
+  "problem_answer": "x**3+12*x**2+48*x+64",
+  "problem_type": [
+    "Measurement of Solid Geometric Forms"
+  ],
+  "complexity_level": "Level 1",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

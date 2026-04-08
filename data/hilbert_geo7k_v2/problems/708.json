@@ -1,0 +1,32 @@
+{
+  "problem_id": 708,
+  "annotation": "RuoranXu_2025-08-09",
+  "annotation_img": "RuoranXu_2025-08-09",
+  "source": "SolidGeo",
+  "problem_text_cn": "图中显示的是一个高8厘米、半径6厘米的圆柱体。圆柱体的体积由V= r^2h给出。求圆柱体的体积，将答案四舍五入到小数点后两位。",
+  "problem_text_en": "The figure shows a cylinder with height of 8 centimeters and radius of 6 centimeters. The volume of a cylinder is given by $V=\\pi r^2h$. \n\nFind the volume of the cylinder, rounding your answer to two decimal places.",
+  "problem_img": "images\\708.png",
+  "construction_cdl": [
+    "Shape(PQ,QP)",
+    "Cocircular(Q)",
+    "Cocircular(P)"
+  ],
+  "text_cdl": [
+    "Cylinder(P,Q)",
+    "IsCentreOfCircle(P,P)",
+    "IsCentreOfCircle(Q,Q)",
+    "Equal(HeightOfCylinder(P,Q),8)",
+    "Equal(RadiusOfCircle(Q),6)"
+  ],
+  "image_cdl": [
+    "Cylinder(P,Q)",
+    "Equal(HeightOfCylinder(P,Q),8)",
+    "Equal(RadiusOfCircle(Q),6)"
+  ],
+  "goal_cdl": "Value(VolumeOfCylinder(P,Q))",
+  "problem_answer": "904.78",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

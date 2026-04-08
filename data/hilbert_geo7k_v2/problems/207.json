@@ -1,0 +1,25 @@
+{
+  "problem_id": 207,
+  "annotation": "",
+  "source": "SolidGeo",
+  "problem_text_en": "A square pyramid is shown with the following dimensions.\n\nFind an expression for L, in terms of the variable, x.",
+  "construction_cdl": [
+    "Shape(AB,BC,CD,DA,AP,BP,CP,DP)",
+    "RegularQuadrangularPyramid(A,B,C,D,P)"
+  ],
+  "text_cdl": [
+    "Equal(HeightOfQuadrangularPyramid(A,B,C,D,P),2x+3)",
+    "Equal(SideLengthOfCube(A,B,C,D),5)"
+  ],
+  "image_cdl": [
+    "Equal(HeightOfQuadrangularPyramid(A,B,C,D,P),2x+3)",
+    "Equal(SideLengthOfCube(A,B,C,D),5)",
+    "Equal(LengthOfLine(A,P),5x+7)"
+  ],
+  "goal_cdl": "Value(LengthOfLine(A,P))",
+  "problem_answer": "5x+7",
+  "problem_type": [],
+  "complexity_level": "",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": "{\"START\": []}"
+}

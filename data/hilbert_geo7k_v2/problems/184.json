@@ -1,0 +1,23 @@
+{
+  "problem_id": 184,
+  "annotation": "",
+  "source": "SolidGeo",
+  "problem_text_en": "Find the total surface area of the solid with a side length equal to 6 cm.",
+  "construction_cdl": [
+    "Shape(AB,BC,CD,DA,EF,FG,GH,HE,AE,BF,CG,DH)",
+    "Cube(ABCDEFGH)"
+  ],
+  "text_cdl": [
+    "Equal(SideLengthOfCube(ABCDEFGH),6)"
+  ],
+  "image_cdl": [
+    "Cube(ABCDEFGH)",
+    "Equal(SideLengthOfCube(ABCDEFGH),6)"
+  ],
+  "goal_cdl": "Value(SurfaceAreaOfQuadrangularPrism(ABCDEFGH))",
+  "problem_answer": "216",
+  "problem_type": [],
+  "complexity_level": "",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": "{\"START\": []}"
+}

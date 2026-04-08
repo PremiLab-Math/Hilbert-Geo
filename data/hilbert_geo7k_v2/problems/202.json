@@ -1,0 +1,28 @@
+{
+  "problem_id": 202,
+  "annotation": "",
+  "source": "SolidGeo",
+  "problem_text_en": "Given the following square pyramid.\nFind the volume of the square pyramid.",
+  "construction_cdl": [
+    "Shape(AB,BC,CD,DA,AP,BP,CP,DP)",
+    "Square(ABCD)",
+    "RegularQuadrangularPyramid(A,B,C,D,P)",
+    "IsAltitudeOfQuadrilateral(P,ABCD)"
+  ],
+  "text_cdl": [
+    "RegularQuadrangularPyramid(A,B,C,D,P)",
+    "Equal(HeightOfQuadrangularPyramid(P,ABCD),6)",
+    "Equal(SideLengthOfCube(AB),10)"
+  ],
+  "image_cdl": [
+    "RegularQuadrangularPyramid(A,B,C,D,P)",
+    "Equal(HeightOfQuadrangularPyramid(P,ABCD),6)",
+    "Equal(SideLengthOfCube(AB),10)"
+  ],
+  "goal_cdl": "Value(VolumeOfQuadrangularPyramid(P,ABCD))",
+  "problem_answer": "200",
+  "problem_type": [],
+  "complexity_level": "",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": "{\"START\": []}"
+}

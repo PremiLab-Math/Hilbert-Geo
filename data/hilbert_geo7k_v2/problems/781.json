@@ -1,0 +1,47 @@
+{
+  "problem_id": 781,
+  "annotation": "Gemini_2024-05-22",
+  "annotation_img": "Gemini_2024-05-22",
+  "source": "SolidGeo",
+  "problem_text_cn": "",
+  "problem_text_en": "Find the surface area of the solid figure shown.\n\nRound your answer to two decimal places.",
+  "problem_img": "images\\781.png",
+  "construction_cdl": [
+    "Shape(AB,BC,CD,DA)",
+    "Shape(EF,FG,GH,HE)",
+    "Shape(AE,EF,FB,BA)",
+    "Shape(BC,CG,GF,FB)",
+    "Shape(CD,DH,HG,GC)",
+    "Shape(DA,AE,EH,HD)",
+    "Shape(EF,FI,IE)",
+    "Shape(HG,GJ,JH)",
+    "Coplanar(U,ABCD)",
+    "Coplanar(V,EFGH)",
+    "Coplanar(W,AEFB)",
+    "Coplanar(X,BCGF)",
+    "Coplanar(Y,CDHG)",
+    "Coplanar(Z,DAEH)",
+    "Coplanar(M,EFI)",
+    "Coplanar(N,HGJ)"
+  ],
+  "text_cdl": [],
+  "image_cdl": [
+    "Cuboid(ABCDEFGH)",
+    "Prism(M,N)",
+    "RightTriangularPrism(EFI,HGJ)",
+    "Equal(LengthOfLine(AB),5)",
+    "Equal(LengthOfLine(BC),10)",
+    "Equal(LengthOfLine(AE),6)",
+    "Equal(HeightOfTriangle(EFI),3)"
+  ],
+  "goal_cdl": "Value(Add(AreaOfCuboid(ABCDEFGH),SurfaceAreaOfTrigularPrism(EFI,HGJ)))",
+  "problem_answer": "423.10",
+  "problem_type": [
+    "Measurement of Solid Geometric Forms"
+  ],
+  "complexity_level": "Level 1",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

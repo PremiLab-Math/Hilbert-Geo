@@ -1,0 +1,259 @@
+{
+  "solved": {
+    "1": {
+      "msg": [
+        [
+          "circle_property_length_of_radius_and_diameter",
+          "1",
+          [
+            "O"
+          ]
+        ]
+      ],
+      "timing": 0.07569456100463867,
+      "step_size": 1
+    },
+    "2": {
+      "msg": [],
+      "timing": 0.07952284812927246,
+      "step_size": 0
+    },
+    "19": {
+      "msg": [
+        [
+          "sphere_volume_formula",
+          "1",
+          [
+            "O"
+          ]
+        ]
+      ],
+      "timing": 0.1737368106842041,
+      "step_size": 1
+    },
+    "20": {
+      "msg": [
+        [
+          "sphere_volume_formula",
+          "1",
+          [
+            "O"
+          ]
+        ]
+      ],
+      "timing": 0.20033979415893555,
+      "step_size": 1
+    },
+    "30": {
+      "msg": [
+        [
+          "sphere_area_formula",
+          "1",
+          [
+            "O"
+          ]
+        ]
+      ],
+      "timing": 0.17514920234680176,
+      "step_size": 1
+    },
+    "34": {
+      "msg": [
+        [
+          "circle_area_formula",
+          "1",
+          [
+            "O"
+          ]
+        ],
+        [
+          "sphere_area_formula",
+          "1",
+          [
+            "O"
+          ]
+        ]
+      ],
+      "timing": 0.19544005393981934,
+      "step_size": 1
+    },
+    "33": {
+      "msg": [
+        [
+          "circle_area_formula",
+          "1",
+          [
+            "O"
+          ]
+        ]
+      ],
+      "timing": 0.21591711044311523,
+      "step_size": 1
+    },
+    "31": {
+      "msg": [
+        [
+          "sphere_area_formula",
+          "1",
+          [
+            "O"
+          ]
+        ],
+        [
+          "sphere_property_length_of_radius_and_diameter",
+          "1",
+          [
+            "O"
+          ]
+        ]
+      ],
+      "timing": 0.3238637447357178,
+      "step_size": 1
+    },
+    "15": {
+      "msg": [
+        [
+          "sphere_volume_formula",
+          "1",
+          [
+            "O"
+          ]
+        ],
+        [
+          "sphere_property_length_of_radius_and_diameter",
+          "1",
+          [
+            "O"
+          ]
+        ]
+      ],
+      "timing": 0.41705965995788574,
+      "step_size": 1
+    }
+  },
+  "unsolved": {
+    "8": {
+      "msg": "None",
+      "timing": 0.051027536392211914,
+      "step_size": 1
+    },
+    "7": {
+      "msg": "None",
+      "timing": 0.05432271957397461,
+      "step_size": 1
+    },
+    "25": {
+      "msg": "None",
+      "timing": 0.06543493270874023,
+      "step_size": 1
+    },
+    "26": {
+      "msg": "None",
+      "timing": 0.06833219528198242,
+      "step_size": 1
+    },
+    "28": {
+      "msg": "None",
+      "timing": 0.0642557144165039,
+      "step_size": 1
+    },
+    "13": {
+      "msg": "None",
+      "timing": 0.19119644165039062,
+      "step_size": 1
+    },
+    "17": {
+      "msg": "None",
+      "timing": 0.1887671947479248,
+      "step_size": 1
+    },
+    "18": {
+      "msg": "None",
+      "timing": 0.18902587890625,
+      "step_size": 1
+    },
+    "12": {
+      "msg": "None",
+      "timing": 0.21027708053588867,
+      "step_size": 1
+    },
+    "14": {
+      "msg": "None",
+      "timing": 0.21637773513793945,
+      "step_size": 1
+    },
+    "11": {
+      "msg": "None",
+      "timing": 0.24864649772644043,
+      "step_size": 1
+    },
+    "32": {
+      "msg": "None",
+      "timing": 0.23471713066101074,
+      "step_size": 1
+    },
+    "35": {
+      "msg": "None",
+      "timing": 0.23770451545715332,
+      "step_size": 1
+    },
+    "22": {
+      "msg": "None",
+      "timing": 0.5816507339477539,
+      "step_size": 1
+    },
+    "21": {
+      "msg": "None",
+      "timing": 0.5928699970245361,
+      "step_size": 1
+    },
+    "23": {
+      "msg": "None",
+      "timing": 0.6035175323486328,
+      "step_size": 1
+    },
+    "27": {
+      "msg": "None",
+      "timing": 0.5989151000976562,
+      "step_size": 1
+    },
+    "24": {
+      "msg": "None",
+      "timing": 0.6918511390686035,
+      "step_size": 1
+    },
+    "16": {
+      "msg": "None",
+      "timing": 2.0086863040924072,
+      "step_size": 1
+    }
+  },
+  "timeout": {},
+  "error": {
+    "6": {
+      "msg": "TypeError('sequence item 0: expected str instance, tuple found')",
+      "timing": 0.0003185272216796875,
+      "step_size": 0
+    },
+    "5": {
+      "msg": "SympifyError(\"cannot sympify object of type <class 'sympy.assumptions.ask.AssumptionKeys'>\")",
+      "timing": 0.04470419883728027,
+      "step_size": 0
+    },
+    "10": {
+      "msg": "TypeError(\"bad operand type for unary -: 'NoneType'\")",
+      "timing": 0.04404616355895996,
+      "step_size": 0
+    },
+    "29": {
+      "msg": "IndexError('pop from empty list')",
+      "timing": 0.0003070831298828125,
+      "step_size": 0
+    },
+    "9": {
+      "msg": "TypeError(\"unsupported operand type(s) for -: 'NoneType' and 'Float'\")",
+      "timing": 0.19822430610656738,
+      "step_size": 0
+    }
+  }
+}

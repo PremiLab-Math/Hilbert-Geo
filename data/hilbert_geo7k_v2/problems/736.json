@@ -1,0 +1,28 @@
+{
+  "problem_id": 736,
+  "annotation": "RuoranXu_2025-08-11",
+  "annotation_img": "RuoranXu_2025-08-11",
+  "source": "SolidGeo",
+  "problem_text_cn": "求出下面半球的表面积。半径是74.74米，把答案四舍五入到小数点后两位。",
+  "problem_text_en": "Find the surface area of the following hemisphere. The radius is 74.74 m,\n\nRound your answer to two decimal places.",
+  "problem_img": "images\\736.png",
+  "construction_cdl": [
+    "Shape(O)",
+    "Cospherical(O)",
+    "Cocircular(O)"
+  ],
+  "text_cdl": [],
+  "image_cdl": [
+    "Sphere(O)",
+    "Circle(O)",
+    "IsCentreOfSphere(O,O)",
+    "IsCentreOfCircle(O,O)",
+    "Equal(RadiusOfSphere(O),74.74)"
+  ],
+  "goal_cdl": "Value(Add(AreaOfCircle(O),Mul(AreaOfSphere(O),1/2)))",
+  "problem_answer": "52647.45",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

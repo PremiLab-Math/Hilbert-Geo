@@ -1,0 +1,31 @@
+{
+  "problem_id": 188,
+  "annotation": "",
+  "source": "SolidGeo",
+  "problem_text_en": "Find the surface area of the trapezoidal prism. The bottom face has edges of 18cm and 8cm.",
+  "construction_cdl": [
+    "Shape(AB,BC,CD,DA,EF,FG,GH,HE)",
+    "Shape(AE,BF,CG,DH)",
+    "Coplanar(ABCD)",
+    "Coplanar(EFGH)"
+  ],
+  "text_cdl": [
+    "SurfaceAreaOfTrigularPrism",
+    "Equal(LengthOfLine(A,B),18)",
+    "Equal(LengthOfLine(D,A),8)"
+  ],
+  "image_cdl": [
+    "RightTrapezoid(ABCD)",
+    "Equal(LengthOfLine(A,B),18)",
+    "Equal(LengthOfLine(D,A),8)",
+    "Equal(HeightOfTrapezoid(ABCD),3)",
+    "Equal(LengthOfLine(E,F),10)",
+    "Equal(HeightOfTriangularPrism(AE),5)"
+  ],
+  "goal_cdl": "Value(SurfaceAreaOfTrigularPrism)",
+  "problem_answer": "254",
+  "problem_type": [],
+  "complexity_level": "",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": "{\"START\": []}"
+}

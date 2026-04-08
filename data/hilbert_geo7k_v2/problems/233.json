@@ -1,0 +1,33 @@
+{
+  "problem_id": 233,
+  "annotation": "",
+  "source": "SolidGeo",
+  "problem_text_en": "The following is a right pyramid on a square base. A right pyramid has its apex aligned directly above the centre of its base.\n\nUse your answer from part (a) to find the length of VW, the perpendicular height of the pyramid correct to two decimal places.",
+  "construction_cdl": [
+    "Shape(AB, BC, CD, DA, VW)",
+    "Shape(V, W, A, B, C, D)",
+    "IsCentreOfQuadrilateral(W, ABCD)",
+    "IsAltitudeOfQuadrilateral(VW, ABCD)",
+    "Coplanar(ABCD)"
+  ],
+  "text_cdl": [
+    "RightQuadrangularPyramid(V, ABCD)",
+    "Equal(LengthOfLine(AB), 26)",
+    "Equal(LengthOfLine(BC), 16)",
+    "IsCentreOfQuadrilateral(W, ABCD)",
+    "IsAltitudeOfQuadrilateral(VW, ABCD)"
+  ],
+  "image_cdl": [
+    "Shape(AB, BC, CD, DA, VW)",
+    "Equal(LengthOfLine(AB), 26)",
+    "Equal(LengthOfLine(BC), 16)",
+    "IsCentreOfQuadrilateral(W, ABCD)",
+    "IsAltitudeOfQuadrilateral(VW, ABCD)"
+  ],
+  "goal_cdl": "Value(LengthOfLine(VW))",
+  "problem_answer": "z",
+  "problem_type": [],
+  "complexity_level": "",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": "{\"START\": []}"
+}

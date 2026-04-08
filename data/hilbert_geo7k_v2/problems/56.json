@@ -1,0 +1,26 @@
+{
+  "problem_id": 56,
+  "annotation": "",
+  "source": "SolidGeo",
+  "problem_text_en": "Find the volume of the solid with a diameter of 8 cm.\n\nRounding to two decimal places.",
+  "construction_cdl": [
+    "Shape(O)",
+    "Shape(PQ,QP)",
+    "Cocircular(O)",
+    "IsDiameterOfCircle(O,PQ)"
+  ],
+  "text_cdl": [
+    "Equal(DiameterOfCircle(O),8)"
+  ],
+  "image_cdl": [
+    "Cylinder(O,P)",
+    "Equal(DiameterOfCircle(O),8)",
+    "Equal(HeightOfCylinder(O,P),20)"
+  ],
+  "goal_cdl": "Value(VolumeOfCylinder(O,P))",
+  "problem_answer": "1005.31",
+  "problem_type": [],
+  "complexity_level": "",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": "{\"START\": []}"
+}

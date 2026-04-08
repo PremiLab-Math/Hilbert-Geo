@@ -1,0 +1,39 @@
+{
+  "problem_id": 866,
+  "annotation": "",
+  "annotation_img": "",
+  "source": "SolidGeo",
+  "problem_text_cn": "下面立方体的所有边都是7厘米长。找到z，角AGH的大小，精确到小数点后2位。",
+  "problem_text_en": "All edges of the following cube are 7 cm long.Find z, the size of \\angle AGH, correct to 2 decimal places.",
+  "problem_img": "images\\746.png",
+  "construction_cdl": [
+    "Shape(AB,BC,CD,DA)",
+    "Shape(EF,FG,GH,HE)",
+    "Shape(AE,EF,FB,BA)",
+    "Shape(CD,DH,HG,GC)",
+    "Shape(AH,HD,DA)",
+    "Shape(AE,EH,HA)",
+    "Shape(BC,CG,GF,FB)",
+    "Shape(AH,HG,GA)",
+    "Coplanar(U,ABCD)",
+    "Coplanar(V,EFGH)",
+    "Coplanar(W,AEFB)",
+    "Coplanar(X,ADHE)",
+    "Coplanar(Y,CBFG)",
+    "Coplanar(Z,CGHD)"
+  ],
+  "text_cdl": [
+    "Cube(ABCDEFGH)",
+    "Equal(SideLengthOfCube(ABCDEFGH),7)",
+    "Equal(MeasureOfAngle(AGH),z)"
+  ],
+  "image_cdl": [
+    "Cube(ABCDEFGH)"
+  ],
+  "goal_cdl": "Value(z)",
+  "problem_answer": "54.74",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

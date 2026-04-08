@@ -1,0 +1,32 @@
+{
+  "problem_id": 846,
+  "annotation": "ShiyuShen_2025-08-23",
+  "annotation_img": "ShiyuShen_2025-08-23",
+  "source": "SolidGeo",
+  "problem_text_cn": "圆柱体的表面积为54105(mm)^2，半径为79 mm。圆柱体的高度$h$ mm必须是多少？把你的答案四舍五入到最接近的整数。",
+  "problem_text_en": "A cylinder has a surface area of 54105(mm)^2 and a radius of 79 mm.\n\nWhat must the height $h$ mm of the cylinder be?\n\nRound your answer to the nearest whole number.",
+  "problem_img": "images\\846.png",
+  "construction_cdl": [
+    "Shape(PQ,QP)",
+    "Cocircular(P)",
+    "Cocircular(Q)"
+  ],
+  "text_cdl": [
+    "Equal(Add(AreaOfCircle(P),AreaOfCircle(Q),LateralareaOfCylinder(P,Q)),54105)",
+    "Equal(RadiusOfCircle(P),79)",
+    "Equal(HeightOfCylinder(P,Q),h)"
+  ],
+  "image_cdl": [
+    "Cylinder(P,Q)",
+    "IsCentreOfCircle(P,P)",
+    "IsCentreOfCircle(Q,Q)",
+    "Equal(RadiusOfCircle(P),79)",
+    "Equal(HeightOfCylinder(P,Q),h)"
+  ],
+  "goal_cdl": "Value(h)",
+  "problem_answer": "30",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

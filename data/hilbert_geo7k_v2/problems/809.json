@@ -1,0 +1,52 @@
+{
+  "problem_id": 809,
+  "annotation": "",
+  "annotation_img": "",
+  "source": "SolidGeo",
+  "problem_text_cn": "",
+  "problem_text_en": "A wedding cake consists of three cylinders stacked on top of each other. The top layer has a height of 20 cm, the middle layer has a radius double this, and the same height and the bottom layer has a radius three times as big, and is twice as high.\n\nAll the sides and top surfaces are to be covered in icing, but not the bottom.\n\nWhat is the surface area of the cake that needs to be iced?\n\nGive your answer to the nearest cm2.",
+  "problem_img": [
+    "images\\108.jpg"
+  ],
+  "construction_cdl": [
+    "Shape(AB,BA)",
+    "Shape(PQ,QP)",
+    "Shape(CD,DC)",
+    "Cocircular(A)",
+    "Cocircular(B)",
+    "Cocircular(C)",
+    "Cocircular(D)",
+    "Cocircular(P)",
+    "Cocircular(Q)",
+    "Coplanar(U,A)",
+    "Coplanar(V,BC)",
+    "Coplanar(W,DP)",
+    "Coplanar(X,Q)"
+  ],
+  "text_cdl": [
+    "Cylinder(A,B)",
+    "Cylinder(C,D)",
+    "Cylinder(P,Q)",
+    "Equal(HeightOfCylinder(A,B),20)",
+    "Equal(RadiusOfCircle(C),Mul(2,HeightOfCylinder(A,B)))",
+    "Equal(HeightOfCylinder(C,D),HeightOfCylinder(A,B))",
+    "Equal(RadiusOfCircle(P),Mul(3,HeightOfCylinder(A,B)))",
+    "Equal(HeightOfCylinder(P,Q),Mul(2,HeightOfCylinder(A,B)))"
+  ],
+  "image_cdl": [
+    "Cylinder(A,B)",
+    "Cylinder(C,D)",
+    "Cylinder(P,Q)",
+    "Equal(RadiusOfCircle(A),20)"
+  ],
+  "goal_cdl": "Value(Add(LateralareaOfCylinder(A,B),LateralareaOfCylinder(C,D),LateralareaOfCylinder(P,Q),AreaOfCircle(A),Sub(AreaOfCircle(C),AreaOfCircle(B)),Sub(AreaOfCircle(P),AreaOfCircle(D))))",
+  "problem_answer": "33929",
+  "problem_type": [
+    "Composite Solid Structures"
+  ],
+  "complexity_level": "Level 2",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

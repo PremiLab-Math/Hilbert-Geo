@@ -1,0 +1,43 @@
+{
+  "problem_id": 914,
+  "annotation": "",
+  "annotation_img": "",
+  "source": "SolidGeo",
+  "problem_text_cn": "",
+  "problem_text_en": "Each side length of the cube is equal. Find the volume of the cube shown.",
+  "problem_img": [
+    "images\\213.jpg"
+  ],
+  "construction_cdl": [
+    "Shape(AB,BC,CD,DA)",
+    "Shape(EF,FG,GH,HE)",
+    "Shape(AE,EF,FB,BA)",
+    "Shape(CD,DH,HG,GC)",
+    "Shape(AE,EH,HD,DA)",
+    "Shape(BF,FG,GC,CB,)",
+    "Coplanar(U,ABCD)",
+    "Coplanar(V,EFGH)",
+    "Coplanar(W,AEFB)",
+    "Coplanar(X,ADHE)",
+    "Coplanar(Y,CBFG)",
+    "Coplanar(Z,CGHD)"
+  ],
+  "text_cdl": [
+    "Cube(ABCDEFGH)",
+    "Equal(SideLengthOfCube(ABCDEFGH),12)"
+  ],
+  "image_cdl": [
+    "Cube(ABCDEFGH)",
+    "Equal(LengthOfLine(EF),12)"
+  ],
+  "goal_cdl": "Value(VolumeOfCube(ABCDEFGH))",
+  "problem_answer": "144",
+  "problem_type": [
+    "Measurement of Solid Geometric Forms"
+  ],
+  "complexity_level": "Level 1",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

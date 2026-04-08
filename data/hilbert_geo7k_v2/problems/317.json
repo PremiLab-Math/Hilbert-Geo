@@ -1,0 +1,30 @@
+{
+  "problem_id": 317,
+  "annotation": "",
+  "annotation_img": "",
+  "source": "SolidGeo",
+  "problem_text_cn": "",
+  "problem_text_en": "",
+  "problem_img": [
+    "images\\317.jpg"
+  ],
+  "construction_cdl": [
+    "Shape(OP,PO)"
+  ],
+  "text_cdl": [],
+  "image_cdl": [
+    "Equal(RadiusOfCircle(O),9.1)",
+    "Cone(O,P)",
+    "Equal(BusbarOfCone(O,P),13.7)"
+  ],
+  "goal_cdl": "Value(Add(Mul(pi,Pow(RadiusOfCircle(O),2)),Mul(pi,RadiusOfCircle(O),BusbarOfCone(O,P))))",
+  "problem_answer": "651.82",
+  "problem_type": [
+    "Measurement of Solid Geometric Forms"
+  ],
+  "complexity_level": "Level 1",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

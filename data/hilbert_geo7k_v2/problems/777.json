@@ -1,0 +1,32 @@
+{
+  "problem_id": 777,
+  "annotation": "Gemini_2024-05-22",
+  "annotation_img": "Gemini_2024-05-22",
+  "source": "SolidGeo",
+  "problem_text_cn": "",
+  "problem_text_en": "Find the surface area of the solid shown. The radius is 3cm.\n\nRound your answer to two decimal places.",
+  "problem_img": "images\\777.png",
+  "construction_cdl": [
+    "Shape(OP,PO)"
+  ],
+  "text_cdl": [
+    "Cone(O,P)",
+    "Equal(RadiusOfCircle(O),3)",
+    "Equal(BusbarOfCone(O,P),10)"
+  ],
+  "image_cdl": [
+    "Cone(O,P)",
+    "Equal(RadiusOfCircle(O),3)",
+    "Equal(BusbarOfCone(O,P),10)"
+  ],
+  "goal_cdl": "Value(Add(AreaOfCircle(O),LateralareaOfCone(O,P)))",
+  "problem_answer": "122.52",
+  "problem_type": [
+    "Measurement of Solid Geometric Forms"
+  ],
+  "complexity_level": "Level 1",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

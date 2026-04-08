@@ -1,0 +1,34 @@
+{
+  "problem_id": 169,
+  "annotation": "",
+  "source": "SolidGeo",
+  "problem_text_en": "This triangular prism shaped box labelled ABCDEF needs a diagonal support inserted as shown. Find the length AF of this support.\nHence, find the length of AF in terms of AB, BD and DF.",
+  "construction_cdl": [
+    "Shape(AB,BC,CD,DA,EF)",
+    "Shape(AF)",
+    "Collinear(A,B,F)",
+    "Collinear(B,D,F)",
+    "Collinear(D,F,C)",
+    "Collinear(A,F,C)",
+    "Coplanar(A,B,C,D,E,F)"
+  ],
+  "text_cdl": [
+    "TriangularPrism(ABCDEF)",
+    "Equal(LengthOfLine(AB),19)",
+    "Equal(LengthOfLine(BD),9)",
+    "Equal(LengthOfLine(DF),9)"
+  ],
+  "image_cdl": [
+    "TriangularPrism(ABCDEF)",
+    "Equal(LengthOfLine(AB),19)",
+    "Equal(LengthOfLine(BD),9)",
+    "Equal(LengthOfLine(DF),9)",
+    "Equal(LengthOfLine(AF),z)"
+  ],
+  "goal_cdl": "Value(LengthOfLine(AF))",
+  "problem_answer": "sqrt(AB^2 + BD^2 + DF^2)",
+  "problem_type": [],
+  "complexity_level": "",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": "{\"START\": []}"
+}

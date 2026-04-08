@@ -1,0 +1,29 @@
+{
+  "problem_id": 430,
+  "annotation": "",
+  "source": "SolidGeo",
+  "problem_text_en": "The truncated right circular cone below has a large base radius 8 cm and a small base radius of 3 cm. The height of the truncated cone is 7 cm. What is the volume of this solid?",
+  "construction_cdl": [
+    "Shape(O,P,Q)",
+    "Cocircular(O)",
+    "Cocircular(P)",
+    "Cocircular(Q)"
+  ],
+  "text_cdl": [
+    "Equal(RadiusOfCircle(O),8)",
+    "Equal(RadiusOfCircle(P),3)",
+    "Equal(HeightOfCone(O,P),7)"
+  ],
+  "image_cdl": [
+    "Cone(O,P,Q)",
+    "Equal(RadiusOfCircle(O),8)",
+    "Equal(RadiusOfCircle(P),3)",
+    "Equal(HeightOfCone(O,P),7)"
+  ],
+  "goal_cdl": "Value(VolumeOfCone(O,P,Q))",
+  "problem_answer": "410.33",
+  "problem_type": [],
+  "complexity_level": "",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": "{\"START\": []}"
+}

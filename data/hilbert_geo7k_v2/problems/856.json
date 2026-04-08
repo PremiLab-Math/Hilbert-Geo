@@ -1,0 +1,45 @@
+{
+  "problem_id": 856,
+  "annotation": "ShiyuShen_2025-08-23",
+  "annotation_img": "ShiyuShen_2025-08-23",
+  "source": "SolidGeo",
+  "problem_text_cn": "上面那一个个的半径是5mm。我们希望求出整个固体的表面积。请注意，如果一个区域没有被其他物体覆盖，则称为“暴露”区域。底部实心图形的暴露表面积是多少？把你的答案精确到小数点后两位。",
+  "problem_text_en": "The top one has a radius of 5mm. We wish to find the surface area of the entire solid. Note that an area is called 'exposed' if it is not covered by the other object.\nWhat is the exposed surface area of the bottom solid figure? Give your answer correct to two decimal places.",
+  "problem_img": "images\\856.png",
+  "construction_cdl": [
+    "Shape(PQ,QP)",
+    "Shape(AB,BC,CD,DA)",
+    "Shape(EF,FG,GH,HE)",
+    "Shape(AE,EF,FB,BA)",
+    "Shape(CD,DH,HG,GC)",
+    "Shape(AE,EH,HD,DA)",
+    "Shape(BC,CG,GF,FB)",
+    "Coplanar(R,P)",
+    "Cocircular(P)",
+    "Cocircular(Q)",
+    "Coplanar(U,ABCDQ)",
+    "Coplanar(V,EFGH)",
+    "Coplanar(W,AEFB)",
+    "Coplanar(X,ADHE)",
+    "Coplanar(Y,CBFG)",
+    "Coplanar(Z,CGHD)"
+  ],
+  "text_cdl": [
+    "Equal(RadiusOfCircle(Q),5)",
+    "Equal(RadiusOfCircle(P),5)"
+  ],
+  "image_cdl": [
+    "Cuboid(ABCDEFGH)",
+    "Cylinder(P,Q)",
+    "Equal(HeightOfCylinder(P,Q),11)",
+    "Equal(LengthOfLine(AB),65)",
+    "Equal(LengthOfLine(EH),21)",
+    "Equal(LengthOfLine(BF),10)"
+  ],
+  "goal_cdl": "Value(Sub(AreaOfCuboid(ABCDEFGH),AreaOfCircle(Q)))",
+  "problem_answer": "4371.46",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

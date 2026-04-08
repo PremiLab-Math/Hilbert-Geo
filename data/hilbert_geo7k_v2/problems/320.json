@@ -1,0 +1,60 @@
+{
+  "problem_id": 320,
+  "annotation": "",
+  "annotation_img": "",
+  "source": "SolidGeo",
+  "problem_text_cn": "",
+  "problem_text_en": "",
+  "problem_img": [
+    "images\\320.jpg"
+  ],
+  "construction_cdl": [
+    "Shape(PQ,QP)",
+    "Shape(AB,BC,CD,DA)",
+    "Shape(EF,FG,GH,HE)",
+    "Shape(AE,EF,FB,BA)",
+    "Shape(CD,DH,HG,GC)",
+    "Shape(AE,EH,HD,DA)",
+    "Shape(BC,CG,GF,FB)",
+    "Shape(IJ,JK,KL,LI)",
+    "Shape(IJ,JN,NM,MI)",
+    "Shape(JK,KO,ON,NJ)",
+    "Shape(KL,LS,SO,OK)",
+    "Shape(IL,LS,SM,MI)",
+    "Shape(MN,NO,OS,SM)",
+    "Coplanar(R,SIJKL)",
+    "Coplanar(T,MNOS)",
+    "Cocircular(P)",
+    "Cocircular(Q)",
+    "Coplanar(U,ABCDQ)",
+    "Coplanar(V,EFGH)",
+    "Coplanar(W,AEFBIJNM)",
+    "Coplanar(X,ADHEJNOK)",
+    "Coplanar(Y,CBFGIJSM)",
+    "Coplanar(Z,CGHDSOKL)"
+  ],
+  "text_cdl": [],
+  "image_cdl": [
+    "Equal(LengthOfLine(AB),33)",
+    "Equal(HeightOfCylinder(Q,R),11)",
+    "Equal(LengthOfLine(JK),25)",
+    "Equal(LengthOfLine(AE),20)",
+    "Cylinder(Q,R)",
+    "Cuboid(IJKLMNOP)",
+    "Cuboid(ABCDEFGH)",
+    "Equal(LengthOfLine(BC),25)",
+    "Equal(LengthOfLine(IJ),33)",
+    "Equal(LengthOfLine(IM),20)",
+    "Equal(RadiusOfCircle(Q),6)"
+  ],
+  "goal_cdl": "Value(Sub(Add(Mul(2,Mul(2,Add(Mul(LengthOfLine(AB),LengthOfLine(BC)),Mul(LengthOfLine(AB),LengthOfLine(AE)),Mul(LengthOfLine(BC),LengthOfLine(AE))))),LateralareaOfCylinder(QR)),Mul(2,AreaOfCircle(Q))))",
+  "problem_answer": "8128.50",
+  "problem_type": [
+    "Composite Solid Structures"
+  ],
+  "complexity_level": "Level 2",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "problem_id": 768,
+  "annotation": "",
+  "annotation_img": "",
+  "source": "SolidGeo",
+  "problem_text_cn": "",
+  "problem_text_en": "Find the surface area of the triangular prism shown. The height is 21 cm. The base is an isosceles triangle.",
+  "problem_img": "images\\768.png",
+  "construction_cdl": [
+    "Shape(AB,BD,DA)",
+    "Shape(AC,CD,DA)",
+    "Shape(EF,FG,GE)",
+    "Shape(AE,EF,FB,BA)",
+    "Shape(AC,CG,GE,EA)",
+    "Shape(BC,CG,GF,FB)",
+    "Coplanar(U,ABCD)",
+    "Coplanar(V,EFG)",
+    "Coplanar(W,ACEG)",
+    "Coplanar(X,ABEF)",
+    "Coplanar(Y,BCFG)",
+    "Collinear(BDC)"
+  ],
+  "text_cdl": [
+    "RightTriangularPrism(ABC,EFG)",
+    "Prism(U,V)",
+    "Equal(LengthOfLine(AE),21)",
+    "Equal(LengthOfLine(BF),21)",
+    "Equal(LengthOfLine(CG),21)"
+  ],
+  "image_cdl": [
+    "RightTriangularPrism(ABC,EFG)",
+    "Prism(U,V)",
+    "IsoscelesTriangle(ABC)",
+    "Equal(LengthOfLine(BC),12)",
+    "Equal(LengthOfLine(AC),10)",
+    "Equal(LengthOfLine(AD),8)",
+    "Equal(MeasureOfAngle(ADC),90)"
+  ],
+  "goal_cdl": "Value(SurfaceAreaOfTrigularPrism(ABC,EFG))",
+  "problem_answer": "768",
+  "problem_type": [
+    "Measurement of Solid Geometric Forms"
+  ],
+  "complexity_level": "Level 1",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

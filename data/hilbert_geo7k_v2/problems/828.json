@@ -1,0 +1,31 @@
+{
+  "problem_id": 828,
+  "annotation": "ShiyuShen_2025-08-23",
+  "annotation_img": "ShiyuShen_2025-08-23",
+  "source": "SolidGeo",
+  "problem_text_cn": "图中圆柱体的半径为5厘米。求所示图形的体积，精确到小数点后两位。",
+  "problem_text_en": "The radius of cylinder in figure is 5 centimeters. Find the volume of the figure shown, correct to two decimal places.",
+  "problem_img": "images\\828.png",
+  "construction_cdl": [
+    "Shape(PQ,QP)",
+    "Cocircular(Q)",
+    "Cocircular(P)"
+  ],
+  "text_cdl": [
+    "Cylinder(P,Q)",
+    "IsCentreOfCircle(P,P)",
+    "IsCentreOfCircle(Q,Q)",
+    "Equal(RadiusOfCircle(Q),5)"
+  ],
+  "image_cdl": [
+    "Cylinder(P,Q)",
+    "Equal(HeightOfCylinder(P,Q),15)",
+    "Equal(RadiusOfCircle(Q),5)"
+  ],
+  "goal_cdl": "Value(Mul(VolumeOfCylinder(P,Q),3/4))",
+  "problem_answer": "883.57",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

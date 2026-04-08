@@ -1,0 +1,47 @@
+{
+  "problem_id": 797,
+  "annotation": "",
+  "annotation_img": "",
+  "source": "SolidGeo",
+  "problem_text_cn": "",
+  "problem_text_en": "As shown in the figure, the height of the solid is 8cm. Find the volume of the solid.",
+  "problem_img": [
+    "images\\96.jpg"
+  ],
+  "construction_cdl": [
+    "Shape(AB,BC,CA)",
+    "Shape(DE,EF,FD)",
+    "Shape(AD,DE,EB,BA)",
+    "Shape(BE,EF,FC,CB)",
+    "Shape(CA,AD,DF,FC)",
+    "Coplanar(U,ABC)",
+    "Coplanar(V,DEF)",
+    "Coplanar(W,ADEB)",
+    "Coplanar(X,BEFC)",
+    "Coplanar(Y,CFDA)"
+  ],
+  "text_cdl": [
+    "Equal(LengthOfLine(AD),8)",
+    "Equal(LengthOfLine(CF),8)",
+    "Equal(LengthOfLine(BE),8)"
+  ],
+  "image_cdl": [
+    "Prism(U,V)",
+    "RightTriangularPrism(ABC,DEF)",
+    "Equal(LengthOfLine(AB),2)",
+    "Equal(LengthOfLine(AC),4)",
+    "Equal(MeasureOfAngle(BAC),90)"
+  ],
+  "goal_cdl": "Value(VolumeOfTriangularPrism(ABC,DEF))",
+  "problem_answer": "32",
+  "problem_type": [
+    "Measurement of Solid Geometric Forms"
+  ],
+  "complexity_level": "Level 1",
+  "theorem_seqs": [
+    "triangle_area_formula_sine(ABC)"
+  ],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

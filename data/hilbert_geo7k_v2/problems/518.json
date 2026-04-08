@@ -1,0 +1,22 @@
+{
+  "problem_id": 518,
+  "annotation": "",
+  "source": "SolidGeo",
+  "problem_text_en": "As shown in the figure,Determine whether the two planes are perpendicular.",
+  "construction_cdl": [
+    "Plane(P1)",
+    "Plane(P2)"
+  ],
+  "text_cdl": [
+    "Determine whether PerpendicularBetweenPlane(P1,P2)"
+  ],
+  "image_cdl": [
+    "PerpendicularBetweenPlane(P1,P2)"
+  ],
+  "goal_cdl": "Value(PerpendicularBetweenPlane(P1,P2))",
+  "problem_answer": "True",
+  "problem_type": [],
+  "complexity_level": "",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": "{\"START\": []}"
+}

@@ -1,0 +1,52 @@
+{
+  "problem_id": 883,
+  "annotation": "",
+  "annotation_img": "",
+  "source": "SolidGeo",
+  "problem_text_cn": "",
+  "problem_text_en": "Find the volume of the figure shown. The top and bottom cylinder are the same size with a radius of 8 cm and height of 2 cm. The middle cylinder has a diameter of 3 cm and height of 10 cm.\n\nRound your answer to two decimal places.",
+  "problem_img": [
+    "images\\182.jpg"
+  ],
+  "construction_cdl": [
+    "Shape(A,B)",
+    "Shape(P,Q)",
+    "Shape(C,D)",
+    "Cocircular(A)",
+    "Cocircular(B)",
+    "Cocircular(C)",
+    "Cocircular(D)",
+    "Cocircular(P)",
+    "Cocircular(Q)",
+    "Coplanar(U,A)",
+    "Coplanar(V,BC)",
+    "Coplanar(W,DP)",
+    "Coplanar(X,Q)"
+  ],
+  "text_cdl": [
+    "Equal(HeightOfCylinder(A,B), 2)",
+    "Equal(HeightOfCylinder(P,Q), 2)",
+    "Equal(HeightOfCylinder(C,D),10)",
+    "Equal(RadiusOfCircle(P),8)",
+    "Equal(RadiusOfCircle(A),8)",
+    "Equal(DiameterOfCircle(C),3)"
+  ],
+  "image_cdl": [
+    "Cylinder(P,Q)",
+    "Cylinder(A,B)",
+    "Cylinder(C,D)",
+    "Equal(RadiusOfCircle(A), 8)",
+    "Equal(RadiusOfCircle(Q), 8)"
+  ],
+  "goal_cdl": "Value(Add(VolumeOfCylinder(P,Q),VolumeOfCylinder(C,D),VolumeOfCylinder(A,B)))",
+  "problem_answer": "874.93",
+  "problem_type": [
+    "Measurement of Solid Geometric Forms",
+    "Composite Solid Structures"
+  ],
+  "complexity_level": "Level 2",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

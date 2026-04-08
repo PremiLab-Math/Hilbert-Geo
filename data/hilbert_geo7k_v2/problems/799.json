@@ -1,0 +1,43 @@
+{
+  "problem_id": 799,
+  "annotation": "",
+  "annotation_img": "",
+  "source": "SolidGeo",
+  "problem_text_cn": "",
+  "problem_text_en": "As shown in the figure, the height of the solid is 9cm. Find the volume of the solid shown.",
+  "problem_img": [
+    "images\\98.jpg"
+  ],
+  "construction_cdl": [
+    "Shape(AB,BC,CA)",
+    "Shape(DE,EF,FD)",
+    "Shape(AD,DE,EB,BA)",
+    "Shape(BE,EF,FC,CB)",
+    "Shape(CA,AD,DF,FC)",
+    "Coplanar(U,ABC)",
+    "Coplanar(V,DEF)",
+    "Coplanar(W,ADEB)",
+    "Coplanar(X,BEFC)",
+    "Coplanar(Y,CFDA)"
+  ],
+  "text_cdl": [
+    "Equal(LengthOfLine(AD),9)",
+    "Equal(LengthOfLine(CF),9)",
+    "Equal(LengthOfLine(BE),9)"
+  ],
+  "image_cdl": [
+    "Prism(U,V)",
+    "RightTriangularPrism(ABC,DEF)",
+    "Equal(LengthOfLine(AD),9)"
+  ],
+  "goal_cdl": "Value(VolumeOfTriangularPrism(ABC,DEF))",
+  "problem_answer": "270",
+  "problem_type": [
+    "Measurement of Solid Geometric Forms"
+  ],
+  "complexity_level": "Level 1",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

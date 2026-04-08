@@ -1,0 +1,41 @@
+{
+  "problem_id": 707,
+  "annotation": "RuoranXu_2025-08-08",
+  "annotation_img": "RuoranXu_2025-08-08",
+  "source": "SolidGeo",
+  "problem_text_cn": "空心圆柱管的尺寸如图所示。外径2.1厘米。内径为1.8厘米。长度是13厘米。这管子是由一种特别坚固的金属制成的。如果1 (cm)^3的金属重5.3g，计算管子的重量，使你的答案精确到小数点后一位。",
+  "problem_text_en": "A hollow cylindrical pipe has the dimensions shown in the figure. The outer diameter is 2.1 centimeters. The inner diameter is 1.8 centimeters. The length is 13 centimeters.\n\nThe pipe is made of a particularly strong metal.\n\nCalculate the weight of the pipe if 1 (cm)^3 of the metal weighs 5.3g , giving your answer correct to one decimal place.",
+  "problem_img": "images\\707.png",
+  "construction_cdl": [
+    "Shape(PQ,QP)",
+    "Shape(AB,BA)",
+    "Coplanar(U,AP)",
+    "Coplanar(V,BQ)",
+    "Cocircular(P)",
+    "Cocircular(Q)",
+    "Cocircular(A)",
+    "Cocircular(B)"
+  ],
+  "text_cdl": [
+    "Cylinder(A,B)",
+    "Cylinder(P,Q)",
+    "Equal(DiameterOfCircle(Q),2.1)",
+    "Equal(DiameterOfCircle(A),1.8)",
+    "Equal(HeightOfCylinder(P,Q),13)",
+    "Equal(HeightOfCylinder(A,B),13)"
+  ],
+  "image_cdl": [
+    "Cylinder(A,B)",
+    "Cylinder(P,Q)",
+    "Equal(DiameterOfCircle(Q),2.1)",
+    "Equal(DiameterOfCircle(A),1.8)",
+    "Equal(HeightOfCylinder(P,Q),13)",
+    "Equal(HeightOfCylinder(A,B),13)"
+  ],
+  "goal_cdl": "Value(Mul(5.3,Sub(VolumeOfCylinder(P,Q),VolumeOfCylinder(A,B))))",
+  "problem_answer": "63.3",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

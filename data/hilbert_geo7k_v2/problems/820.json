@@ -1,0 +1,46 @@
+{
+  "problem_id": 820,
+  "annotation": "",
+  "annotation_img": "",
+  "source": "SolidGeo",
+  "problem_text_cn": "",
+  "problem_text_en": "In the figure shown above, the left container has radius of 3. If all the water in the right container is poured into the left container, the water level rises from $h$ inches to $(h+x)$ inches. Which of the following is the best approximation of the value of $x$ ? A. 3\n B. 3.4\n C. 3.8\n D. 4.2\n",
+  "problem_img": "images\\820.png",
+  "construction_cdl": [
+    "Shape(PQ,QP)",
+    "Shape(AB,BC,CD,DA)",
+    "Shape(EF,FG,GH,HE)",
+    "Shape(AE,EF,FB,BA)",
+    "Shape(BC,CG,GF,FB)",
+    "Shape(CD,DH,HG,GC)",
+    "Shape(DA,AE,EH,HD)",
+    "Coplanar(U,ABCD)",
+    "Coplanar(V,EFGH)",
+    "Coplanar(W,AEFB)",
+    "Coplanar(X,BCGF)",
+    "Coplanar(Y,CDHG)",
+    "Coplanar(Z,DAEH)"
+  ],
+  "text_cdl": [
+    "Equal(RadiusOfCircle(P),3)"
+  ],
+  "image_cdl": [
+    "Cylinder(P,Q)",
+    "Cuboid(ABCDEFGH)",
+    "Equal(HeightOfCylinder(P,Q),x)",
+    "Equal(VolumeOfCylinder(P,Q),VolumeOfCuboid(ABCDEFGH))",
+    "Equal(LengthOfLine(EF),6)",
+    "Equal(LengthOfLine(CG),4)",
+    "Equal(LengthOfLine(FG),5)"
+  ],
+  "goal_cdl": "Value(x)",
+  "problem_answer": "4.2",
+  "problem_type": [
+    "Measurement of Solid Geometric Forms"
+  ],
+  "complexity_level": "Level 2",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "problem_id": 346,
+  "annotation": "",
+  "annotation_img": "",
+  "source": "SolidGeo",
+  "problem_text_cn": "",
+  "problem_text_en": "",
+  "problem_img": [
+    "images\\346.jpg"
+  ],
+  "construction_cdl": [
+    "Shape(AB,BA)",
+    "Shape(PQ,QP)",
+    "Shape(CD,DC)",
+    "Cocircular(A)",
+    "Cocircular(B)",
+    "Cocircular(C)",
+    "Cocircular(D)",
+    "Cocircular(P)",
+    "Cocircular(Q)",
+    "Coplanar(U,A)",
+    "Coplanar(V,BC)",
+    "Coplanar(W,DP)",
+    "Coplanar(X,Q)"
+  ],
+  "text_cdl": [],
+  "image_cdl": [
+    "Cylinder(C,D)",
+    "Equal(HeightOfCylinder(A,B),20)",
+    "Cylinder(A,B)",
+    "Equal(HeightOfCylinder(P,Q),Mul(2,HeightOfCylinder(A,B)))",
+    "Equal(RadiusOfCircle(A),20)",
+    "Equal(RadiusOfCircle(P),Mul(3,HeightOfCylinder(A,B)))",
+    "Equal(RadiusOfCircle(C),Mul(2,HeightOfCylinder(A,B)))",
+    "Cylinder(P,Q)",
+    "Equal(HeightOfCylinder(C,D),HeightOfCylinder(A,B))"
+  ],
+  "goal_cdl": "Value(Add(LateralareaOfCylinder(A,B),LateralareaOfCylinder(C,D),LateralareaOfCylinder(P,Q),AreaOfCircle(A),Sub(AreaOfCircle(C),AreaOfCircle(B)),Sub(AreaOfCircle(P),AreaOfCircle(D))))",
+  "problem_answer": "33929",
+  "problem_type": [
+    "Composite Solid Structures"
+  ],
+  "complexity_level": "Level 2",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

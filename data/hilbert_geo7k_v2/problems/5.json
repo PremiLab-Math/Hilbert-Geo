@@ -1,0 +1,26 @@
+{
+  "problem_id": 5,
+  "annotation": "",
+  "source": "SolidGeo",
+  "problem_text_en": "Find the volume of a concrete pipe with length 13 metres. Write your answer correct to two decimal places.",
+  "construction_cdl": [
+    "Shape(OP,PO)",
+    "Cocircular(O)",
+    "Cocircular(P)"
+  ],
+  "text_cdl": [
+    "Equal(LengthOfLine(O,P),13)"
+  ],
+  "image_cdl": [
+    "Cylinder(O,P)",
+    "Equal(RadiusOfCircle(O),7)",
+    "Equal(RadiusOfCircle(P),3)",
+    "Equal(HeightOfCylinder(O,P),13)"
+  ],
+  "goal_cdl": "Value(VolumeOfCylinder(O,P))",
+  "problem_answer": "2544.69",
+  "problem_type": [],
+  "complexity_level": "",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": "{\"START\": []}"
+}

@@ -1,0 +1,25 @@
+{
+  "problem_id": 12,
+  "annotation": "",
+  "source": "SolidGeo",
+  "problem_text_en": "Find the volume of the solid figure pictured here. The radius is 4.1 centimeters.\n\n(Give your answer correct to 1 decimal place.)",
+  "construction_cdl": [
+    "Shape(OP,PO)",
+    "Cocircular(O)"
+  ],
+  "text_cdl": [
+    "Equal(RadiusOfCircle(O),4.1)",
+    "Equal(HeightOfCone(O,P),12.5)"
+  ],
+  "image_cdl": [
+    "Cone(O,P)",
+    "Equal(RadiusOfCircle(O),4.1)",
+    "Equal(HeightOfCone(O,P),12.5)"
+  ],
+  "goal_cdl": "Value(VolumeOfCone(O,P))",
+  "problem_answer": "110.9",
+  "problem_type": [],
+  "complexity_level": "",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": "{\"START\": []}"
+}

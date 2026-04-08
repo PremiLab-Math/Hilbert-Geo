@@ -1,0 +1,42 @@
+{
+  "problem_id": 934,
+  "annotation": "",
+  "annotation_img": "",
+  "source": "SolidGeo",
+  "problem_text_cn": "",
+  "problem_text_en": "The following is a right pyramid on a square base. A right pyramid has its apex aligned directly above the centre of its base.\n\nUse your answer from part (a) to find the length of VW, the perpendicular height of the pyramid correct to two decimal places.",
+  "problem_img": [
+    "images\\233.jpg"
+  ],
+  "construction_cdl": [
+    "Shape(OP,PO)",
+    "Cocircular(O)"
+  ],
+  "text_cdl": [
+    "Cone(O,P)",
+    "Sphere(O)",
+    "IsCentreOfCircle(O,O)",
+    "IsCentreOfSphere(O,O)",
+    "Equal(HeightOfCone(O,P),12)",
+    "Equal(RadiusOfCircle(O),3)",
+    "Equal(RadiusOfSphere(O),3)"
+  ],
+  "image_cdl": [
+    "Cone(O,P)",
+    "Sphere(O)",
+    "IsCentreOfCircle(O,O)",
+    "IsCentreOfSphere(O,O)",
+    "Equal(RadiusOfCircle(O),3)",
+    "Equal(RadiusOfSphere(O),3)"
+  ],
+  "goal_cdl": "Value(Add(VolumeOfCone(O,P),Mul(1/2,VolumeOfSphere(O))))",
+  "problem_answer": "169.65",
+  "problem_type": [
+    "Measurement of Solid Geometric Forms"
+  ],
+  "complexity_level": "Level 1",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

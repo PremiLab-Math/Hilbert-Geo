@@ -1,0 +1,43 @@
+{
+  "problem_id": 318,
+  "annotation": "",
+  "annotation_img": "",
+  "source": "SolidGeo",
+  "problem_text_cn": "",
+  "problem_text_en": "",
+  "problem_img": [
+    "images\\318.jpg"
+  ],
+  "construction_cdl": [
+    "Shape(AB,BC,CD,DA)",
+    "Shape(EF,FG,GH,HE)",
+    "Shape(AE,EF,FB,BA)",
+    "Shape(BC,CG,GF,FB)",
+    "Shape(CD,DH,HG,GC)",
+    "Shape(DA,AE,EH,HD)",
+    "Shape(EFI)",
+    "Shape(HGJ)"
+  ],
+  "text_cdl": [],
+  "image_cdl": [
+    "RightTriangularPrism(EFI,HGJ)",
+    "Equal(LengthOfLine(EF),5)",
+    "Cuboid(ABCDEFGH)",
+    "Equal(LengthOfLine(BC),10)",
+    "Equal(LengthOfLine(AB),5)",
+    "Equal(LengthOfLine(FG),10)",
+    "Equal(LengthOfLine(IM),3)",
+    "Equal(LengthOfLine(AE),6)",
+    "Equal(HeightOfTriangle(EFI),3)"
+  ],
+  "goal_cdl": "Value(Add(Mul(LengthOfLine(AB),LengthOfLine(BC)),Mul(2,Mul(LengthOfLine(AE),LengthOfLine(AB))),Mul(2,Mul(LengthOfLine(AE),LengthOfLine(BC))),Mul(2,Mul(0.5,Mul(LengthOfLine(EF),LengthOfLine(IM)))),Mul(2,Mul(LengthOfLine(FG),Sqrt(Add(Pow(LengthOfLine(IM),2),Pow(Mul(LengthOfLine(EF),0.5),2)))))))",
+  "problem_answer": "323.10",
+  "problem_type": [
+    "Measurement of Solid Geometric Forms"
+  ],
+  "complexity_level": "Level 1",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

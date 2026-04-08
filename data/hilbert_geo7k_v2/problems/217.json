@@ -1,0 +1,26 @@
+{
+  "problem_id": 217,
+  "annotation": "",
+  "source": "SolidGeo",
+  "problem_text_en": "Find the volume of the prism shown.",
+  "construction_cdl": [
+    "Shape(ABCD,EFGH)",
+    "Coplanar(ABCD,EFGH)"
+  ],
+  "text_cdl": [
+    "AreaOfPolygon(ABCD)",
+    "Equal(AreaOfPolygon(ABCD),30)",
+    "Equal(HeightOfPrism(ABCD,EFGH),9)"
+  ],
+  "image_cdl": [
+    "Prism(ABCD,EFGH)",
+    "Equal(AreaOfPolygon(ABCD),30)",
+    "Equal(HeightOfPrism(ABCD,EFGH),9)"
+  ],
+  "goal_cdl": "Value(VolumeOfPrism(ABCD,EFGH))",
+  "problem_answer": "270",
+  "problem_type": [],
+  "complexity_level": "",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": "{\"START\": []}"
+}

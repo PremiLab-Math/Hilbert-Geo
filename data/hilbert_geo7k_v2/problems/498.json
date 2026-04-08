@@ -1,0 +1,24 @@
+{
+  "problem_id": 498,
+  "annotation": "",
+  "source": "SolidGeo",
+  "problem_text_en": "The height h of the cylinder is 39. Find the surface area of the cylinder.",
+  "construction_cdl": [
+    "Shape(OP,PO)",
+    "Cocircular(O)",
+    "Cocircular(P)"
+  ],
+  "text_cdl": [
+    "Equal(HeightOfCylinder(O,P),39)"
+  ],
+  "image_cdl": [
+    "Cylinder(O,P)",
+    "Equal(RadiusOfCircle(O),7)"
+  ],
+  "goal_cdl": "Value(SurfaceAreaOfCylinder(O,P))",
+  "problem_answer": "2036",
+  "problem_type": [],
+  "complexity_level": "",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": "{\"START\": []}"
+}

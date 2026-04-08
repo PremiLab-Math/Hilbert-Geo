@@ -1,0 +1,23 @@
+{
+  "problem_id": 13,
+  "annotation": "",
+  "source": "SolidGeo",
+  "problem_text_en": "Find the volume of the cone pictured. The perpendicular height is 6.\n\n(Give your answer correct to 2 decimal places.)",
+  "construction_cdl": [
+    "Shape(OP,PO)",
+    "Cocircular(O)"
+  ],
+  "text_cdl": [
+    "Equal(HeightOfCone(O,P),6)"
+  ],
+  "image_cdl": [
+    "Cone(O,P)",
+    "Equal(RadiusOfCircle(O),3)"
+  ],
+  "goal_cdl": "Value(VolumeOfCone(O,P))",
+  "problem_answer": "56.55",
+  "problem_type": [],
+  "complexity_level": "",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": "{\"START\": []}"
+}

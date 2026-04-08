@@ -1,0 +1,27 @@
+{
+  "problem_id": 699,
+  "annotation": "",
+  "source": "SolidGeo",
+  "problem_text_en": "Consider the solid below. Lengths of BC is 4.\n Prove that AE is parallel to BF.",
+  "construction_cdl": [
+    "Shape(AB,BC,CD,DA,AE,BF,EF)",
+    "Collinear(A,B,C,D)",
+    "Collinear(E,F,X)",
+    "Coplanar(AE,BF,EF)"
+  ],
+  "text_cdl": [
+    "Equal(LengthOfLine(B,C),4)",
+    "ParallelBetweenLine(A,E,B,F)"
+  ],
+  "image_cdl": [
+    "Equal(LengthOfLine(A,B),10)",
+    "Equal(LengthOfLine(E,F),15)",
+    "ParallelBetweenLine(A,E,B,F)"
+  ],
+  "goal_cdl": "ParallelBetweenLine(A,E,B,F)",
+  "problem_answer": "True",
+  "problem_type": [],
+  "complexity_level": "",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": "{\"START\": []}"
+}

@@ -1,0 +1,27 @@
+{
+  "problem_id": 837,
+  "annotation": "ShiyuShen_2025-08-23",
+  "annotation_img": "ShiyuShen_2025-08-23",
+  "source": "SolidGeo",
+  "problem_text_cn": "这个球的半径是8.8厘米。求出球体的体积，把答案精确到小数点后两位。",
+  "problem_text_en": "The radius of the sphere is 8.8 centimeters. Find the volume of the sphere, giving your answer correct to two decimal places.",
+  "problem_img": "images\\837.png",
+  "construction_cdl": [
+    "Shape(O)",
+    "Cospherical(O)"
+  ],
+  "text_cdl": [
+    "Equal(RadiusOfSphere(O),8.8)"
+  ],
+  "image_cdl": [
+    "Sphere(O)",
+    "IsCentreOfSphere(O,O)",
+    "Equal(RadiusOfSphere(O),8.8)"
+  ],
+  "goal_cdl": "Value(VolumeOfSphere(O))",
+  "problem_answer": "2854.54",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

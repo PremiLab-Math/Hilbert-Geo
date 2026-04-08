@@ -1,0 +1,27 @@
+{
+  "problem_id": 874,
+  "annotation": "",
+  "annotation_img": "",
+  "source": "SolidGeo",
+  "problem_text_cn": "计算固体的体积。精确到小数点后一位。",
+  "problem_text_en": "Calculate the volume of the solid. Correct to one decimal place.",
+  "problem_img": "images\\874.png",
+  "construction_cdl": [
+    "Shape(PQ,QP)",
+    "Cocircular(P)",
+    "Cocircular(Q)"
+  ],
+  "text_cdl": [],
+  "image_cdl": [
+    "Cylinder(P,Q)",
+    "IsCentreOfCircle(P,P)",
+    "IsCentreOfCircle(Q,Q)",
+    "Equal(HeightOfCylinder(P,Q),10)"
+  ],
+  "goal_cdl": "Value(VolumeOfCylinder(P,Q))",
+  "problem_answer": "70.7",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

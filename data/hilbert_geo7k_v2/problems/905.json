@@ -1,0 +1,35 @@
+{
+  "problem_id": 905,
+  "annotation": "",
+  "annotation_img": "",
+  "source": "SolidGeo",
+  "problem_text_cn": "",
+  "problem_text_en": "Consider the two similar spheres shown.\nWhat is the ratio of the volume of Sphere A to Sphere B?",
+  "problem_img": [
+    "images\\204.jpg"
+  ],
+  "construction_cdl": [
+    "Shape(A)",
+    "Shape(B)",
+    "Cospherical(A)",
+    "Cospherical(B)"
+  ],
+  "text_cdl": [
+    "Sphere(A)",
+    "Sphere(B)",
+    "Equal(RadiusOfSphere(B),12)"
+  ],
+  "image_cdl": [
+    "Equal(RadiusOfSphere(A),3)"
+  ],
+  "goal_cdl": "Value(Div(VolumeOfSphere(A),VolumeOfSphere(B)))",
+  "problem_answer": "1/64",
+  "problem_type": [
+    "Measurement of Solid Geometric Forms"
+  ],
+  "complexity_level": "Level 1",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

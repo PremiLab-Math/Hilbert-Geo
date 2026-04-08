@@ -1,0 +1,22 @@
+{
+  "problem_id": 517,
+  "annotation": "",
+  "source": "SolidGeo",
+  "problem_text_en": "As shown in the figure. Determine whether plane U is perpendicular to plane V.",
+  "construction_cdl": [
+    "Plane(U)",
+    "Plane(V)"
+  ],
+  "text_cdl": [
+    "Determine whether PerpendicularBetweenPlane(U,V)"
+  ],
+  "image_cdl": [
+    "PerpendicularBetweenPlane(U,V)"
+  ],
+  "goal_cdl": "Value(PerpendicularBetweenPlane(U,V))",
+  "problem_answer": "True",
+  "problem_type": [],
+  "complexity_level": "",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": "{\"START\": []}"
+}

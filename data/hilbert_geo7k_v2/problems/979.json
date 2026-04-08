@@ -1,0 +1,46 @@
+{
+  "problem_id": 979,
+  "annotation": "",
+  "annotation_img": "",
+  "source": "SolidGeo",
+  "problem_text_cn": "",
+  "problem_text_en": "",
+  "problem_img": [
+    "images\\278.jpg"
+  ],
+  "construction_cdl": [
+    "Shape(PA,AB,BQ,QB,BA,PA)",
+    "Collinear(PABQ)",
+    "Cocircular(Q)",
+    "Cocircular(P)",
+    "Cospherical(A)",
+    "Cospherical(B)"
+  ],
+  "text_cdl": [
+    "Equal(HeightOfCylinder(P,Q),10)",
+    "Equal(RadiusOfCircle(Q),2.5)",
+    "Equal(RadiusOfCircle(P),2.5)"
+  ],
+  "image_cdl": [
+    "Cylinder(P,Q)",
+    "Sphere(A)",
+    "Sphere(B)",
+    "IsCentreOfCircle(P,P)",
+    "IsCentreOfCircle(Q,Q)",
+    "IsCentreOfSphere(A,A)",
+    "IsCentreOfSphere(B,B)",
+    "Equal(RadiusOfCircle(P),RadiusOfSphere(A))",
+    "Equal(RadiusOfCircle(Q),RadiusOfSphere(B))",
+    "Equal(Add(DiameterOfSphere(B),DiameterOfSphere(A)),HeightOfCylinder(P,Q))"
+  ],
+  "goal_cdl": "Value(AreaOfSphere(A))",
+  "problem_answer": "78.5",
+  "problem_type": [
+    "Composite Solid Structures"
+  ],
+  "complexity_level": "Level 2",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "problem_id": 838,
+  "annotation": "ShiyuShen_2025-08-23",
+  "annotation_img": "ShiyuShen_2025-08-23",
+  "source": "SolidGeo",
+  "problem_text_cn": "球体的半径是22.36毫米。求出所示球体的体积，把答案精确到小数点后两位。",
+  "problem_text_en": "The radius of the sphere is 22.36 millimeters. Find the volume of the sphere shown, giving your answer correct to two decimal places.",
+  "problem_img": "images\\838.png",
+  "construction_cdl": [
+    "Shape(O)",
+    "Cospherical(O)"
+  ],
+  "text_cdl": [
+    "Equal(RadiusOfSphere(O),22.36)"
+  ],
+  "image_cdl": [
+    "Sphere(O)",
+    "IsCentreOfSphere(O,O)",
+    "Equal(RadiusOfSphere(O),22.36)"
+  ],
+  "goal_cdl": "Value(VolumeOfSphere(O))",
+  "problem_answer": "46827.83",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

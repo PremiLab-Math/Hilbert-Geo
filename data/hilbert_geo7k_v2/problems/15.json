@@ -1,0 +1,24 @@
+{
+  "problem_id": 15,
+  "annotation": "",
+  "source": "SolidGeo",
+  "problem_text_en": "Find the volume of the sphere shown. The diameter is 4 centimeters.\n\nRound your answer to two decimal places.",
+  "construction_cdl": [
+    "Shape(O)",
+    "Cospherical(O)",
+    "Equal(DiameterOfSphere(O),4)"
+  ],
+  "text_cdl": [
+    "Equal(DiameterOfSphere(O),4)"
+  ],
+  "image_cdl": [
+    "Sphere(O)",
+    "Equal(DiameterOfSphere(O),4)"
+  ],
+  "goal_cdl": "Value(VolumeOfSphere(O))",
+  "problem_answer": "33.51",
+  "problem_type": [],
+  "complexity_level": "",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": "{\"START\": []}"
+}

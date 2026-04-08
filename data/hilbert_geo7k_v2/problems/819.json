@@ -1,0 +1,48 @@
+{
+  "problem_id": 819,
+  "annotation": "",
+  "annotation_img": "",
+  "source": "SolidGeo",
+  "problem_text_cn": "",
+  "problem_text_en": "The figure above shows a triangular prism whose base is a equilateral triangle with side lengths $x$ and height $\\sqrt{3} x$. If the volume of the prism is $\\frac{81}{4}$, what is the value of $x$ ? A. 3\n B. 4\n C. 5\n D. 6\n",
+  "problem_img": "images\\819.png",
+  "construction_cdl": [
+    "Shape(AB,BC,CA)",
+    "Shape(DE,EF,FD)",
+    "Shape(AD,DE,EB,BA)",
+    "Shape(BE,EF,FC,CB)",
+    "Shape(CA,AD,DF,FC)",
+    "Coplanar(U,ABC)",
+    "Coplanar(V,DEF)",
+    "Coplanar(W,ADEB)",
+    "Coplanar(X,BEFC)",
+    "Coplanar(Y,CFDA)"
+  ],
+  "text_cdl": [
+    "Prism(U,V)",
+    "RightTriangularPrism(ABC,DEF)",
+    "Equal(HeightOfTriangularPrism(ABC,DEF),sqrt(3)*x)",
+    "Equal(LengthOfLine(AB),x)",
+    "Equal(LengthOfLine(BC),x)",
+    "Equal(LengthOfLine(CA),x)",
+    "Equal(VolumeOfTrigularPrism(ABC,DEF),81/4)"
+  ],
+  "image_cdl": [
+    "Prism(U,V)",
+    "RightTriangularPrism(ABC,DEF)",
+    "Equal(HeightOfTriangularPrism(ABC,DEF),sqrt(3)*x)",
+    "Equal(LengthOfLine(AB),x)",
+    "Equal(LengthOfLine(BC),x)",
+    "Equal(LengthOfLine(CA),x)"
+  ],
+  "goal_cdl": "Value(x)",
+  "problem_answer": "3",
+  "problem_type": [
+    "Measurement of Solid Geometric Forms"
+  ],
+  "complexity_level": "Level 1",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "problem_id": 200,
+  "annotation": "",
+  "source": "SolidGeo",
+  "problem_text_en": "Find the surface area of the figure shown, rounded to two decimal places.",
+  "construction_cdl": [
+    "Shape(O,P,Q,R,S,T,U,V)",
+    "Shape(OP, PQ, QR, RS, ST, TU, UV, VO)",
+    "Cocircular(O,P,Q,R)",
+    "Cocircular(S,T,U,V)"
+  ],
+  "text_cdl": [
+    "Equal(RadiusOfCircle(O),5)",
+    "Equal(HeightOfCylinder(O,S),12)"
+  ],
+  "image_cdl": [
+    "Cylinder(O,S)",
+    "Equal(RadiusOfCircle(O),5)",
+    "Equal(HeightOfCylinder(O,S),12)"
+  ],
+  "goal_cdl": "Value(SurfaceAreaOfCylinder(O,S))",
+  "problem_answer": "534.07",
+  "problem_type": [],
+  "complexity_level": "",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": "{\"START\": []}"
+}

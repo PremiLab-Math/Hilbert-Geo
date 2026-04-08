@@ -1,0 +1,30 @@
+{
+  "problem_id": 714,
+  "annotation": "RuoranXu_2025-08-09",
+  "annotation_img": "RuoranXu_2025-08-09",
+  "source": "SolidGeo",
+  "problem_text_cn": "求图中圆锥体的体积。垂直高度是6。\n\n（把你的答案精确到小数点后两位）",
+  "problem_text_en": "Find the volume of the cone pictured. The perpendicular height is 6.\n\n(Give your answer correct to 2 decimal places.)",
+  "problem_img": "images\\714.png",
+  "construction_cdl": [
+    "Shape(OP,PO)",
+    "Cocircular(O)"
+  ],
+  "text_cdl": [
+    "Cone(O,P)",
+    "IsCentreOfCircle(O,O)",
+    "Equal(HeightOfCone(O,P),6)"
+  ],
+  "image_cdl": [
+    "Cone(O,P)",
+    "IsCentreOfCircle(O,O)",
+    "Equal(HeightOfCone(O,P),6)",
+    "Equal(RadiusOfCircle(O),3)"
+  ],
+  "goal_cdl": "Value(VolumeOfCone(O,P))",
+  "problem_answer": "56.55",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

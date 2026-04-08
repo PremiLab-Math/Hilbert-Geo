@@ -1,0 +1,28 @@
+{
+  "problem_id": 147,
+  "annotation": "",
+  "source": "SolidGeo",
+  "problem_text_en": "Consider the solid pictured and answer the following:\n\nHence what is the total surface area? The outer radius is 11 cm, inner radius is 10 cm and length 24 cm.\n\nGive your answer to the nearest two decimal places.",
+  "construction_cdl": [
+    "Shape(OP,PO)",
+    "Cocircular(O)",
+    "Cocircular(P)"
+  ],
+  "text_cdl": [
+    "Equal(RadiusOfCircle(O),11)",
+    "Equal(RadiusOfCircle(P),10)",
+    "Equal(HeightOfCylinder(O,P),24)"
+  ],
+  "image_cdl": [
+    "Cylinder(O,P)",
+    "Equal(RadiusOfCircle(O),11)",
+    "Equal(RadiusOfCircle(P),10)",
+    "Equal(HeightOfCylinder(O,P),24)"
+  ],
+  "goal_cdl": "Value(SurfaceAreaOfCylinder(O,P))",
+  "problem_answer": "3494.69",
+  "problem_type": [],
+  "complexity_level": "",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": "{\"START\": []}"
+}

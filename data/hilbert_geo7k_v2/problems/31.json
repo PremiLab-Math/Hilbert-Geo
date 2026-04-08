@@ -1,0 +1,25 @@
+{
+  "problem_id": 31,
+  "annotation": "",
+  "source": "SolidGeo",
+  "problem_text_en": "Find the surface area of the solid figure shown.\n\nRound your answer to two decimal places.",
+  "construction_cdl": [
+    "Shape(O)",
+    "Cospherical(O)",
+    "Equal(RadiusOfSphere(O),9)"
+  ],
+  "text_cdl": [
+    "Find the surface area of the solid figure shown",
+    "Equal(RadiusOfSphere(O),9)"
+  ],
+  "image_cdl": [
+    "Sphere(O)",
+    "Equal(RadiusOfSphere(O),9)"
+  ],
+  "goal_cdl": "Value(AreaOfSphere(O))",
+  "problem_answer": "1017.88",
+  "problem_type": [],
+  "complexity_level": "",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": "{\"START\": []}"
+}

@@ -1,0 +1,34 @@
+{
+  "problem_id": 950,
+  "annotation": "",
+  "annotation_img": "",
+  "source": "SolidGeo",
+  "problem_text_cn": "",
+  "problem_text_en": "",
+  "problem_img": [
+    "images\\249.jpg"
+  ],
+  "construction_cdl": [
+    "Shape(OP,PO)",
+    "Cocircular(O)"
+  ],
+  "text_cdl": [
+    "Equal(DiameterOfCircle(O),3)"
+  ],
+  "image_cdl": [
+    "Cone(O,P)",
+    "IsCentreOfCircle(O,O)",
+    "Equal(DiameterOfCircle(O),3)",
+    "Equal(BusbarOfCone(O,P),9)"
+  ],
+  "goal_cdl": "Value(Mul(1/2,VolumeOfCone(O,P)))",
+  "problem_answer": "10.45",
+  "problem_type": [
+    "Measurement of Solid Geometric Forms"
+  ],
+  "complexity_level": "Level 1",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

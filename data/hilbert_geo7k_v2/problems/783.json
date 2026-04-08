@@ -1,0 +1,62 @@
+{
+  "problem_id": 783,
+  "annotation": "",
+  "annotation_img": "",
+  "source": "SolidGeo",
+  "problem_text_cn": "",
+  "problem_text_en": "Assume that both boxes are identical in size. The middle cylinder has radius of 6 and height of 11.\nFind the surface area of the solid.\n\nRound your answer to two decimal places.",
+  "problem_img": "images\\783.png",
+  "construction_cdl": [
+    "Shape(PQ,QP)",
+    "Shape(AB,BC,CD,DA)",
+    "Shape(EF,FG,GH,HE)",
+    "Shape(AE,EF,FB,BA)",
+    "Shape(CD,DH,HG,GC)",
+    "Shape(AE,EH,HD,DA)",
+    "Shape(BC,CG,GF,FB)",
+    "Shape(IJ,JK,KL,LI)",
+    "Shape(IJ,JN,NM,MI)",
+    "Shape(JK,KO,ON,NJ)",
+    "Shape(KL,LS,SO,OK)",
+    "Shape(IL,LS,SM,MI)",
+    "Shape(MN,NO,OS,SM)",
+    "Coplanar(R,SIJKL)",
+    "Coplanar(T,MNOS)",
+    "Cocircular(P)",
+    "Cocircular(Q)",
+    "Coplanar(U,ABCDQ)",
+    "Coplanar(V,EFGH)",
+    "Coplanar(W,AEFBIJNM)",
+    "Coplanar(X,ADHEJNOK)",
+    "Coplanar(Y,CBFGIJSM)",
+    "Coplanar(Z,CGHDSOKL)"
+  ],
+  "text_cdl": [
+    "Cuboid(ABCDEFGH)",
+    "Cuboid(IJKLMNOP)",
+    "Cylinder(Q,R)",
+    "Equal(LengthOfLine(AB),33)",
+    "Equal(LengthOfLine(BC),25)",
+    "Equal(LengthOfLine(AE),20)",
+    "Equal(LengthOfLine(IJ),33)",
+    "Equal(LengthOfLine(JK),25)",
+    "Equal(LengthOfLine(IM),20)",
+    "Equal(RadiusOfCircle(Q),6)",
+    "Equal(HeightOfCylinder(Q,R),11)"
+  ],
+  "image_cdl": [
+    "Equal(LengthOfLine(AB),33)",
+    "Equal(LengthOfLine(BC),25)",
+    "Equal(LengthOfLine(AE),20)"
+  ],
+  "goal_cdl": "Value(Add(Sub(AreaOfCuboid(ABCDEFGH),AreaOfCircle(Q)),LateralareaOfCylinder(P,Q),Sub(AreaOfCuboid(IJKLMNOS),AreaOfCircle(P))))",
+  "problem_answer": "8128.50",
+  "problem_type": [
+    "Composite Solid Structures"
+  ],
+  "complexity_level": "Level 2",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "problem_id": 84,
+  "annotation": "",
+  "source": "SolidGeo",
+  "problem_text_en": "Consider the two similar spheres shown. The smaller sphere has radius $3$ cm while the larger sphere has a radius of 12 cm.\n\n\nFind the volume of Sphere A, in simplest exact form.",
+  "construction_cdl": [
+    "Shape(A)",
+    "Shape(B)",
+    "Cospherical(A)",
+    "Cospherical(B)"
+  ],
+  "text_cdl": [
+    "Equal(RadiusOfSphere(A),3)",
+    "Equal(RadiusOfSphere(B),12)",
+    "SimilarBetweenSphere(A,B)"
+  ],
+  "image_cdl": [
+    "Sphere(A)",
+    "Sphere(B)",
+    "Equal(RadiusOfSphere(A),3)",
+    "Equal(RadiusOfSphere(B),12)"
+  ],
+  "goal_cdl": "Value(VolumeOfSphere(A))",
+  "problem_answer": "36*pi",
+  "problem_type": [],
+  "complexity_level": "",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": "{\"START\": []}"
+}

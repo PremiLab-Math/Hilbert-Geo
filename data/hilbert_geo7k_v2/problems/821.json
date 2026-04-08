@@ -1,0 +1,28 @@
+{
+  "problem_id": 821,
+  "annotation": "RuoranXu_2025-08-08",
+  "annotation_img": "RuoranXu_2025-08-08",
+  "source": "SolidGeo",
+  "problem_text_cn": "立体图形的垂直高度为12米。\n\n因此，求出实心图形底的直径的长度。",
+  "problem_text_en": "The perpendicular height of the solid figure is 12m.\n\nHence, find the length of the diameter of the solid figure's base.",
+  "problem_img": "images\\821.png",
+  "construction_cdl": [
+    "Shape(OP,PO)",
+    "Cocircular(O)"
+  ],
+  "text_cdl": [
+    "Equal(HeightOfCone(O,P),12)"
+  ],
+  "image_cdl": [
+    "Cone(O,P)",
+    "IsCentreOfCircle(O,O)",
+    "Equal(HeightOfCone(O,P),12)",
+    "Equal(BusbarOfCone(O,P),13)"
+  ],
+  "goal_cdl": "Value(DiameterOfCircle(O))",
+  "problem_answer": "10",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

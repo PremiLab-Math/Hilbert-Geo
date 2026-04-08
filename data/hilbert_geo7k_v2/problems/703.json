@@ -1,0 +1,28 @@
+{
+  "problem_id": 703,
+  "annotation": "RuoranXu_2025-08-08",
+  "annotation_img": "RuoranXu_2025-08-08",
+  "source": "SolidGeo",
+  "problem_text_cn": "该图显示了一个立体图形，倾斜高度为13米。实心图形底的半径用r表示。求r的值。",
+  "problem_text_en": "The diagram shows a solid figure with a slant height of 13 m. The radius of the base of the solid figure is denoted by $r$.\n\nFind the value of $r$.",
+  "problem_img": "images\\703.png",
+  "construction_cdl": [
+    "Shape(OP,PO)",
+    "Cocircular(O)"
+  ],
+  "text_cdl": [
+    "Equal(BusbarOfCone(O,P),13)"
+  ],
+  "image_cdl": [
+    "Cone(O,P)",
+    "IsCentreOfCircle(O,O)",
+    "Equal(HeightOfCone(O,P),12)",
+    "Equal(BusbarOfCone(O,P),13)"
+  ],
+  "goal_cdl": "Value(RadiusOfCircle(O))",
+  "problem_answer": "5",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

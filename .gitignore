@@ -1,0 +1,139 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs and temporary files
+logs/
+search_logs/
+*.log
+*.out
+*.txt
+!README*.txt
+!requirements*.txt
+
+# Test results and outputs
+test_results/
+test_output/
+*_test_results_*/
+*_results_*/
+evaluation_results/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+*.swp
+*.swo
+result.txt
+search_test_output_*.txt
+
+# Data files (keep structure but ignore large generated files)
+data/generated_output/
+data/*.jsonl
+!data/dataset_info.txt
+
+# Compressed files
+*.zip
+*.tar.gz
+*.rar
+
+# Images (keep source images, ignore generated)
+*.png
+*.jpg
+*.jpeg
+*.svg
+!src/fgps/formalgeo/images*/
+!src/fgps/formalgeo/images*/
+!src/fgps/formalgeo/gdl/pic/
+!gemini/images/
+!figures/*.pdf
+
+# Temporary datasets
+temp_datasets/
+gemoni/
+
+# Scripts (keep core, ignore temporary)
+*.bat
+*.sh
+*.ps1
+!src/**/*.sh
+!formalgeo/**/*.sh
+
+# Temporary test and fix scripts (only in root directory)
+/test_*.py
+/fix_*.py
+/debug_*.py
+/check_*.py
+/update_*.py
+/extract_*.py
+/analyze_*.py
+/compare_*.py
+/calc_*.py
+/create_*.py
+/convert_*.py
+/validate_*.py
+/reset_*.py
+/correct_*.py
+/batch_*.py
+/quick_*.py
+/generate_*.py
+/geogebra_*.py
+/retest_*.py
+/evaluate_*.py
+/example_*.py
+
+# Keep core files
+!run.py
+!src/**/*.py
+!formalgeo/**/*.py
+!gemini/**/*.py
+
+# JSON files (keep config, ignore results)
+*_results.json
+*_final.json
+*_merged.json
+*_fuzzy.json
+1_hypertree.json
+
+# Other temporary files
+代码文件清单.txt
+my_clean_test_set*.jsonl
+my_clean_tes
+
+# HPC and system files
+*.out
+run_search_*.out
+

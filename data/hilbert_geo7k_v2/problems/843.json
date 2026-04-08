@@ -1,0 +1,32 @@
+{
+  "problem_id": 843,
+  "annotation": "ShiyuShen_2025-08-23",
+  "annotation_img": "ShiyuShen_2025-08-23",
+  "source": "SolidGeo",
+  "problem_text_cn": "求给定圆柱体的表面积。高是80，半径是98。图表中所有的测量单位都是毫米。把你的答案四舍五入到小数点后两位。",
+  "problem_text_en": "Find the surface area of the given cylinder. The height is 80 and radius is 98. All measurements in the diagram are in mm.\n\nRound your answer to two decimal places.",
+  "problem_img": "images\\843.png",
+  "construction_cdl": [
+    "Shape(PQ,QP)",
+    "Cocircular(P)",
+    "Cocircular(Q)"
+  ],
+  "text_cdl": [
+    "Cylinder(P,Q)",
+    "Equal(HeightOfCylinder(P,Q),80)",
+    "Equal(RadiusOfCircle(P),98)"
+  ],
+  "image_cdl": [
+    "Cylinder(O,P)",
+    "IsCentreOfCircle(P,P)",
+    "IsCentreOfCircle(Q,Q)",
+    "Equal(HeightOfCylinder(P,Q),80)",
+    "Equal(RadiusOfCircle(P),98)"
+  ],
+  "goal_cdl": "Value(Add(AreaOfCircle(P),AreaOfCircle(Q),LateralareaOfCylinder(P,Q)))",
+  "problem_answer": "109603.88",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

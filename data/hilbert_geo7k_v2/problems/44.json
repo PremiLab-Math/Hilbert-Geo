@@ -1,0 +1,32 @@
+{
+  "problem_id": 44,
+  "annotation": "",
+  "source": "SolidGeo",
+  "problem_text_en": "The following is a right pyramid on a square base with side length 12cm. \n\nNow, if the size of \\angle VAW is \\theta °, find \\theta  to two decimal places.",
+  "construction_cdl": [
+    "Shape(AB, BC, CD, DA, VA, VB, VC, VD)",
+    "Shape(A, B, C, D, V, W)",
+    "Square(ABCD)",
+    "RegularQuadrangularPyramid(V, ABCD)",
+    "IsAltitudeOfQuadrilateral(V, ABCD)"
+  ],
+  "text_cdl": [
+    "RegularQuadrangularPyramid(V, ABCD)",
+    "Square(ABCD)",
+    "Equal(SideLengthOfCube(AB), 12)",
+    "MeasureOfAngle(VAW, θ)"
+  ],
+  "image_cdl": [
+    "RegularQuadrangularPyramid(V, ABCD)",
+    "Square(ABCD)",
+    "Equal(LengthOfLine(AB), 12)",
+    "Equal(HeightOfQuadrangularPyramid(V, ABCD), 23)",
+    "MeasureOfAngle(VAW, θ)"
+  ],
+  "goal_cdl": "Value(MeasureOfAngle(VAW))",
+  "problem_answer": "27.27",
+  "problem_type": [],
+  "complexity_level": "",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": "{\"START\": []}"
+}

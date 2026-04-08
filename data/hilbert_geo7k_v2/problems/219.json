@@ -1,0 +1,38 @@
+{
+  "problem_id": 219,
+  "annotation": "",
+  "source": "SolidGeo",
+  "problem_text_en": "The solid in the figure is constructed by 3 segments, 2 of segments are same cylinder on each side of the solid. Calculate the volume of the solid. Round your answer to one decimal place.",
+  "construction_cdl": [
+    "Shape(O1,O2,O3)",
+    "Cocircular(O1)",
+    "Cocircular(O2)",
+    "Cocircular(O3)"
+  ],
+  "text_cdl": [
+    "Cylinder(O1,O2)",
+    "Cylinder(O2,O3)",
+    "Equal(RadiusOfCylinder(O1,O2),8)",
+    "Equal(RadiusOfCylinder(O2,O3),8)",
+    "Equal(HeightOfCylinder(O1,O2),11)",
+    "Equal(HeightOfCylinder(O2,O3),11)",
+    "Equal(HeightOfCylinder(O1,O3),7)",
+    "Equal(RadiusOfCylinder(O1,O3),4)"
+  ],
+  "image_cdl": [
+    "Cylinder(O1,O2)",
+    "Cylinder(O2,O3)",
+    "Equal(RadiusOfCylinder(O1,O2),8)",
+    "Equal(RadiusOfCylinder(O2,O3),8)",
+    "Equal(HeightOfCylinder(O1,O2),11)",
+    "Equal(HeightOfCylinder(O2,O3),11)",
+    "Equal(HeightOfCylinder(O1,O3),7)",
+    "Equal(RadiusOfCylinder(O1,O3),4)"
+  ],
+  "goal_cdl": "Value(VolumeOfCylinder(O1,O2) + VolumeOfCylinder(O2,O3) + VolumeOfCylinder(O1,O3))",
+  "problem_answer": "2460.8",
+  "problem_type": [],
+  "complexity_level": "",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": "{\"START\": []}"
+}

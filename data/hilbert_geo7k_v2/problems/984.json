@@ -1,0 +1,46 @@
+{
+  "problem_id": 984,
+  "annotation": "",
+  "annotation_img": "",
+  "source": "SolidGeo",
+  "problem_text_cn": "",
+  "problem_text_en": "",
+  "problem_img": [
+    "images\\283.jpg"
+  ],
+  "construction_cdl": [
+    "Shape(AB,BC,CD,DA)",
+    "Shape(EF,FG,GH,HE)",
+    "Shape(AE,EF,FB,BA)",
+    "Shape(CD,DH,HG,GC)",
+    "Shape(AH,HD,DA)",
+    "Shape(AE,EH,HA)",
+    "Shape(BC,CG,GF,FB)",
+    "Shape(AH,HG,GA)",
+    "Coplanar(U,ABCD)",
+    "Coplanar(V,EFGH)",
+    "Coplanar(W,AEFB)",
+    "Coplanar(X,ADHE)",
+    "Coplanar(Y,CBFG)",
+    "Coplanar(Z,CGHD)",
+    "Coplanar(R,AHGB)"
+  ],
+  "text_cdl": [
+    "Cube(ABCDEFGH)",
+    "Equal(SideLengthOfCube(ABCDEFGH),7)",
+    "Equal(MeasureOfAngle(AGH),z)"
+  ],
+  "image_cdl": [
+    "Cube(ABCDEFGH)"
+  ],
+  "goal_cdl": "Value(z)",
+  "problem_answer": "54.74",
+  "problem_type": [
+    "Spatial Metric Relations"
+  ],
+  "complexity_level": "Level 2",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

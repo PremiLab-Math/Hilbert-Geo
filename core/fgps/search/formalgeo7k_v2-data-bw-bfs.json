@@ -1,0 +1,485 @@
+{
+  "solved": {
+    "2": {
+      "msg": [],
+      "timing": 0.11930537223815918,
+      "step_size": 0
+    },
+    "1": {
+      "msg": [
+        [
+          "circle_property_length_of_radius_and_diameter",
+          "1",
+          [
+            "O"
+          ]
+        ]
+      ],
+      "timing": 0.12940621376037598,
+      "step_size": 1
+    },
+    "20": {
+      "msg": [
+        [
+          "sphere_volume_formula",
+          "1",
+          [
+            "O"
+          ]
+        ]
+      ],
+      "timing": 0.25531697273254395,
+      "step_size": 1
+    },
+    "17": {
+      "msg": [
+        [
+          "sphere_volume_formula",
+          "1",
+          [
+            "O"
+          ]
+        ]
+      ],
+      "timing": 0.27191972732543945,
+      "step_size": 1
+    },
+    "14": {
+      "msg": [
+        [
+          "sphere_volume_formula",
+          "1",
+          [
+            "O"
+          ]
+        ]
+      ],
+      "timing": 0.30199360847473145,
+      "step_size": 1
+    },
+    "18": {
+      "msg": [
+        [
+          "sphere_volume_formula",
+          "1",
+          [
+            "O"
+          ]
+        ]
+      ],
+      "timing": 0.29776477813720703,
+      "step_size": 1
+    },
+    "19": {
+      "msg": [
+        [
+          "sphere_volume_formula",
+          "1",
+          [
+            "O"
+          ]
+        ]
+      ],
+      "timing": 0.29871463775634766,
+      "step_size": 1
+    },
+    "30": {
+      "msg": [
+        [
+          "sphere_area_formula",
+          "1",
+          [
+            "O"
+          ]
+        ]
+      ],
+      "timing": 0.2898716926574707,
+      "step_size": 1
+    },
+    "34": {
+      "msg": [
+        [
+          "circle_area_formula",
+          "1",
+          [
+            "O"
+          ]
+        ],
+        [
+          "sphere_area_formula",
+          "1",
+          [
+            "O"
+          ]
+        ]
+      ],
+      "timing": 0.28897714614868164,
+      "step_size": 1
+    },
+    "33": {
+      "msg": [
+        [
+          "circle_area_formula",
+          "1",
+          [
+            "O"
+          ]
+        ]
+      ],
+      "timing": 0.29589200019836426,
+      "step_size": 1
+    },
+    "40": {
+      "msg": [
+        [
+          "sphere_area_formula",
+          "1",
+          [
+            "A"
+          ]
+        ]
+      ],
+      "timing": 0.2964601516723633,
+      "step_size": 1
+    },
+    "32": {
+      "msg": [
+        [
+          "sphere_area_formula",
+          "1",
+          [
+            "O"
+          ]
+        ]
+      ],
+      "timing": 0.35039567947387695,
+      "step_size": 1
+    },
+    "35": {
+      "msg": [
+        [
+          "circle_area_formula",
+          "1",
+          [
+            "O"
+          ]
+        ],
+        [
+          "sphere_area_formula",
+          "1",
+          [
+            "O"
+          ]
+        ]
+      ],
+      "timing": 0.35750746726989746,
+      "step_size": 1
+    },
+    "31": {
+      "msg": [
+        [
+          "sphere_area_formula",
+          "1",
+          [
+            "O"
+          ]
+        ],
+        [
+          "sphere_property_length_of_radius_and_diameter",
+          "1",
+          [
+            "O"
+          ]
+        ]
+      ],
+      "timing": 0.418712854385376,
+      "step_size": 1
+    },
+    "36": {
+      "msg": [
+        [
+          "cuboid_area_formula",
+          "1",
+          [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H"
+          ]
+        ],
+        [
+          "circle_area_formula",
+          "1",
+          [
+            "Q"
+          ]
+        ]
+      ],
+      "timing": 0.4300379753112793,
+      "step_size": 1
+    },
+    "15": {
+      "msg": [
+        [
+          "sphere_volume_formula",
+          "1",
+          [
+            "O"
+          ]
+        ],
+        [
+          "sphere_property_length_of_radius_and_diameter",
+          "1",
+          [
+            "O"
+          ]
+        ]
+      ],
+      "timing": 0.5126190185546875,
+      "step_size": 1
+    },
+    "65": {
+      "msg": [
+        [
+          "cube_area_formula",
+          "1",
+          [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H"
+          ]
+        ]
+      ],
+      "timing": 0.35335254669189453,
+      "step_size": 1
+    },
+    "16": {
+      "msg": [
+        [
+          "sphere_volume_formula",
+          "1",
+          [
+            "P"
+          ]
+        ],
+        [
+          "sphere_volume_formula",
+          "1",
+          [
+            "O"
+          ]
+        ],
+        [
+          "sphere_property_length_of_radius_and_diameter",
+          "1",
+          [
+            "P"
+          ]
+        ],
+        [
+          "sphere_property_length_of_radius_and_diameter",
+          "1",
+          [
+            "O"
+          ]
+        ]
+      ],
+      "timing": 0.9751253128051758,
+      "step_size": 1
+    }
+  },
+  "unsolved": {
+    "11": {
+      "msg": "None",
+      "timing": 0.06552934646606445,
+      "step_size": 1
+    },
+    "8": {
+      "msg": "None",
+      "timing": 0.08595728874206543,
+      "step_size": 1
+    },
+    "7": {
+      "msg": "None",
+      "timing": 0.10775256156921387,
+      "step_size": 1
+    },
+    "5": {
+      "msg": "None",
+      "timing": 0.11906981468200684,
+      "step_size": 1
+    },
+    "6": {
+      "msg": "None",
+      "timing": 0.1219029426574707,
+      "step_size": 1
+    },
+    "25": {
+      "msg": "None",
+      "timing": 0.10974359512329102,
+      "step_size": 1
+    },
+    "26": {
+      "msg": "None",
+      "timing": 0.10832405090332031,
+      "step_size": 1
+    },
+    "12": {
+      "msg": "None",
+      "timing": 0.2743349075317383,
+      "step_size": 1
+    },
+    "27": {
+      "msg": "None",
+      "timing": 0.23769831657409668,
+      "step_size": 1
+    },
+    "23": {
+      "msg": "None",
+      "timing": 0.2482309341430664,
+      "step_size": 1
+    },
+    "21": {
+      "msg": "None",
+      "timing": 0.2565751075744629,
+      "step_size": 1
+    },
+    "10": {
+      "msg": "None",
+      "timing": 0.30725789070129395,
+      "step_size": 1
+    },
+    "13": {
+      "msg": "None",
+      "timing": 0.3062887191772461,
+      "step_size": 1
+    },
+    "22": {
+      "msg": "None",
+      "timing": 0.2807807922363281,
+      "step_size": 1
+    },
+    "9": {
+      "msg": "None",
+      "timing": 0.324249267578125,
+      "step_size": 1
+    },
+    "24": {
+      "msg": "None",
+      "timing": 0.3192570209503174,
+      "step_size": 1
+    },
+    "38": {
+      "msg": "None",
+      "timing": 0.2698242664337158,
+      "step_size": 1
+    },
+    "28": {
+      "msg": "None",
+      "timing": 0.3261387348175049,
+      "step_size": 1
+    },
+    "41": {
+      "msg": "None",
+      "timing": 0.25164008140563965,
+      "step_size": 1
+    },
+    "39": {
+      "msg": "None",
+      "timing": 0.27561187744140625,
+      "step_size": 1
+    },
+    "53": {
+      "msg": "None",
+      "timing": 0.05807185173034668,
+      "step_size": 1
+    },
+    "52": {
+      "msg": "None",
+      "timing": 0.08302044868469238,
+      "step_size": 1
+    },
+    "56": {
+      "msg": "None",
+      "timing": 0.058892011642456055,
+      "step_size": 1
+    },
+    "55": {
+      "msg": "None",
+      "timing": 0.0632774829864502,
+      "step_size": 1
+    },
+    "57": {
+      "msg": "None",
+      "timing": 0.05838942527770996,
+      "step_size": 1
+    },
+    "54": {
+      "msg": "None",
+      "timing": 0.08435249328613281,
+      "step_size": 1
+    },
+    "59": {
+      "msg": "None",
+      "timing": 0.06357765197753906,
+      "step_size": 1
+    },
+    "60": {
+      "msg": "None",
+      "timing": 0.06362533569335938,
+      "step_size": 1
+    },
+    "61": {
+      "msg": "None",
+      "timing": 0.06574225425720215,
+      "step_size": 1
+    },
+    "58": {
+      "msg": "None",
+      "timing": 0.09192347526550293,
+      "step_size": 1
+    },
+    "63": {
+      "msg": "None",
+      "timing": 0.07163333892822266,
+      "step_size": 1
+    },
+    "62": {
+      "msg": "None",
+      "timing": 0.0885469913482666,
+      "step_size": 1
+    },
+    "64": {
+      "msg": "None",
+      "timing": 0.19376802444458008,
+      "step_size": 1
+    },
+    "42": {
+      "msg": "None",
+      "timing": 0.5119085311889648,
+      "step_size": 1
+    }
+  },
+  "timeout": {},
+  "error": {
+    "29": {
+      "msg": "IndexError('pop from empty list')",
+      "timing": 0.001123189926147461,
+      "step_size": 0
+    },
+    "49": {
+      "msg": "SyntaxError('invalid syntax', ('<string>', 1, 6, \"sqrt {Symbol ('AB' )^Integer (2 )+Symbol ('BD' )^Integer (2 )+Symbol ('DF' )^Integer (2 )}\", 1, 7))",
+      "timing": 0.12557578086853027,
+      "step_size": 0
+    }
+  }
+}

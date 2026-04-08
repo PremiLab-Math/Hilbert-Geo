@@ -1,0 +1,40 @@
+{
+  "problem_id": 108,
+  "annotation": "",
+  "source": "SolidGeo",
+  "problem_text_en": "A wedding cake consists of three cylinders stacked on top of each other. The top layer has a height of 20 cm, the middle layer has a radius double this, and the same height and the bottom layer has a radius three times as big, and is twice as high.\n\nAll the sides and top surfaces are to be covered in icing, but not the bottom.\n\nWhat is the surface area of the cake that needs to be iced?\n\nGive your answer to the nearest cm2.",
+  "construction_cdl": [
+    "Shape(O1P1, O2P2, O3P3)",
+    "Cocircular(O1)",
+    "Cocircular(O2)",
+    "Cocircular(O3)"
+  ],
+  "text_cdl": [
+    "Cylinder(O1, P1)",
+    "Cylinder(O2, P2)",
+    "Cylinder(O3, P3)",
+    "Equal(HeightOfCylinder(O1, P1), 20)",
+    "Equal(RadiusOfCircle(O1), 20)",
+    "Equal(RadiusOfCircle(O2), 40)",
+    "Equal(HeightOfCylinder(O2, P2), 20)",
+    "Equal(RadiusOfCircle(O3), 60)",
+    "Equal(HeightOfCylinder(O3, P3), 40)"
+  ],
+  "image_cdl": [
+    "Cylinder(O1, P1)",
+    "Cylinder(O2, P2)",
+    "Cylinder(O3, P3)",
+    "Equal(HeightOfCylinder(O1, P1), 20)",
+    "Equal(RadiusOfCircle(O1), 20)",
+    "Equal(RadiusOfCircle(O2), 40)",
+    "Equal(HeightOfCylinder(O2, P2), 20)",
+    "Equal(RadiusOfCircle(O3), 60)",
+    "Equal(HeightOfCylinder(O3, P3), 40)"
+  ],
+  "goal_cdl": "Value(SurfaceAreaOfCylinder(O1P1, O2P2, O3P3))",
+  "problem_answer": "18840",
+  "problem_type": [],
+  "complexity_level": "",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": "{\"START\": []}"
+}

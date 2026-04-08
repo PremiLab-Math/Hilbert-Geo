@@ -1,0 +1,34 @@
+{
+  "problem_id": 818,
+  "annotation": "",
+  "annotation_img": "",
+  "source": "SolidGeo",
+  "problem_text_cn": "",
+  "problem_text_en": "In the cylindrical tube shown above, the circumference of the circular base is 32 . If the tube is cut along $\\overline{A B}$ and laid out flat to make a rectangle, what is the length of $\\overline{A C}$ to the nearest whole number?",
+  "problem_img": "images\\818.png",
+  "construction_cdl": [
+    "Shape(EF,FG,GH,HE)",
+    "Shape(AB,BC,CD,DA)",
+    "Shape(PQ,QP)"
+  ],
+  "text_cdl": [
+    "Cylinder(P,Q)",
+    "Equal(PerimeterOfCircle(P),32)",
+    "Equal(PerimeterOfCircle(P),LengthOfLine(EF))"
+  ],
+  "image_cdl": [
+    "Cylinder(P,Q)",
+    "Equal(LengthOfLine(AB),30)",
+    "Equal(LengthOfLine(BC),RadiusOfCircle(P))"
+  ],
+  "goal_cdl": "Value(LengthOfLine(EG))",
+  "problem_answer": "34",
+  "problem_type": [
+    "Planar Unfolding and Configuration"
+  ],
+  "complexity_level": "Level 2",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

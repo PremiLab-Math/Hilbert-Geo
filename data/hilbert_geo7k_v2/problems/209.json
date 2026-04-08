@@ -1,0 +1,29 @@
+{
+  "problem_id": 209,
+  "annotation": "",
+  "source": "SolidGeo",
+  "problem_text_en": "Consider the cube shown.\n\nFind the polynomial that represents the volume of the cube.",
+  "construction_cdl": [
+    "Shape(AB,BC,CD,DA,EF,FG,GH,HE,AE,BF,CG,DH)",
+    "Coplanar(A,B,C,D)",
+    "Coplanar(E,F,G,H)",
+    "Coplanar(A,E,F,B)",
+    "Coplanar(B,F,G,C)",
+    "Coplanar(C,G,H,D)",
+    "Coplanar(D,H,E,A)"
+  ],
+  "text_cdl": [
+    "Cube(ABCD,EFGH)",
+    "Equal(SideLengthOfCube(ABCD,EFGH),x+4)"
+  ],
+  "image_cdl": [
+    "Cube(ABCD,EFGH)",
+    "Equal(SideLengthOfCube(ABCD,EFGH),x+4)"
+  ],
+  "goal_cdl": "Value(VolumeOfCube(ABCD,EFGH))",
+  "problem_answer": "(x+4)^3",
+  "problem_type": [],
+  "complexity_level": "",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": "{\"START\": []}"
+}

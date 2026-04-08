@@ -1,0 +1,39 @@
+{
+  "problem_id": 808,
+  "annotation": "",
+  "annotation_img": "",
+  "source": "SolidGeo",
+  "problem_text_cn": "",
+  "problem_text_en": "A cylinder has a surface area of 54105 \\mathrm{mm}^2 and a radius of 79 mm.\n\nWhat must the height h mm of the cylinder be?\n\nRound your answer to the nearest whole number.",
+  "problem_img": [
+    "images\\107.jpg"
+  ],
+  "construction_cdl": [
+    "Shape(PQ,QP)",
+    "Cocircular(P)",
+    "Cocircular(Q)"
+  ],
+  "text_cdl": [
+    "Cylinder(P,Q)",
+    "Equal(HeightOfCylinder(P,Q),h)",
+    "Equal(RadiusOfCircle(P),79)",
+    "Equal(Add(LateralareaOfCylinder(P,Q),AreaOfCircle(P),AreaOfCircle(Q)),54105)"
+  ],
+  "image_cdl": [
+    "Cylinder(P,Q)",
+    "IsCentreOfCircle(P,P)",
+    "IsCentreOfCircle(Q,Q)",
+    "Equal(HeightOfCylinder(P,Q),h)",
+    "Equal(RadiusOfCircle(P),79)"
+  ],
+  "goal_cdl": "Value(h)",
+  "problem_answer": "30",
+  "problem_type": [
+    "Measurement of Solid Geometric Forms"
+  ],
+  "complexity_level": "Level 1",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

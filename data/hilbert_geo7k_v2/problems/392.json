@@ -1,0 +1,40 @@
+{
+  "problem_id": 392,
+  "annotation": "",
+  "source": "SolidGeo",
+  "problem_text_en": "\"The figure below shows the three views of a machine part, with the top view being an equilateral triangle. Using the dimensions indicated in the diagram, calculate the surface area of this geometric solid. (Express your answer in terms of $\\sqrt{3}$).\" A. $16 \\sqrt{3}+48$\n B. $24 \\sqrt{3}+72$\n C. $32 \\sqrt{3}+96$\n D. $40 \\sqrt{3}+120$\n",
+  "construction_cdl": [
+    "Shape(ABC)",
+    "EquilateralTriangle(ABC)",
+    "Shape(DEFG)",
+    "Rectangle(DEFG)",
+    "Shape(HIJK)",
+    "Rectangle(HIJK)"
+  ],
+  "text_cdl": [
+    "EquilateralTriangle(ABC)",
+    "Equal(SideLengthOfTriangle(ABC),4*sqrt(3))",
+    "Rectangle(DEFG)",
+    "Equal(HeightOfRectangle(DEFG),4)",
+    "Equal(WidthOfRectangle(DEFG),4*sqrt(3))",
+    "Rectangle(HIJK)",
+    "Equal(HeightOfRectangle(HIJK),4)",
+    "Equal(WidthOfRectangle(HIJK),4*sqrt(3))"
+  ],
+  "image_cdl": [
+    "EquilateralTriangle(ABC)",
+    "Equal(SideLengthOfTriangle(ABC),4*sqrt(3))",
+    "Rectangle(DEFG)",
+    "Equal(HeightOfRectangle(DEFG),4)",
+    "Equal(WidthOfRectangle(DEFG),4*sqrt(3))",
+    "Rectangle(HIJK)",
+    "Equal(HeightOfRectangle(HIJK),4)",
+    "Equal(WidthOfRectangle(HIJK),4*sqrt(3))"
+  ],
+  "goal_cdl": "Value(SurfaceAreaOfTrigularPrism(ABC,DEFG,HIJK))",
+  "problem_answer": "40*sqrt(3)+120",
+  "problem_type": [],
+  "complexity_level": "",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": "{\"START\": []}"
+}

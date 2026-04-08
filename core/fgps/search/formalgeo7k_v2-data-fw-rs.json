@@ -1,0 +1,735 @@
+{
+  "solved": {
+    "1": {
+      "msg": [
+        [
+          "circle_property_length_of_radius_and_diameter",
+          "1",
+          [
+            "O"
+          ]
+        ]
+      ],
+      "timing": 0.28266382217407227,
+      "step_size": 6
+    },
+    "2": {
+      "msg": [],
+      "timing": 0.2995576858520508,
+      "step_size": 1
+    },
+    "8": {
+      "msg": [
+        [
+          "circle_area_formula",
+          "1",
+          [
+            "P"
+          ]
+        ],
+        [
+          "cylinder_volume_formula_common",
+          "1",
+          [
+            "P",
+            "Q"
+          ]
+        ]
+      ],
+      "timing": 0.290374755859375,
+      "step_size": 5
+    },
+    "7": {
+      "msg": [
+        [
+          "circle_area_formula",
+          "1",
+          [
+            "P"
+          ]
+        ],
+        [
+          "cylinder_volume_formula_common",
+          "1",
+          [
+            "P",
+            "Q"
+          ]
+        ]
+      ],
+      "timing": 0.3019828796386719,
+      "step_size": 5
+    },
+    "14": {
+      "msg": [
+        [
+          "sphere_volume_formula",
+          "1",
+          [
+            "O"
+          ]
+        ]
+      ],
+      "timing": 0.301175594329834,
+      "step_size": 3
+    },
+    "15": {
+      "msg": [
+        [
+          "sphere_property_length_of_radius_and_diameter",
+          "1",
+          [
+            "O"
+          ]
+        ],
+        [
+          "sphere_volume_formula",
+          "1",
+          [
+            "O"
+          ]
+        ]
+      ],
+      "timing": 0.29134535789489746,
+      "step_size": 3
+    },
+    "19": {
+      "msg": [
+        [
+          "sphere_volume_formula",
+          "1",
+          [
+            "O"
+          ]
+        ]
+      ],
+      "timing": 0.2886686325073242,
+      "step_size": 3
+    },
+    "9": {
+      "msg": [
+        [
+          "circle_area_formula",
+          "1",
+          [
+            "O"
+          ]
+        ],
+        [
+          "cone_volume_formula_common",
+          "1",
+          [
+            "O",
+            "P"
+          ]
+        ]
+      ],
+      "timing": 0.3351283073425293,
+      "step_size": 4
+    },
+    "13": {
+      "msg": [
+        [
+          "circle_area_formula",
+          "1",
+          [
+            "O"
+          ]
+        ],
+        [
+          "cone_volume_formula_common",
+          "1",
+          [
+            "O",
+            "P"
+          ]
+        ]
+      ],
+      "timing": 0.3309326171875,
+      "step_size": 4
+    },
+    "17": {
+      "msg": [
+        [
+          "sphere_volume_formula",
+          "1",
+          [
+            "O"
+          ]
+        ]
+      ],
+      "timing": 0.32439231872558594,
+      "step_size": 3
+    },
+    "10": {
+      "msg": [
+        [
+          "circle_area_formula",
+          "1",
+          [
+            "O"
+          ]
+        ],
+        [
+          "cone_volume_formula_common",
+          "1",
+          [
+            "O",
+            "P"
+          ]
+        ]
+      ],
+      "timing": 0.3756065368652344,
+      "step_size": 4
+    },
+    "12": {
+      "msg": [
+        [
+          "circle_area_formula",
+          "1",
+          [
+            "O"
+          ]
+        ],
+        [
+          "cone_volume_formula_common",
+          "1",
+          [
+            "O",
+            "P"
+          ]
+        ]
+      ],
+      "timing": 0.3771040439605713,
+      "step_size": 4
+    },
+    "33": {
+      "msg": [
+        [
+          "circle_area_formula",
+          "1",
+          [
+            "O"
+          ]
+        ]
+      ],
+      "timing": 0.26987338066101074,
+      "step_size": 3
+    },
+    "30": {
+      "msg": [
+        [
+          "sphere_area_formula",
+          "1",
+          [
+            "O"
+          ]
+        ]
+      ],
+      "timing": 0.2874774932861328,
+      "step_size": 2
+    },
+    "18": {
+      "msg": [
+        [
+          "sphere_volume_formula",
+          "1",
+          [
+            "O"
+          ]
+        ]
+      ],
+      "timing": 0.3590819835662842,
+      "step_size": 3
+    },
+    "31": {
+      "msg": [
+        [
+          "sphere_property_length_of_radius_and_diameter",
+          "1",
+          [
+            "O"
+          ]
+        ],
+        [
+          "sphere_area_formula",
+          "1",
+          [
+            "O"
+          ]
+        ]
+      ],
+      "timing": 0.29576802253723145,
+      "step_size": 2
+    },
+    "20": {
+      "msg": [
+        [
+          "sphere_volume_formula",
+          "1",
+          [
+            "O"
+          ]
+        ]
+      ],
+      "timing": 0.37209320068359375,
+      "step_size": 3
+    },
+    "34": {
+      "msg": [
+        [
+          "sphere_area_formula",
+          "1",
+          [
+            "O"
+          ]
+        ],
+        [
+          "circle_area_formula",
+          "1",
+          [
+            "O"
+          ]
+        ]
+      ],
+      "timing": 0.3066260814666748,
+      "step_size": 3
+    },
+    "35": {
+      "msg": [
+        [
+          "sphere_area_formula",
+          "1",
+          [
+            "O"
+          ]
+        ],
+        [
+          "circle_area_formula",
+          "1",
+          [
+            "O"
+          ]
+        ]
+      ],
+      "timing": 0.3284931182861328,
+      "step_size": 3
+    },
+    "21": {
+      "msg": [
+        [
+          "circle_area_formula",
+          "1",
+          [
+            "Q"
+          ]
+        ],
+        [
+          "cylinder_area_formula",
+          "1",
+          [
+            "P",
+            "Q"
+          ]
+        ],
+        [
+          "circle_area_formula",
+          "1",
+          [
+            "P"
+          ]
+        ]
+      ],
+      "timing": 0.4198925495147705,
+      "step_size": 23
+    },
+    "32": {
+      "msg": [
+        [
+          "sphere_area_formula",
+          "1",
+          [
+            "O"
+          ]
+        ]
+      ],
+      "timing": 0.3668653964996338,
+      "step_size": 2
+    },
+    "22": {
+      "msg": [
+        [
+          "circle_area_formula",
+          "1",
+          [
+            "Q"
+          ]
+        ],
+        [
+          "cylinder_area_formula",
+          "1",
+          [
+            "P",
+            "Q"
+          ]
+        ],
+        [
+          "circle_area_formula",
+          "1",
+          [
+            "P"
+          ]
+        ]
+      ],
+      "timing": 0.4593498706817627,
+      "step_size": 23
+    },
+    "27": {
+      "msg": [
+        [
+          "circle_area_formula",
+          "1",
+          [
+            "Q"
+          ]
+        ],
+        [
+          "cylinder_area_formula",
+          "1",
+          [
+            "P",
+            "Q"
+          ]
+        ],
+        [
+          "circle_area_formula",
+          "1",
+          [
+            "P"
+          ]
+        ]
+      ],
+      "timing": 0.44805383682250977,
+      "step_size": 23
+    },
+    "23": {
+      "msg": [
+        [
+          "cylinder_area_formula",
+          "1",
+          [
+            "P",
+            "Q"
+          ]
+        ],
+        [
+          "circle_area_formula",
+          "1",
+          [
+            "P"
+          ]
+        ],
+        [
+          "circle_area_formula",
+          "1",
+          [
+            "Q"
+          ]
+        ]
+      ],
+      "timing": 0.547898530960083,
+      "step_size": 85
+    },
+    "5": {
+      "msg": [
+        [
+          "cylinder_volume_formula_common",
+          "1",
+          [
+            "A",
+            "B"
+          ]
+        ],
+        [
+          "cylinder_volume_formula_common",
+          "1",
+          [
+            "P",
+            "Q"
+          ]
+        ],
+        [
+          "circle_area_formula",
+          "1",
+          [
+            "P"
+          ]
+        ],
+        [
+          "circle_area_formula",
+          "1",
+          [
+            "A"
+          ]
+        ]
+      ],
+      "timing": 0.613353967666626,
+      "step_size": 39
+    },
+    "24": {
+      "msg": [
+        [
+          "circle_area_formula",
+          "1",
+          [
+            "Q"
+          ]
+        ],
+        [
+          "cylinder_area_formula",
+          "1",
+          [
+            "P",
+            "Q"
+          ]
+        ],
+        [
+          "circle_area_formula",
+          "1",
+          [
+            "P"
+          ]
+        ]
+      ],
+      "timing": 0.640831470489502,
+      "step_size": 23
+    },
+    "6": {
+      "msg": [
+        [
+          "circle_property_length_of_radius_and_diameter",
+          "1",
+          [
+            "A"
+          ]
+        ],
+        [
+          "cylinder_volume_formula_common",
+          "1",
+          [
+            "A",
+            "B"
+          ]
+        ],
+        [
+          "cylinder_volume_formula_common",
+          "1",
+          [
+            "P",
+            "Q"
+          ]
+        ],
+        [
+          "circle_property_length_of_radius_and_diameter",
+          "1",
+          [
+            "Q"
+          ]
+        ],
+        [
+          "circle_area_formula",
+          "1",
+          [
+            "P"
+          ]
+        ],
+        [
+          "circle_area_formula",
+          "1",
+          [
+            "A"
+          ]
+        ]
+      ],
+      "timing": 0.7260560989379883,
+      "step_size": 39
+    },
+    "26": {
+      "msg": [
+        [
+          "circle_area_formula",
+          "1",
+          [
+            "Q"
+          ]
+        ],
+        [
+          "cylinder_area_formula",
+          "1",
+          [
+            "P",
+            "Q"
+          ]
+        ],
+        [
+          "circle_area_formula",
+          "1",
+          [
+            "P"
+          ]
+        ]
+      ],
+      "timing": 0.9146943092346191,
+      "step_size": 23
+    },
+    "16": {
+      "msg": [
+        [
+          "sphere_volume_formula",
+          "1",
+          [
+            "O"
+          ]
+        ],
+        [
+          "sphere_volume_formula",
+          "1",
+          [
+            "P"
+          ]
+        ],
+        [
+          "sphere_property_length_of_radius_and_diameter",
+          "1",
+          [
+            "O"
+          ]
+        ],
+        [
+          "sphere_property_length_of_radius_and_diameter",
+          "1",
+          [
+            "P"
+          ]
+        ]
+      ],
+      "timing": 0.9836065769195557,
+      "step_size": 6
+    },
+    "28": {
+      "msg": [
+        [
+          "cylinder_area_formula",
+          "1",
+          [
+            "P",
+            "Q"
+          ]
+        ],
+        [
+          "circle_area_formula",
+          "1",
+          [
+            "B"
+          ]
+        ],
+        [
+          "cylinder_area_formula",
+          "1",
+          [
+            "A",
+            "B"
+          ]
+        ],
+        [
+          "circle_area_formula",
+          "1",
+          [
+            "Q"
+          ]
+        ],
+        [
+          "circle_area_formula",
+          "1",
+          [
+            "P"
+          ]
+        ],
+        [
+          "circle_area_formula",
+          "1",
+          [
+            "A"
+          ]
+        ]
+      ],
+      "timing": 0.9340834617614746,
+      "step_size": 39
+    },
+    "25": {
+      "msg": [
+        [
+          "circle_area_formula",
+          "1",
+          [
+            "Q"
+          ]
+        ],
+        [
+          "cylinder_area_formula",
+          "1",
+          [
+            "P",
+            "Q"
+          ]
+        ],
+        [
+          "circle_area_formula",
+          "1",
+          [
+            "P"
+          ]
+        ]
+      ],
+      "timing": 1.1049237251281738,
+      "step_size": 23
+    },
+    "11": {
+      "msg": [
+        [
+          "circle_area_formula",
+          "1",
+          [
+            "O"
+          ]
+        ],
+        [
+          "cone_volume_formula_common",
+          "1",
+          [
+            "O",
+            "P"
+          ]
+        ],
+        [
+          "circle_property_length_of_radius_and_diameter",
+          "1",
+          [
+            "O"
+          ]
+        ]
+      ],
+      "timing": 4.85563325881958,
+      "step_size": 6
+    }
+  },
+  "unsolved": {},
+  "timeout": {},
+  "error": {
+    "29": {
+      "msg": "IndexError('pop from empty list')",
+      "timing": 0.0003669261932373047,
+      "step_size": null
+    }
+  }
+}

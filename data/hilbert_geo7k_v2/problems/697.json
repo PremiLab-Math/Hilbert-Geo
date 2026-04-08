@@ -1,0 +1,29 @@
+{
+  "problem_id": 697,
+  "annotation": "",
+  "source": "SolidGeo",
+  "problem_text_en": "Consider the solid below. Lengths of BC is 4.\n Prove that AB is parallel to CD.",
+  "construction_cdl": [
+    "Shape(AB,BC,CD,DA,EF,EX,XF)",
+    "Collinear(A,B)",
+    "Collinear(C,D)",
+    "Collinear(E,F)",
+    "Coplanar(ABCD)",
+    "Coplanar(EFX)"
+  ],
+  "text_cdl": [
+    "Equal(LengthOfLine(B,C),4)",
+    "ParallelBetweenLine(A,B,C,D)"
+  ],
+  "image_cdl": [
+    "Equal(LengthOfLine(A,B),10)",
+    "Equal(LengthOfLine(E,F),15)",
+    "ParallelBetweenLine(A,B,C,D)"
+  ],
+  "goal_cdl": "ParallelBetweenLine(A,B,C,D)",
+  "problem_answer": "True",
+  "problem_type": [],
+  "complexity_level": "",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": "{\"START\": []}"
+}

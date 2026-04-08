@@ -1,0 +1,25 @@
+{
+  "problem_id": 839,
+  "annotation": "ShiyuShen_2025-08-23",
+  "annotation_img": "ShiyuShen_2025-08-23",
+  "source": "SolidGeo",
+  "problem_text_cn": "求下列半球的体积。把你的答案四舍五入到小数点后三位。",
+  "problem_text_en": "Find the volume of the following hemisphere.\n\nRound your answer to three decimal places.",
+  "problem_img": "images\\839.png",
+  "construction_cdl": [
+    "Shape(O)",
+    "Cospherical(O)"
+  ],
+  "text_cdl": [],
+  "image_cdl": [
+    "Sphere(O)",
+    "IsCentreOfSphere(O,O)",
+    "Equal(RadiusOfSphere(O),6)"
+  ],
+  "goal_cdl": "Value(Mul(1/2,VolumeOfSphere(O)))",
+  "problem_answer": "452.389",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "problem_id": 798,
+  "annotation": "",
+  "annotation_img": "",
+  "source": "SolidGeo",
+  "problem_text_cn": "",
+  "problem_text_en": "As shown in the figure, the height of the prism is 2cm. Find the volume of the solid.",
+  "problem_img": [
+    "images\\97.jpg"
+  ],
+  "construction_cdl": [
+    "Shape(AB,BC,CD,DA)",
+    "Shape(EF,FG,GH,HE)",
+    "Shape(AE,EF,FB,BA)",
+    "Shape(CD,DH,HG,GC)",
+    "Shape(AE,EH,HD,DA)",
+    "Shape(BF,FG,GC,CB)",
+    "Coplanar(U,ABCD)",
+    "Coplanar(V,EFGH)"
+  ],
+  "text_cdl": [
+    "RightQuadrangularPrism(ABCD,EFGH)",
+    "Prism(U,V)",
+    "Equal(HeightOfQuadrilateral(ABCD),2)"
+  ],
+  "image_cdl": [
+    "RightQuadrangularPrism(ABCD,EFGH)",
+    "Prism(U,V)",
+    "Kite(ABCD)",
+    "Equal(LengthOfLine(AC),8)",
+    "Equal(LengthOfLine(BD),4)"
+  ],
+  "goal_cdl": "Value(VolumeOfQuadrangularPrism(ABCD,EFGH))",
+  "problem_answer": "32",
+  "problem_type": [
+    "Measurement of Solid Geometric Forms"
+  ],
+  "complexity_level": "Level 1",
+  "theorem_seqs": [],
+  "theorem_seqs_dag": {
+    "START": []
+  }
+}
