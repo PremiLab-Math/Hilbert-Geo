@@ -1,5 +1,5 @@
 {
-  "dataset_name": "hilbert_geo_sample_1k",
+  "dataset_name": "hilbert_geo7k",
   "dataset_version": "v2",
   "short_description": "1k sample problems for the reorganized Hilbert-Geo repository.",
   "license": "MIT",
@@ -8,5 +8,5 @@
   "gdl_name": "GFS-Basic",
   "gdl_version": "v2",
   "problem_source": "Geometry3k (https://github.com/lupantech/InterGPS), GeoQA (https://github.com/chen-judge/GeoQA), GeoQA+ (https://github.com/SCNU203/GeoQA-Plus) and online resources.",
-  "release_datetime": "2024-11-12 11:33:23"
+  "release_datetime": "2025-11-12 11:33:23"
 }

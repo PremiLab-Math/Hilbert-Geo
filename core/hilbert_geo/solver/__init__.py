@@ -1,5 +1,3 @@
-
-
 """
 'solver' invokes other modules to enable interactive problem-solving and automated problem-solving.
 The automated problem-solving implements both forward search and backward search, allowing for the

@@ -1,7 +1,3 @@
-# Copyright (C) 2022-2024 Hilbert-Geo Development Team
-# Author: Xiaokai Zhang
-# Contact: formalgeo@gmail.com
-
 """
 'tools' provides some practical tools, such as problem-solving process outputting.
 """

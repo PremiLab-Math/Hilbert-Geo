@@ -240,5 +240,3 @@ class DatasetLoader:
 
 if __name__ == '__main__':
     show_available_datasets("D:/Projects/released")
-    # download_dataset("hilbert_geo_sample_1k", "D:/Projects/released")
-    # remove_dataset("hilbert_geo_sample_1k", "D:/Projects/released")

@@ -1,6 +1,5 @@
 
-
-"""Download and Management of Datasets and Formal Systems."""
+"""Download and Management of Datasets and SolidGeo Formal Systems."""
 
 __all__ = [
     "show_available_datasets", "download_dataset", "remove_dataset",

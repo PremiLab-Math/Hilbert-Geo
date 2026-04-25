@@ -1,5 +1,4 @@
 
-
 """
 'core' responsible for GPL statements executing, which consists of 2 submodules.
 'GeometryPredicateLogicExecutor' responsible for GPL statements parsing and relational inference.

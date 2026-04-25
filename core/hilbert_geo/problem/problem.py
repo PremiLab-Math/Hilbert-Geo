@@ -7,7 +7,7 @@ from hilbert_geo.problem.condition import Condition, Goal
 from hilbert_geo.parse import parse_expr, get_equation_from_tree
 from hilbert_geo.tools import rough_equal
 from hilbert_geo.core import EquationKiller as EqKiller
-from itertools import combinations, permutations  # 导入全排列函数
+from itertools import combinations, permutations
 
 class Problem:
     def __init__(self):

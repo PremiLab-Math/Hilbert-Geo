@@ -182,7 +182,7 @@ def inverse_parse_solution(hypertree, pgdl_source_file, tgdl_source_file, langua
 
             theorem = theorem.split("(")[0]
             if len(premises) > 0:
-                print_text += "已知条件"
+                print_text += "Given conditions"
                 for premise in premises:
                     if premise not in node_map:
                         node_map[premise] = [len(node_map) + 1,
@@ -191,11 +191,11 @@ def inverse_parse_solution(hypertree, pgdl_source_file, tgdl_source_file, langua
                 print_text += "，"
 
             if theorem == "solve_eq":
-                print_text += "计算可得"
+                print_text += "Computationally available"
             else:
-                print_text += "由{}可得".format(theorem_gdl_source[theorem][language])
+                print_text += "It can be obtained from {}".format(theorem_gdl_source[theorem][language])
             print_text += "，{}（{}）；\n".format(node_map[conclusion][1], node_map[conclusion][0])
-        print_text += "完成解题。"
+        print_text += "Complete the solution."
     else:
         print_text = "From the conditions of the problem, we have "
         print_text += "{} ({})".format(node_map[start_nodes_used[0]][1], node_map[start_nodes_used[0]][0])

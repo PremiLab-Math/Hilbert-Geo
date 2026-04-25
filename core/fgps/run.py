@@ -5,11 +5,11 @@ if __package__ in {None, ""}:
     sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from hilbert_geo.data import DatasetLoader
-from hilbert_geo.tools import load_json, save_json, safe_save_json, simple_show, show_solution
-from hilbert_geo.tools import get_solution_hypertree, get_theorem_dag
+from hilbert_geo.tools import load_json, save_json, safe_save_json, simple_show
 from hilbert_geo.parse import parse_theorem_seqs
 from hilbert_geo.solver import Interactor
 from fgps import get_args
+from fgps.solution_display import show_solution, get_solution_hypertree, get_theorem_dag, get_theorem_trace
 import os
 import warnings
 import time
@@ -71,14 +71,16 @@ def run(path_datasets, dataset_name, path_logs):
 
         solver.problem.check_goal()  # check goal after applied theorem seqs
 
-        show_solution(solver.problem)  # show solving process
+        show_solution(solver.problem, dl.theorem_GDL)  # show solving process
 
         save_json(solver.problem.parsed_problem_CDL,
                   os.path.join(path_logs, "run/problems/{}_{}_parsed_cdl.json".format(dataset_name, pid)))
-        save_json(get_solution_hypertree(solver.problem),
+        save_json(get_solution_hypertree(solver.problem, dl.theorem_GDL),
                   os.path.join(path_logs, "run/problems/{}_{}_tree.json".format(dataset_name, pid)))
         save_json(get_theorem_dag(solver.problem),
                   os.path.join(path_logs, "run/problems/{}_{}_dag.json".format(dataset_name, pid)))
+        save_json(get_theorem_trace(solver.problem, dl.theorem_GDL),
+                  os.path.join(path_logs, "run/problems/{}_{}_trace.json".format(dataset_name, pid)))
 
         print()
 

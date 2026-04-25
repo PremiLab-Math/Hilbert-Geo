@@ -1,4 +1,3 @@
-
 """
 'parse' responsible for statements parsing and inverse parsing, building a bridge
 between natural language, formal language, and machine language.

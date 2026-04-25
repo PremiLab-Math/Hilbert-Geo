@@ -1,4 +1,6 @@
-
+# Copyright (C) 2025-2026 Hilbert-Geo Team
+# Author: Ruoran Xu
+# Contact: miccioscroga33@gmail.com
 
 """Formal representation and solving for Euclidean plane geometry problems."""
 

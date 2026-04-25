@@ -9,14 +9,12 @@ from copy import deepcopy
 
 
 class GeometrySolver:
-    """几何问题求解器类，封装问题处理与求解的完整流程"""
+    """The geometric problem solver class encapsulates the complete process of problem handling and solving"""
     
     def __init__(self, predicate_gdl_path, theorem_gdl_path):
         """
-        初始化求解器
+        Initialize the solver
         
-        :param predicate_gdl_path: 谓词定义GDL文件路径
-        :param theorem_gdl_path: 定理定义GDL文件路径
         """
         self.predicate_gdl = self._load_predicate_gdl(predicate_gdl_path)
         self.theorem_gdl = self._load_theorem_gdl(theorem_gdl_path)
@@ -24,54 +22,50 @@ class GeometrySolver:
         self.solving_history = []
         
     def _load_predicate_gdl(self, path):
-        """加载谓词定义"""
+        """Load predicate definition"""
         try:
             with open(path, 'r', encoding='utf-8') as f:
                 return parse_predicate_gdl(json.load(f))
         except Exception as e:
-            warnings.warn(f"加载谓词定义失败: {str(e)}")
+            warnings.warn(f"The predicate definition loading failed: {str(e)}")
             return None
     
     def _load_theorem_gdl(self, path):
-        """加载定理定义"""
+        """Definition of Loading Theorem"""
         try:
             with open(path, 'r', encoding='utf-8') as f:
                 return parse_theorem_gdl(json.load(f),self.predicate_gdl)
         except Exception as e:
-            warnings.warn(f"加载定理定义失败: {str(e)}")
+            warnings.warn(f"The definition of the loading theorem failed: {str(e)}")
             return None
     
     def load_problem(self, problem_data):
         """
-        加载问题数据
+        Load problem data
         
-        :param problem_data
         """
         try:
             parsed_problem = parse_problem_cdl(problem_data)
             self.problem = Problem()
             self.problem.load_problem_by_fl(
-                parsed_predicate_GDL=self.predicate_gdl,  # 解析后的谓词定义
-                parsed_theorem_GDL=self.theorem_gdl,      # 解析后的定理定义
-                parsed_problem=parsed_problem             # 解析后的问题数据（如 parse_problem_cdl 的返回值）
+                parsed_predicate_GDL=self.predicate_gdl,  
+                parsed_theorem_GDL=self.theorem_gdl,      
+                parsed_problem=parsed_problem             
                 )
-            self.problem._construction_init()  # 执行条件扩展
-            self.solving_history = [f"问题加载完成: {problem_data.get('problem_id', '未知ID')}"]
+            self.problem._construction_init()  # Execution condition extension
+            self.solving_history = [f"The problem has been loaded successfully.: {problem_data.get('problem_id', 'Unknown ID')}"]
             return True
         except Exception as e:
-            warnings.warn(f"加载问题失败: {str(e)}")
+            warnings.warn(f"Loading issue failed: {str(e)}")
             return False
     
     def apply_theorem(self, theorem_name, branch=0):
         """
-        应用指定定理
+        Apply the specified theorem
         
-        :param theorem_name: 定理名称
-        :param branch: 定理分支索引
-        :return: 应用是否成功
         """
         if not self.problem:
-            warnings.warn("请先加载问题")
+            warnings.warn("Please load the question first")
             return False
             
         try:
@@ -82,9 +76,9 @@ class GeometrySolver:
             )
             if update:
                 self.solving_history.append(
-                    f"应用定理成功: {theorem_name} (分支 {branch})"
+                    f"Successful application of the theorem: {theorem_name} (Branch {branch})"
                 )
-                EqKiller.solve_equations(self.problem)  # 求解方程
+                EqKiller.solve_equations(self.problem)  # Solve the equation
                 return True
             self.solving_history.append(
                 f"应用定理失败: {theorem_name} (分支 {branch})"
@@ -92,12 +86,12 @@ class GeometrySolver:
             return False
         except Exception as e:
             self.solving_history.append(
-                f"应用定理出错: {theorem_name} - {str(e)}"
+                f"Error in applying the theorem: {theorem_name} - {str(e)}"
             )
             return False
     
     def check_goal(self):
-        """检查目标是否已解决"""
+        """Check whether the target has been resolved"""
         if not self.problem:
             return False, None
             
@@ -108,55 +102,55 @@ class GeometrySolver:
     
     def solve(self, max_steps=20):
         """
-        自动求解问题
+        Automatically solve problems
         
-        :param max_steps: 最大求解步骤
-        :return: (是否解决, 答案, 求解历史)
+        :param max_steps: Maximum solution steps
+        :return: (Whether it has been solved, the answer, and the history of seeking solutions)
         """
         if not self.problem:
-            warnings.warn("请先加载问题")
+            warnings.warn("Please load the question first")
             return False, None, self.solving_history
             
         for step in range(max_steps):
-            # 检查是否已解决
+            # Check if it has been resolved
             solved, answer = self.check_goal()
             if solved:
-                self.solving_history.append(f"步骤 {step + 1}: 目标已解决，答案: {answer}")
+                self.solving_history.append(f"Steps {step + 1}: The goal has been solved. The answer: {answer}")
                 return True, answer, self.solving_history
             
-            # 尝试应用所有可用定理
+            # Try to apply all available theorems
             theorem_applied = False
             for theorem_name in self.theorem_gdl:
                     
-                # 尝试所有分支
+                # Try all branches
                 for branch_idx, branch_key in enumerate(self.theorem_gdl[theorem_name]["body"].keys()):
                     if self.apply_theorem(theorem_name, branch_idx):
                         theorem_applied = True
-                        break  # 应用成功后继续检查目标
+                        break  # After the application is successful, continue to check the target
                 if theorem_applied:
                     break
             
             if not theorem_applied:
-                self.solving_history.append(f"步骤 {step + 1}: 无可用定理可应用，求解终止")
+                self.solving_history.append(f"Step {step + 1}: There are no available theorems to apply, and the solution is terminated")
                 break
         
-        # 最终检查
+        # Final inspection
         solved, answer = self.check_goal()
         return solved, answer, self.solving_history
     
     def show_solution(self):
-        """展示求解过程详情"""
+        """Details of the solution process"""
         if not self.problem:
-            warnings.warn("请先加载问题")
+            warnings.warn("Please load the question first")
             return
         show_solution(self.problem)
     
     def get_history(self):
-        """获取历史"""
+        """Get history"""
         return self.solving_history
     
     def copy(self):
-        """创建求解器副本（用于分支探索）"""
+        """Create a copy of the solver (for branch exploration)"""
         new_solver = GeometrySolver(None, None)
         new_solver.predicate_gdl = deepcopy(self.predicate_gdl)
         new_solver.theorem_gdl = deepcopy(self.theorem_gdl)
