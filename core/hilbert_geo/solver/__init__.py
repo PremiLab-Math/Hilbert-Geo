@@ -1,6 +1,4 @@
-# Copyright (C) 2022-2024 Hilbert-Geo Development Team
-# Author: Xiaokai Zhang
-# Contact: formalgeo@gmail.com
+
 
 """
 'solver' invokes other modules to enable interactive problem-solving and automated problem-solving.
