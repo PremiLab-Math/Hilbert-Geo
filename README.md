@@ -33,13 +33,13 @@ SolidGeoSolver/
 │   ├── files/
 │   └── hilbert_geo/
 └── data/
-    └── hilbert_geo7k_v2/
+    └── hilbert_geo_v2/ https://github.com/CHYYYYYYYY/SolidGeoSolver/tree/main/data/hilbert_geo7k_v2
 ```
 
 - `api/` contains prompt-and-call helpers for model APIs.
 - `core/hilbert_geo/` is the package.
 - `core/gdl/` and `core/files/t_info.json` keep the predicate library, theorem bank, and theorem metadata with the core code.
-- `data/hilbert_geo_v2/` contains sample subset for repository display and quick testing.
+- `data/hilbert_geo_v2/` contains sample subset for repository display and quick testing. 
 
 ## Quick Start
 
