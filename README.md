@@ -8,6 +8,8 @@
   </h1>
 </p>
 
+<a href='https://arxiv.org/abs/2605.16385'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a> <a href='https://github.com/PremiLab-Math/Hilbert-Geo'><img src='https://img.shields.io/badge/Project-Page-green'></a>
+
 
 ## News
 
