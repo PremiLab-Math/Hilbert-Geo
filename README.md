@@ -73,13 +73,12 @@ By default:
 ## ✍️ Citation
 If you use our work and are inspired by our work, please consider cite us:
 ```
-@misc{xu2026hilbertgeosolvingsolidgeometric,
-      title={Hilbert-Geo: Solving Solid Geometric Problems by Neural-Symbolic Reasoning}, 
-      author={Ruoran Xu and Haoyu Cheng and Bin Dong and Qiufeng Wang},
-      year={2026},
-      eprint={2605.16385},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2605.16385}, 
+@InProceedings{Xu_2026_CVPR,
+    author    = {Xu, Ruoran and Cheng, Haoyu and Dong, Bin and Wang, Qiufeng},
+    title     = {Hilbert-Geo: Solving Solid Geometric Problems by Neural-Symbolic Reasoning},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2026},
+    pages     = {9658-9667}
 }
 ```
