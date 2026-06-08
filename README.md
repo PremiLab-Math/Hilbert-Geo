@@ -14,7 +14,7 @@
 ## News
 
 <div style="max-height: 350px; overflow-y: auto; border: 1px solid #e0e0e0; border-radius: 8px; padding: 10px 15px; background-color: #fafafa; font-size: 12px;" markdown="1">
-2026.02: &nbsp;🎉🎉 Our paper "Hilbert-Geo: Solving Solid Geometric Problems by Neural-Symbolic Reasoning" was accepted by CVPR2026.
+2026.02: &nbsp;🎉🎉 Our paper "Hilbert-Geo: Solving Solid Geometric Problems by Neural-Symbolic Reasoning" was accepted by CVPR2026. The dataset link：https://huggingface.co/datasets/WendingGao/Hilbert-Geo2K
 </div>
 
 ## Structure
