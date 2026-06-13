@@ -8,13 +8,13 @@
   </h1>
 </p>
 
-[![Stars](https://img.shields.io/github/stars/CHYYYYYYYY/SolidGeoSolver)](https://github.com/CHYYYYYYYY/SolidGeoSolver) <a href='https://arxiv.org/abs/2605.16385'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a> <a href='https://github.com/PremiLab-Math/Hilbert-Geo'><img src='https://img.shields.io/badge/Project-Page-green'></a>
+[![Stars](https://img.shields.io/github/stars/CHYYYYYYYY/SolidGeoSolver)](https://github.com/CHYYYYYYYY/SolidGeoSolver) <a href='https://arxiv.org/abs/2605.16385'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a> <a href='https://github.com/PremiLab-Math/Hilbert-Geo'><img src='https://img.shields.io/badge/Project-Page-green'></a> <a href='https://huggingface.co/datasets/WendingGao/Hilbert-Geo2K'><img src='https://img.shields.io/badge/Dataset-HuggingFace-yellow'></a>
 
 
 ## News
 
 <div style="max-height: 350px; overflow-y: auto; border: 1px solid #e0e0e0; border-radius: 8px; padding: 10px 15px; background-color: #fafafa; font-size: 12px;" markdown="1">
-2026.02: &nbsp;🎉🎉 Our paper "Hilbert-Geo: Solving Solid Geometric Problems by Neural-Symbolic Reasoning" was accepted by CVPR2026. The dataset link：https://huggingface.co/datasets/WendingGao/Hilbert-Geo2K
+2026.02: &nbsp;🎉🎉 Our paper "Hilbert-Geo: Solving Solid Geometric Problems by Neural-Symbolic Reasoning" was accepted by CVPR2026.
 </div>
 
 ## Structure
