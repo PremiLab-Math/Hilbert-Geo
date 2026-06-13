@@ -8,7 +8,7 @@
   </h1>
 </p>
 
-[![Stars](https://img.shields.io/github/stars/CHYYYYYYYY/SolidGeoSolver)](https://github.com/CHYYYYYYYY/SolidGeoSolver) <a href='https://arxiv.org/abs/2605.16385'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a> <a href='https://github.com/PremiLab-Math/Hilbert-Geo'><img src='https://img.shields.io/badge/Project-Page-green'></a> <a href='https://huggingface.co/datasets/WendingGao/Hilbert-Geo2K'><img src='https://img.shields.io/badge/Dataset-HuggingFace-yellow'></a>
+[![Stars](https://img.shields.io/github/stars/CHYYYYYYYY/SolidGeoSolver)](https://github.com/CHYYYYYYYY/SolidGeoSolver) <a href='https://arxiv.org/abs/2605.16385'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a> <a href='https://github.com/PremiLab-Math/Hilbert-Geo'><img src='https://img.shields.io/badge/Project-Page-green'></a>
 
 
 ## News
